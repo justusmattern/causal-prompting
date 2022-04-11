@@ -93,19 +93,23 @@ if __name__=='__main__':
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--train-file', type=str)
+    parser.add_argument('--test-file', type=str)
     parser.add_argument('--batch-size', type=int)
     parser.add_argument('--model-name', type=str)
     parser.add_argument('--tokenizer-name', type=str)
     parser.add_argument('--prompts', type=str, nargs='+')
+    parser.add_argument('--num-epochs', type=int)
 
 
     args = parser.parse_args()
 
     print(args.prompts)
 
-    train(train_file=args.train_file, 
+    train(train_file=args.train_file,
+        test_file=args.test_file, 
         batch_size=args.batch_size, 
         model_name=args.model_name, 
         tokenizer_name=args.tokenizer_name,
-        prompts=args.prompts)
+        prompts=args.prompts,
+        num_epochs=args.num_epochs)
 
