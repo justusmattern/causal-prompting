@@ -1,0 +1,65 @@
+Sender: LSF System <lsfadmin@eu-g3-019>
+Subject: Job 213054490: <synthdata> in cluster <euler> Exited
+
+Job <synthdata> was submitted from host <eu-login-28> by user <jmattern> in cluster <euler> at Sun Apr 10 23:18:45 2022
+Job was executed on host(s) <20*eu-g3-019>, in queue <gpu.24h>, as user <jmattern> in cluster <euler> at Sun Apr 10 23:18:54 2022
+</cluster/home/jmattern> was used as the home directory.
+</cluster/work/sachan/jmattern/causal-prompting> was used as the working directory.
+Started at Sun Apr 10 23:18:54 2022
+Terminated at Sun Apr 10 23:20:25 2022
+Results reported at Sun Apr 10 23:20:25 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python train_model.py --filepath data/imdb_train.txt --training-file-path data/training_data_imdb.txt --prompt-text Review --prompt-label Rating --verbalizer-0 Negative --verbalizer-1 Positive --model-output-file trained_model_anticausal_imdb --epochs 4 --model-name gpt2-xl --tokenizer-name gpt2-xl --batch-size 1
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   29.44 sec.
+    Max Memory :                                 19106 MB
+    Average Memory :                             9228.80 MB
+    Total Requested Memory :                     20480.00 MB
+    Delta Memory :                               1374.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   91 sec.
+    Turnaround time :                            100 sec.
+
+The output (if any) follows:
+
+/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/models/auto/modeling_auto.py:907: FutureWarning: The class `AutoModelWithLMHead` is deprecated and will be removed in a future version. Please use `AutoModelForCausalLM` for causal language models, `AutoModelForMaskedLM` for masked language models and `AutoModelForSeq2SeqLM` for encoder-decoder models.
+  warnings.warn(
+/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/data/datasets/language_modeling.py:54: FutureWarning: This dataset will be removed from the library soon, preprocessing should be handled with the 🤗 Datasets library. You can have a look at this example script for pointers: https://github.com/huggingface/transformers/blob/main/examples/pytorch/language-modeling/run_mlm.py
+  warnings.warn(
+/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+***** Running training *****
+  Num examples = 29493
+  Num Epochs = 4
+  Instantaneous batch size per device = 1
+  Total train batch size (w. parallel, distributed & accumulation) = 1
+  Gradient Accumulation steps = 1
+  Total optimization steps = 117972
+  0%|          | 0/117972 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "train_model.py", line 87, in <module>
+    run(filepath=args.filepath, 
+  File "train_model.py", line 66, in run
+    train_model(text_path=training_file_path, output_file=model_output_file, epochs=epochs, model_name=model_name, tokenizer_name=tokenizer_name, batch_size=batch_size)
+  File "train_model.py", line 46, in train_model
+    trainer.train()
+  File "/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/trainer.py", line 1422, in train
+    tr_loss_step = self.training_step(model, inputs)
+  File "/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/trainer.py", line 2029, in training_step
+    loss.backward()
+  File "/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/torch/_tensor.py", line 363, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: CUDA out of memory. Tried to allocate 30.00 MiB (GPU 0; 10.76 GiB total capacity; 9.49 GiB already allocated; 31.56 MiB free; 9.70 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+  0%|          | 0/117972 [00:00<?, ?it/s]

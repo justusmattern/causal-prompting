@@ -1,0 +1,49 @@
+Sender: LSF System <lsfadmin@eu-g3-077>
+Subject: Job 213201966: <synthdata> in cluster <euler> Exited
+
+Job <synthdata> was submitted from host <eu-login-27> by user <jmattern> in cluster <euler> at Mon Apr 11 14:33:21 2022
+Job was executed on host(s) <20*eu-g3-077>, in queue <gpuhe.24h>, as user <jmattern> in cluster <euler> at Mon Apr 11 14:33:48 2022
+</cluster/home/jmattern> was used as the home directory.
+</cluster/work/sachan/jmattern/causal-prompting> was used as the working directory.
+Started at Mon Apr 11 14:33:48 2022
+Terminated at Mon Apr 11 14:33:59 2022
+Results reported at Mon Apr 11 14:33:59 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python classification.py --test-file data/imdb_test.txt --model-name /cluster/scratch/jmattern/trained_model_anticausal_imdb/checkpoint-20000 --tokenizer-name gpt2-xl --prompt-text Review --prompt-label Rating --verbalizer-1 Positive --verbalizer-0 Negative
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   5.86 sec.
+    Max Memory :                                 451 MB
+    Average Memory :                             247.00 MB
+    Total Requested Memory :                     20480.00 MB
+    Delta Memory :                               20029.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   11 sec.
+    Turnaround time :                            38 sec.
+
+The output (if any) follows:
+
+/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/models/auto/modeling_auto.py:907: FutureWarning: The class `AutoModelWithLMHead` is deprecated and will be removed in a future version. Please use `AutoModelForCausalLM` for causal language models, `AutoModelForMaskedLM` for masked language models and `AutoModelForSeq2SeqLM` for encoder-decoder models.
+  warnings.warn(
+Traceback (most recent call last):
+  File "classification.py", line 67, in <module>
+    run(test_file=args.test_file,
+  File "classification.py", line 23, in run
+    model = AutoModelWithLMHead.from_pretrained(model_name)
+  File "/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/models/auto/modeling_auto.py", line 913, in from_pretrained
+    return super().from_pretrained(pretrained_model_name_or_path, *model_args, **kwargs)
+  File "/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/models/auto/auto_factory.py", line 446, in from_pretrained
+    return model_class.from_pretrained(pretrained_model_name_or_path, *model_args, config=config, **kwargs)
+  File "/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/modeling_utils.py", line 1634, in from_pretrained
+    raise EnvironmentError(
+OSError: Error no file named pytorch_model.bin found in directory /cluster/scratch/jmattern/trained_model_anticausal_imdb/checkpoint-20000 but there is a file for Flax weights. Use `from_flax=True` to load this model from those weights.

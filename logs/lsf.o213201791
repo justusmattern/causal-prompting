@@ -1,0 +1,62 @@
+Sender: LSF System <lsfadmin@eu-g3-077>
+Subject: Job 213201791: <synthdata> in cluster <euler> Exited
+
+Job <synthdata> was submitted from host <eu-login-27> by user <jmattern> in cluster <euler> at Mon Apr 11 14:30:55 2022
+Job was executed on host(s) <20*eu-g3-077>, in queue <gpuhe.24h>, as user <jmattern> in cluster <euler> at Mon Apr 11 14:31:17 2022
+</cluster/home/jmattern> was used as the home directory.
+</cluster/work/sachan/jmattern/causal-prompting> was used as the working directory.
+Started at Mon Apr 11 14:31:17 2022
+Terminated at Mon Apr 11 14:31:29 2022
+Results reported at Mon Apr 11 14:31:29 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python classification.py --test-file data/imdb_test.txt --model-name /cluster/scratch/jmattern/trained_model_anticausal_imdb --tokenizer-name gpt2-xl --prompt-text Review --prompt-label Rating --verbalizer-1 Positive --verbalizer-0 Negative
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   5.67 sec.
+    Max Memory :                                 447 MB
+    Average Memory :                             270.00 MB
+    Total Requested Memory :                     20480.00 MB
+    Delta Memory :                               20033.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   11 sec.
+    Turnaround time :                            34 sec.
+
+The output (if any) follows:
+
+/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/models/auto/modeling_auto.py:907: FutureWarning: The class `AutoModelWithLMHead` is deprecated and will be removed in a future version. Please use `AutoModelForCausalLM` for causal language models, `AutoModelForMaskedLM` for masked language models and `AutoModelForSeq2SeqLM` for encoder-decoder models.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/configuration_utils.py", line 596, in _get_config_dict
+    resolved_config_file = cached_path(
+  File "/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/utils/hub.py", line 297, in cached_path
+    raise EnvironmentError(f"file {url_or_filename} not found")
+OSError: file /cluster/scratch/jmattern/trained_model_anticausal_imdb/config.json not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "classification.py", line 67, in <module>
+    run(test_file=args.test_file,
+  File "classification.py", line 23, in run
+    model = AutoModelWithLMHead.from_pretrained(model_name)
+  File "/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/models/auto/modeling_auto.py", line 913, in from_pretrained
+    return super().from_pretrained(pretrained_model_name_or_path, *model_args, **kwargs)
+  File "/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/models/auto/auto_factory.py", line 423, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 652, in from_pretrained
+    config_dict, _ = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/configuration_utils.py", line 548, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/configuration_utils.py", line 636, in _get_config_dict
+    raise EnvironmentError(
+OSError: Can't load config for '/cluster/scratch/jmattern/trained_model_anticausal_imdb'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure '/cluster/scratch/jmattern/trained_model_anticausal_imdb' is the correct path to a directory containing a config.json file

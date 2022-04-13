@@ -1,0 +1,38 @@
+Sender: LSF System <lsfadmin@eu-g3-060>
+Subject: Job 213202247: <synthdata> in cluster <euler> Done
+
+Job <synthdata> was submitted from host <eu-login-27> by user <jmattern> in cluster <euler> at Mon Apr 11 14:36:21 2022
+Job was executed on host(s) <20*eu-g3-060>, in queue <gpuhe.24h>, as user <jmattern> in cluster <euler> at Mon Apr 11 14:36:47 2022
+</cluster/home/jmattern> was used as the home directory.
+</cluster/work/sachan/jmattern/causal-prompting> was used as the working directory.
+Started at Mon Apr 11 14:36:47 2022
+Terminated at Mon Apr 11 16:19:29 2022
+Results reported at Mon Apr 11 16:19:29 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python classification.py --test-file data/imdb_test.txt --model-name /cluster/scratch/jmattern/trained_model_anticausal_imdb/checkpoint-18000 --tokenizer-name gpt2-xl --prompt-text Review --prompt-label Rating --verbalizer-1 Positive --verbalizer-0 Negative
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   6156.88 sec.
+    Max Memory :                                 17595 MB
+    Average Memory :                             4836.62 MB
+    Total Requested Memory :                     20480.00 MB
+    Delta Memory :                               2885.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                33
+    Run time :                                   6162 sec.
+    Turnaround time :                            6188 sec.
+
+The output (if any) follows:
+
+/cluster/home/jmattern/myenv/lib64/python3.8/site-packages/transformers/models/auto/modeling_auto.py:907: FutureWarning: The class `AutoModelWithLMHead` is deprecated and will be removed in a future version. Please use `AutoModelForCausalLM` for causal language models, `AutoModelForMaskedLM` for masked language models and `AutoModelForSeq2SeqLM` for encoder-decoder models.
+  warnings.warn(
+accuracy: 0.90464

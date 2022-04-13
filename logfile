@@ -1,0 +1,33 @@
+2022-04-13 17:54:46,573 INFO     script is running!!
+2022-04-13 17:54:48,600 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-13 17:54:49,067 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-13 17:54:49,456 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-13 17:54:49,901 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-13 17:54:49,909 DEBUG    Attempting to acquire lock 47403977538960 on /cluster/home/jmattern/.cache/huggingface/transformers/6249eef5c8c1fcfccf9f36fc2e59301b109ac4036d8ebbee9c2b7f7e47f440bd.2538e2565f9e439a3668b981faf959c8b490b36dd631f3c4cd992519b2dd36f1.lock
+2022-04-13 17:54:49,934 DEBUG    Lock 47403977538960 acquired on /cluster/home/jmattern/.cache/huggingface/transformers/6249eef5c8c1fcfccf9f36fc2e59301b109ac4036d8ebbee9c2b7f7e47f440bd.2538e2565f9e439a3668b981faf959c8b490b36dd631f3c4cd992519b2dd36f1.lock
+2022-04-13 17:54:49,944 DEBUG    Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+2022-04-13 17:54:50,049 DEBUG    https://cdn-lfs.huggingface.co:443 "GET /gpt2-medium/98c7b0558df2c732799e509a8157d392251b3a6b06e2c72eefb3a00eb10f8318 HTTP/1.1" 200 1520013706
+2022-04-13 17:54:57,832 DEBUG    Attempting to release lock 47403977538960 on /cluster/home/jmattern/.cache/huggingface/transformers/6249eef5c8c1fcfccf9f36fc2e59301b109ac4036d8ebbee9c2b7f7e47f440bd.2538e2565f9e439a3668b981faf959c8b490b36dd631f3c4cd992519b2dd36f1.lock
+2022-04-13 17:54:57,833 DEBUG    Lock 47403977538960 released on /cluster/home/jmattern/.cache/huggingface/transformers/6249eef5c8c1fcfccf9f36fc2e59301b109ac4036d8ebbee9c2b7f7e47f440bd.2538e2565f9e439a3668b981faf959c8b490b36dd631f3c4cd992519b2dd36f1.lock
+2022-04-13 18:46:21,998 INFO     script is running!!
+2022-04-13 18:46:25,385 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-13 18:46:25,896 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-13 18:46:29,229 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-13 18:46:29,687 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-13 18:46:29,700 DEBUG    Attempting to acquire lock 47203825588352 on /cluster/home/jmattern/.cache/huggingface/transformers/6249eef5c8c1fcfccf9f36fc2e59301b109ac4036d8ebbee9c2b7f7e47f440bd.2538e2565f9e439a3668b981faf959c8b490b36dd631f3c4cd992519b2dd36f1.lock
+2022-04-13 18:46:29,763 DEBUG    Lock 47203825588352 acquired on /cluster/home/jmattern/.cache/huggingface/transformers/6249eef5c8c1fcfccf9f36fc2e59301b109ac4036d8ebbee9c2b7f7e47f440bd.2538e2565f9e439a3668b981faf959c8b490b36dd631f3c4cd992519b2dd36f1.lock
+2022-04-13 18:46:29,776 DEBUG    Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+2022-04-13 18:46:29,879 DEBUG    https://cdn-lfs.huggingface.co:443 "GET /gpt2-medium/98c7b0558df2c732799e509a8157d392251b3a6b06e2c72eefb3a00eb10f8318 HTTP/1.1" 200 1520013706
+2022-04-13 18:46:57,847 DEBUG    Attempting to release lock 47203825588352 on /cluster/home/jmattern/.cache/huggingface/transformers/6249eef5c8c1fcfccf9f36fc2e59301b109ac4036d8ebbee9c2b7f7e47f440bd.2538e2565f9e439a3668b981faf959c8b490b36dd631f3c4cd992519b2dd36f1.lock
+2022-04-13 18:46:57,851 DEBUG    Lock 47203825588352 released on /cluster/home/jmattern/.cache/huggingface/transformers/6249eef5c8c1fcfccf9f36fc2e59301b109ac4036d8ebbee9c2b7f7e47f440bd.2538e2565f9e439a3668b981faf959c8b490b36dd631f3c4cd992519b2dd36f1.lock
+2022-04-13 19:31:52,737 INFO     script is running!!
+2022-04-13 19:32:01,237 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-13 19:32:01,823 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-13 19:32:16,374 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-13 19:32:16,834 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-13 19:32:16,846 DEBUG    Attempting to acquire lock 47901552205200 on /cluster/home/jmattern/.cache/huggingface/transformers/6249eef5c8c1fcfccf9f36fc2e59301b109ac4036d8ebbee9c2b7f7e47f440bd.2538e2565f9e439a3668b981faf959c8b490b36dd631f3c4cd992519b2dd36f1.lock
+2022-04-13 19:32:16,947 DEBUG    Lock 47901552205200 acquired on /cluster/home/jmattern/.cache/huggingface/transformers/6249eef5c8c1fcfccf9f36fc2e59301b109ac4036d8ebbee9c2b7f7e47f440bd.2538e2565f9e439a3668b981faf959c8b490b36dd631f3c4cd992519b2dd36f1.lock
+2022-04-13 19:32:16,959 DEBUG    Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+2022-04-13 19:32:17,035 DEBUG    https://cdn-lfs.huggingface.co:443 "GET /gpt2-medium/98c7b0558df2c732799e509a8157d392251b3a6b06e2c72eefb3a00eb10f8318 HTTP/1.1" 200 1520013706
+2022-04-13 19:32:22,277 DEBUG    Attempting to release lock 47901552205200 on /cluster/home/jmattern/.cache/huggingface/transformers/6249eef5c8c1fcfccf9f36fc2e59301b109ac4036d8ebbee9c2b7f7e47f440bd.2538e2565f9e439a3668b981faf959c8b490b36dd631f3c4cd992519b2dd36f1.lock
+2022-04-13 19:32:22,281 DEBUG    Lock 47901552205200 released on /cluster/home/jmattern/.cache/huggingface/transformers/6249eef5c8c1fcfccf9f36fc2e59301b109ac4036d8ebbee9c2b7f7e47f440bd.2538e2565f9e439a3668b981faf959c8b490b36dd631f3c4cd992519b2dd36f1.lock
