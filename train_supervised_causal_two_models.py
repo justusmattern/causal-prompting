@@ -1,3 +1,4 @@
+from cProfile import label
 from transformers import AutoModelWithLMHead, AutoTokenizer
 from utils import get_data_from_file
 import math
@@ -21,6 +22,17 @@ class TextDataset(torch.utils.data.Dataset):
         return x, y
 
 
+#class Classifier(torch.nn.Module):
+#    def __init__(self, model_name):
+#        super(Classifier, self).__init__()
+#        self.model_pos = AutoModelWithLMHead.from_pretrained(model_name)
+#        self.model_neg = AutoModelWithLMHead.from_pretrained(model_name)
+#    
+#    def forward(input_tokenized):
+#        loss_pos = lm_loss(self.model_pos, )
+
+
+
 def lm_loss(model, input, loss_fn):
     logits = model(input_ids=input).logits.permute(0,2,1)
     loss = loss_fn(logits, input)
@@ -39,6 +51,9 @@ def forward_pass(x, y, model_pos, model_neg, tokenizer, loss_fn_lm, loss_fn_cls)
     cls_loss = loss_fn_cls(label_probs.cpu(), y)
     
     return cls_loss, label_probs
+
+
+
     
 
 
@@ -59,7 +74,7 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
     tokenizer.pad_token = tokenizer.eos_token
     loss_fn_lm = nn.CrossEntropyLoss(reduction='none')
     loss_fn_cls = nn.CrossEntropyLoss(reduction='mean')
-    optimizer = torch.optim.Adam(model_pos.parameters()+model_neg.parameters(), lr = 5e-5)
+    optimizer = torch.optim.Adam(list(model_pos.parameters())+list(model_neg.parameters()), lr = 5e-5)
     optimizer.zero_grad()
 
     for epoch in range(num_epochs):
