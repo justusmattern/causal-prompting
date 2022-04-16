@@ -7,6 +7,7 @@ import torch
 import transformers
 from torch import nn
 import logging
+from torch.optim.lr_scheduler import ExponentialLR
 
 class TextDataset(torch.utils.data.Dataset):
     def __init__(self, file):
@@ -77,6 +78,8 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
     optimizer = torch.optim.Adam(list(model_pos.parameters())+list(model_neg.parameters()), lr = 5e-5)
     optimizer.zero_grad()
 
+    scheduler = ExponentialLR(optimizer, gamma=0.75)
+
     for epoch in range(num_epochs):
 
         logging.info(f'epoch {epoch}, training')
@@ -95,6 +98,8 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
             train_acc += correct_predictions
 
         logging.info('training accuracy', str(train_acc/len(train_data)))
+
+        scheduler.step()
 
         test_acc = 0
         for x, y in test_generator:
