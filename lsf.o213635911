@@ -1,74 +1,0 @@
-Sender: LSF System <lsfadmin@eu-lo-s4-029>
-Subject: Job 213635911: <synthdata> in cluster <euler> Exited
-
-Job <synthdata> was submitted from host <eu-login-22> by user <jmattern> in cluster <euler> at Wed Apr 13 19:22:24 2022
-Job was executed on host(s) <20*eu-lo-s4-029>, in queue <gpu.24h>, as user <jmattern> in cluster <euler> at Wed Apr 13 19:22:42 2022
-</cluster/home/jmattern> was used as the home directory.
-</cluster/work/sachan/jmattern/causal-prompting> was used as the working directory.
-Started at Wed Apr 13 19:22:42 2022
-Terminated at Wed Apr 13 19:32:44 2022
-Results reported at Wed Apr 13 19:32:44 2022
-
-Your job looked like:
-
-------------------------------------------------------------
-# LSBATCH: User input
-python train_supervised_causal.py --train-file data/imdb_train.txt --test-file data/imdb_test.txt --batch-size 16 --model-name gpt2-medium --tokenizer-name gpt2-medium --prompts Negative Positive --num-epochs 20
-------------------------------------------------------------
-
-Exited with exit code 1.
-
-Resource usage summary:
-
-    CPU time :                                   17.76 sec.
-    Max Memory :                                 572 MB
-    Average Memory :                             162.73 MB
-    Total Requested Memory :                     20480.00 MB
-    Delta Memory :                               19908.00 MB
-    Max Swap :                                   -
-    Max Processes :                              3
-    Max Threads :                                5
-    Run time :                                   605 sec.
-    Turnaround time :                            620 sec.
-
-The output (if any) follows:
-
-/cluster/work/sachan/jmattern/venv/lib64/python3.8/site-packages/transformers/models/auto/modeling_auto.py:907: FutureWarning: The class `AutoModelWithLMHead` is deprecated and will be removed in a future version. Please use `AutoModelForCausalLM` for causal language models, `AutoModelForMaskedLM` for masked language models and `AutoModelForSeq2SeqLM` for encoder-decoder models.
-  warnings.warn(
-Downloading:   0%|          | 0.00/1.42G [00:00<?, ?B/s]Downloading:   0%|          | 2.97M/1.42G [00:00<00:48, 31.1MB/s]Downloading:   0%|          | 5.93M/1.42G [00:00<00:51, 29.3MB/s]Downloading:   1%|          | 9.08M/1.42G [00:00<00:48, 31.0MB/s]Downloading:   1%|          | 12.0M/1.42G [00:00<00:49, 30.7MB/s]Downloading:   1%|          | 16.5M/1.42G [00:00<00:41, 36.4MB/s]Downloading:   1%|▏         | 20.5M/1.42G [00:00<00:39, 38.2MB/s]Downloading:   2%|▏         | 24.1M/1.42G [00:00<00:45, 32.9MB/s]Downloading:   2%|▏         | 27.4M/1.42G [00:00<00:52, 28.2MB/s]Downloading:   2%|▏         | 30.3M/1.42G [00:01<00:54, 27.1MB/s]Downloading:   2%|▏         | 33.1M/1.42G [00:01<00:53, 27.7MB/s]Downloading:   2%|▏         | 36.0M/1.42G [00:01<00:51, 28.7MB/s]Downloading:   3%|▎         | 39.2M/1.42G [00:01<00:49, 29.7MB/s]Downloading:   3%|▎         | 43.7M/1.42G [00:01<00:42, 34.7MB/s]Downloading:   3%|▎         | 48.2M/1.42G [00:01<00:38, 38.6MB/s]Downloading:   4%|▎         | 52.4M/1.42G [00:01<00:36, 40.0MB/s]Downloading:   4%|▍         | 56.3M/1.42G [00:01<00:38, 37.7MB/s]Downloading:   4%|▍         | 60.3M/1.42G [00:01<00:37, 38.9MB/s]Downloading:   4%|▍         | 64.0M/1.42G [00:01<00:39, 36.4MB/s]Downloading:   5%|▍         | 67.6M/1.42G [00:02<00:42, 33.8MB/s]Downloading:   5%|▍         | 70.8M/1.42G [00:02<00:45, 32.1MB/s]Downloading:   5%|▌         | 73.9M/1.42G [00:02<00:45, 32.0MB/s]Downloading:   5%|▌         | 78.2M/1.42G [00:02<00:40, 35.4MB/s]Downloading:   6%|▌         | 81.6M/1.42G [00:02<00:41, 34.2MB/s]Downloading:   6%|▌         | 85.5M/1.42G [00:02<00:46, 30.7MB/s]Downloading:   6%|▌         | 88.5M/1.42G [00:02<00:47, 30.0MB/s]Downloading:   6%|▋         | 91.8M/1.42G [00:02<00:45, 31.0MB/s]Downloading:   7%|▋         | 94.8M/1.42G [00:03<00:50, 27.9MB/s]Downloading:   7%|▋         | 97.6M/1.42G [00:03<00:51, 27.4MB/s]Downloading:   7%|▋         | 101M/1.42G [00:03<00:45, 30.9MB/s] Downloading:   7%|▋         | 105M/1.42G [00:03<00:54, 25.8MB/s]Downloading:   7%|▋         | 108M/1.42G [00:03<00:49, 28.3MB/s]Downloading:   8%|▊         | 111M/1.42G [00:03<00:48, 29.0MB/s]Downloading:   8%|▊         | 114M/1.42G [00:03<00:56, 24.8MB/s]Downloading:   8%|▊         | 117M/1.42G [00:03<00:50, 27.7MB/s]Downloading:   8%|▊         | 121M/1.42G [00:04<00:44, 31.1MB/s]Downloading:   9%|▊         | 124M/1.42G [00:04<00:45, 30.3MB/s]Downloading:   9%|▉         | 129M/1.42G [00:04<00:39, 34.7MB/s]Downloading:   9%|▉         | 132M/1.42G [00:04<00:45, 30.1MB/s]Downloading:   9%|▉         | 136M/1.42G [00:04<00:43, 31.9MB/s]Downloading:  10%|▉         | 139M/1.42G [00:04<00:40, 33.6MB/s]Downloading:  10%|▉         | 143M/1.42G [00:04<00:39, 35.0MB/s]Downloading:  10%|█         | 147M/1.42G [00:04<00:36, 37.2MB/s]Downloading:  10%|█         | 152M/1.42G [00:04<00:33, 40.5MB/s]Downloading:  11%|█         | 156M/1.42G [00:05<00:32, 42.3MB/s]Traceback (most recent call last):
-  File "/cluster/work/sachan/jmattern/venv/lib64/python3.8/site-packages/transformers/utils/hub.py", line 585, in get_from_cache
-    http_get(url_to_download, temp_file, proxies=proxies, resume_size=resume_size, headers=headers)
-  File "/cluster/work/sachan/jmattern/venv/lib64/python3.8/site-packages/transformers/utils/hub.py", line 440, in http_get
-    temp_file.write(chunk)
-  File "/cluster/apps/nss/gcc-6.3.0/python/3.8.5/x86_64/lib64/python3.8/tempfile.py", line 474, in func_wrapper
-    return func(*args, **kwargs)
-OSError: [Errno 122] Disk quota exceeded
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/cluster/work/sachan/jmattern/venv/lib64/python3.8/site-packages/transformers/modeling_utils.py", line 1671, in from_pretrained
-    resolved_archive_file = cached_path(
-  File "/cluster/work/sachan/jmattern/venv/lib64/python3.8/site-packages/transformers/utils/hub.py", line 282, in cached_path
-    output_path = get_from_cache(
-  File "/cluster/work/sachan/jmattern/venv/lib64/python3.8/site-packages/transformers/utils/hub.py", line 585, in get_from_cache
-    http_get(url_to_download, temp_file, proxies=proxies, resume_size=resume_size, headers=headers)
-  File "/cluster/apps/nss/gcc-6.3.0/python/3.8.5/x86_64/lib64/python3.8/tempfile.py", line 492, in __exit__
-    result = self.file.__exit__(exc, value, tb)
-OSError: [Errno 122] Disk quota exceeded
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "train_supervised_causal.py", line 113, in <module>
-    train(train_file=args.train_file,
-  File "train_supervised_causal.py", line 55, in train
-    model = AutoModelWithLMHead.from_pretrained(model_name)
-  File "/cluster/work/sachan/jmattern/venv/lib64/python3.8/site-packages/transformers/models/auto/modeling_auto.py", line 913, in from_pretrained
-    return super().from_pretrained(pretrained_model_name_or_path, *model_args, **kwargs)
-  File "/cluster/work/sachan/jmattern/venv/lib64/python3.8/site-packages/transformers/models/auto/auto_factory.py", line 446, in from_pretrained
-    return model_class.from_pretrained(pretrained_model_name_or_path, *model_args, config=config, **kwargs)
-  File "/cluster/work/sachan/jmattern/venv/lib64/python3.8/site-packages/transformers/modeling_utils.py", line 1761, in from_pretrained
-    raise EnvironmentError(
-OSError: Can't load the model for 'gpt2-medium'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'gpt2-medium' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
-Downloading:  11%|█         | 156M/1.42G [00:05<00:45, 30.1MB/s]

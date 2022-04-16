@@ -65,34 +65,37 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
     for epoch in range(num_epochs):
 
         logging.info(f'epoch {epoch}, training')
-
+        t = 0
         train_acc = 0
         for x, y in training_generator:
+            if t % 10 == 0:
+                logging.info(f"iteration {t}")
+            t += 1
             loss, label_probs = forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls)
             loss.backward()
             optimizer.step()
 
             preds = torch.argmax(label_probs, dim=1)
             correct_predictions = torch.sum(preds.cpu() == y.long())
-            train_acc += correct_predictions/len(y)
+            train_acc += correct_predictions
 
-        logging.info('training accuracy', train_acc)
+        logging.info('training accuracy', train_acc/len(train_data))
 
         test_acc = 0
-        for x, y in training_generator:
+        for x, y in test_generator:
             loss, label_probs = forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls)
 
             preds = torch.argmax(label_probs, dim=1)
             correct_predictions = torch.sum(preds.cpu() == y.long())
-            test_acc += correct_predictions/len(y)
+            test_acc += correct_predictions
         
-        logging.info('testing accuracy', test_acc)
-        torch.save(model.state_dict(), f'model_epoch_{epoch}.pt')
+        logging.info('testing accuracy', test_acc/len(test_data))
+        torch.save(model.state_dict(), f'model_mr_epoch_{epoch}.pt')
 
 
 if __name__=='__main__':
     
-    logging.basicConfig(level=logging.DEBUG, filename="logfile", filemode="a+",
+    logging.basicConfig(level=logging.DEBUG, filename="logfile_mr", filemode="a+",
                         format="%(asctime)-15s %(levelname)-8s %(message)s")
     logging.info("script is running!!")
 
