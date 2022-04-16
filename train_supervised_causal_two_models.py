@@ -116,7 +116,7 @@ if __name__=='__main__':
     train(train_file=args.train_file,
         test_file=args.test_file, 
         batch_size=args.batch_size, 
-        model_name=args.model_name, 
-        prompts=args.prompts,
+        model_name=args.model_name,
+        tokenizer_name=args.tokenizer_name,
         num_epochs=args.num_epochs)
 
