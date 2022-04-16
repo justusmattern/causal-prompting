@@ -1,0 +1,383 @@
+2022-04-16 14:48:53,431 INFO     script is running!!
+2022-04-16 14:50:12,494 INFO     script is running!!
+2022-04-16 14:50:12,525 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:50:13,009 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 14:50:13,064 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:50:13,520 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-16 14:50:35,453 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:50:35,900 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 14:50:35,908 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:50:36,359 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-16 14:50:41,523 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:50:41,970 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-16 14:50:41,974 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:50:42,422 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 14:50:42,441 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:50:43,908 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-16 14:50:43,912 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:50:44,358 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/vocab.json HTTP/1.1" 200 0
+2022-04-16 14:50:44,362 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:50:44,807 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/merges.txt HTTP/1.1" 200 0
+2022-04-16 14:50:44,812 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:50:45,269 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2022-04-16 14:50:45,274 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:50:45,725 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2022-04-16 14:50:45,730 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:50:46,184 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+2022-04-16 14:50:46,189 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:50:46,643 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-16 14:50:46,648 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:50:47,093 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 14:53:00,537 INFO     script is running!!
+2022-04-16 14:53:00,616 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:53:01,073 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 14:53:01,149 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:53:01,597 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-16 14:53:22,119 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:53:22,563 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 14:53:22,571 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:53:23,019 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-16 14:53:28,431 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:53:28,876 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-16 14:53:28,880 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:53:29,324 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 14:53:29,343 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:53:29,800 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-16 14:53:29,805 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:53:30,253 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/vocab.json HTTP/1.1" 200 0
+2022-04-16 14:53:30,257 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:53:30,705 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/merges.txt HTTP/1.1" 200 0
+2022-04-16 14:53:30,710 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:53:31,156 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2022-04-16 14:53:31,160 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:53:31,610 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2022-04-16 14:53:31,614 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:53:32,063 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+2022-04-16 14:53:32,067 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:53:32,517 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-16 14:53:32,521 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 14:53:32,967 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 15:04:37,621 INFO     script is running!!
+2022-04-16 15:04:37,661 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:04:38,135 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 15:04:38,189 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:04:38,625 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-16 15:05:00,564 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:05:00,991 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 15:05:00,999 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:05:01,431 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-16 15:05:07,743 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:05:08,180 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-16 15:05:08,184 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:05:08,613 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 15:05:08,633 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:05:09,070 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-16 15:05:09,075 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:05:09,505 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/vocab.json HTTP/1.1" 200 0
+2022-04-16 15:05:09,509 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:05:09,946 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/merges.txt HTTP/1.1" 200 0
+2022-04-16 15:05:09,950 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:05:10,382 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2022-04-16 15:05:10,387 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:05:10,824 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2022-04-16 15:05:10,829 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:05:11,265 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+2022-04-16 15:05:11,273 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:05:11,707 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-16 15:05:11,712 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:05:12,140 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 15:05:12,238 INFO     epoch 0, training
+2022-04-16 15:05:12,239 INFO     iteration 0
+2022-04-16 15:07:30,020 INFO     script is running!!
+2022-04-16 15:07:30,051 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:07:30,498 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 15:07:30,559 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:07:30,990 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-16 15:07:53,386 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:07:53,816 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 15:07:53,820 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:07:54,247 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-16 15:07:59,484 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:07:59,915 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-16 15:07:59,920 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:08:00,351 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 15:08:00,370 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:08:00,805 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-16 15:08:00,810 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:08:01,242 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/vocab.json HTTP/1.1" 200 0
+2022-04-16 15:08:01,247 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:08:01,678 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/merges.txt HTTP/1.1" 200 0
+2022-04-16 15:08:01,683 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:08:02,111 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2022-04-16 15:08:02,116 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:08:02,549 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2022-04-16 15:08:02,554 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:08:02,988 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+2022-04-16 15:08:02,993 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:08:03,430 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-16 15:08:03,434 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-16 15:08:03,867 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-16 15:08:03,955 INFO     epoch 0, training
+2022-04-16 15:08:03,957 INFO     iteration 0
+2022-04-16 15:08:22,648 INFO     iteration 10
+2022-04-16 15:08:41,727 INFO     iteration 20
+2022-04-16 15:08:59,656 INFO     iteration 30
+2022-04-16 15:09:19,171 INFO     iteration 40
+2022-04-16 15:09:37,462 INFO     iteration 50
+2022-04-16 15:09:55,310 INFO     iteration 60
+2022-04-16 15:10:13,607 INFO     iteration 70
+2022-04-16 15:10:31,968 INFO     iteration 80
+2022-04-16 15:10:50,018 INFO     iteration 90
+2022-04-16 15:11:07,261 INFO     iteration 100
+2022-04-16 15:11:25,418 INFO     iteration 110
+2022-04-16 15:11:43,077 INFO     iteration 120
+2022-04-16 15:12:00,255 INFO     iteration 130
+2022-04-16 15:12:18,075 INFO     iteration 140
+2022-04-16 15:12:35,401 INFO     iteration 150
+2022-04-16 15:12:51,591 INFO     iteration 160
+2022-04-16 15:13:09,216 INFO     iteration 170
+2022-04-16 15:13:27,723 INFO     iteration 180
+2022-04-16 15:13:45,417 INFO     iteration 190
+2022-04-16 15:14:04,597 INFO     iteration 200
+2022-04-16 15:14:23,811 INFO     iteration 210
+2022-04-16 15:14:42,148 INFO     iteration 220
+2022-04-16 15:15:00,825 INFO     iteration 230
+2022-04-16 15:15:18,381 INFO     iteration 240
+2022-04-16 15:15:37,305 INFO     iteration 250
+2022-04-16 15:15:55,912 INFO     iteration 260
+2022-04-16 15:16:12,791 INFO     iteration 270
+2022-04-16 15:16:30,267 INFO     iteration 280
+2022-04-16 15:16:47,332 INFO     iteration 290
+2022-04-16 15:17:05,241 INFO     iteration 300
+2022-04-16 15:17:23,323 INFO     iteration 310
+2022-04-16 15:17:40,066 INFO     iteration 320
+2022-04-16 15:17:58,430 INFO     iteration 330
+2022-04-16 15:18:15,578 INFO     iteration 340
+2022-04-16 15:18:32,929 INFO     iteration 350
+2022-04-16 15:18:50,913 INFO     iteration 360
+2022-04-16 15:19:09,784 INFO     iteration 370
+2022-04-16 15:19:28,203 INFO     iteration 380
+2022-04-16 15:19:46,571 INFO     iteration 390
+2022-04-16 15:20:04,602 INFO     iteration 400
+2022-04-16 15:20:23,640 INFO     iteration 410
+2022-04-16 15:20:42,262 INFO     iteration 420
+2022-04-16 15:21:00,412 INFO     iteration 430
+2022-04-16 15:21:18,931 INFO     iteration 440
+2022-04-16 15:21:37,371 INFO     iteration 450
+2022-04-16 15:21:56,191 INFO     iteration 460
+2022-04-16 15:22:13,815 INFO     iteration 470
+2022-04-16 15:22:31,758 INFO     iteration 480
+2022-04-16 15:22:48,499 INFO     iteration 490
+2022-04-16 15:23:06,345 INFO     iteration 500
+2022-04-16 15:23:25,132 INFO     iteration 510
+2022-04-16 15:23:43,767 INFO     iteration 520
+2022-04-16 15:24:01,650 INFO     iteration 530
+2022-04-16 15:24:18,507 INFO     iteration 540
+2022-04-16 15:24:34,913 INFO     iteration 550
+2022-04-16 15:24:52,012 INFO     iteration 560
+2022-04-16 15:25:09,280 INFO     iteration 570
+2022-04-16 15:25:27,368 INFO     iteration 580
+2022-04-16 15:25:46,402 INFO     iteration 590
+2022-04-16 15:26:58,341 INFO     epoch 1, training
+2022-04-16 15:26:58,342 INFO     iteration 0
+2022-04-16 15:27:16,513 INFO     iteration 10
+2022-04-16 15:27:34,407 INFO     iteration 20
+2022-04-16 15:27:53,588 INFO     iteration 30
+2022-04-16 15:28:11,705 INFO     iteration 40
+2022-04-16 15:28:29,168 INFO     iteration 50
+2022-04-16 15:28:47,232 INFO     iteration 60
+2022-04-16 15:29:03,981 INFO     iteration 70
+2022-04-16 15:29:20,327 INFO     iteration 80
+2022-04-16 15:29:37,339 INFO     iteration 90
+2022-04-16 15:29:55,300 INFO     iteration 100
+2022-04-16 15:30:12,876 INFO     iteration 110
+2022-04-16 15:30:31,262 INFO     iteration 120
+2022-04-16 15:30:49,164 INFO     iteration 130
+2022-04-16 15:31:06,669 INFO     iteration 140
+2022-04-16 15:31:24,423 INFO     iteration 150
+2022-04-16 15:31:41,402 INFO     iteration 160
+2022-04-16 15:31:59,660 INFO     iteration 170
+2022-04-16 15:32:18,668 INFO     iteration 180
+2022-04-16 15:32:36,191 INFO     iteration 190
+2022-04-16 15:32:53,885 INFO     iteration 200
+2022-04-16 15:33:11,991 INFO     iteration 210
+2022-04-16 15:33:29,821 INFO     iteration 220
+2022-04-16 15:33:46,708 INFO     iteration 230
+2022-04-16 15:34:06,066 INFO     iteration 240
+2022-04-16 15:34:24,114 INFO     iteration 250
+2022-04-16 15:34:43,053 INFO     iteration 260
+2022-04-16 15:35:03,289 INFO     iteration 270
+2022-04-16 15:35:21,532 INFO     iteration 280
+2022-04-16 15:35:39,299 INFO     iteration 290
+2022-04-16 15:35:58,161 INFO     iteration 300
+2022-04-16 15:36:15,284 INFO     iteration 310
+2022-04-16 15:36:33,105 INFO     iteration 320
+2022-04-16 15:36:50,985 INFO     iteration 330
+2022-04-16 15:37:08,478 INFO     iteration 340
+2022-04-16 15:37:26,467 INFO     iteration 350
+2022-04-16 15:37:45,186 INFO     iteration 360
+2022-04-16 15:38:04,599 INFO     iteration 370
+2022-04-16 15:38:22,602 INFO     iteration 380
+2022-04-16 15:38:40,637 INFO     iteration 390
+2022-04-16 15:38:57,388 INFO     iteration 400
+2022-04-16 15:39:16,146 INFO     iteration 410
+2022-04-16 15:39:34,179 INFO     iteration 420
+2022-04-16 15:39:52,171 INFO     iteration 430
+2022-04-16 15:40:09,814 INFO     iteration 440
+2022-04-16 15:40:27,885 INFO     iteration 450
+2022-04-16 15:40:44,961 INFO     iteration 460
+2022-04-16 15:41:02,884 INFO     iteration 470
+2022-04-16 15:41:20,743 INFO     iteration 480
+2022-04-16 15:41:38,800 INFO     iteration 490
+2022-04-16 15:41:56,840 INFO     iteration 500
+2022-04-16 15:42:14,203 INFO     iteration 510
+2022-04-16 15:42:32,041 INFO     iteration 520
+2022-04-16 15:42:48,606 INFO     iteration 530
+2022-04-16 15:43:05,899 INFO     iteration 540
+2022-04-16 15:43:22,962 INFO     iteration 550
+2022-04-16 15:43:40,364 INFO     iteration 560
+2022-04-16 15:43:58,149 INFO     iteration 570
+2022-04-16 15:44:15,426 INFO     iteration 580
+2022-04-16 15:44:32,645 INFO     iteration 590
+2022-04-16 15:45:42,565 INFO     epoch 2, training
+2022-04-16 15:45:42,566 INFO     iteration 0
+2022-04-16 15:46:01,831 INFO     iteration 10
+2022-04-16 15:46:18,677 INFO     iteration 20
+2022-04-16 15:46:36,106 INFO     iteration 30
+2022-04-16 15:46:53,873 INFO     iteration 40
+2022-04-16 15:47:12,406 INFO     iteration 50
+2022-04-16 15:47:30,341 INFO     iteration 60
+2022-04-16 15:47:48,472 INFO     iteration 70
+2022-04-16 15:48:05,848 INFO     iteration 80
+2022-04-16 15:48:23,789 INFO     iteration 90
+2022-04-16 15:48:40,621 INFO     iteration 100
+2022-04-16 15:48:58,437 INFO     iteration 110
+2022-04-16 15:49:16,004 INFO     iteration 120
+2022-04-16 15:49:33,437 INFO     iteration 130
+2022-04-16 15:49:51,091 INFO     iteration 140
+2022-04-16 15:50:08,805 INFO     iteration 150
+2022-04-16 15:50:25,765 INFO     iteration 160
+2022-04-16 15:50:43,129 INFO     iteration 170
+2022-04-16 15:51:00,347 INFO     iteration 180
+2022-04-16 15:51:17,276 INFO     iteration 190
+2022-04-16 15:51:36,227 INFO     iteration 200
+2022-04-16 15:51:53,971 INFO     iteration 210
+2022-04-16 15:52:11,758 INFO     iteration 220
+2022-04-16 15:52:28,358 INFO     iteration 230
+2022-04-16 15:52:46,756 INFO     iteration 240
+2022-04-16 15:53:04,869 INFO     iteration 250
+2022-04-16 15:53:21,913 INFO     iteration 260
+2022-04-16 15:53:39,583 INFO     iteration 270
+2022-04-16 15:53:57,028 INFO     iteration 280
+2022-04-16 15:54:16,343 INFO     iteration 290
+2022-04-16 15:54:33,781 INFO     iteration 300
+2022-04-16 15:54:51,875 INFO     iteration 310
+2022-04-16 15:55:09,637 INFO     iteration 320
+2022-04-16 15:55:26,909 INFO     iteration 330
+2022-04-16 15:55:44,503 INFO     iteration 340
+2022-04-16 15:56:01,406 INFO     iteration 350
+2022-04-16 15:56:19,134 INFO     iteration 360
+2022-04-16 15:56:38,732 INFO     iteration 370
+2022-04-16 15:56:55,929 INFO     iteration 380
+2022-04-16 15:57:13,910 INFO     iteration 390
+2022-04-16 15:57:31,824 INFO     iteration 400
+2022-04-16 15:57:50,212 INFO     iteration 410
+2022-04-16 15:58:09,382 INFO     iteration 420
+2022-04-16 15:58:27,404 INFO     iteration 430
+2022-04-16 15:58:44,128 INFO     iteration 440
+2022-04-16 15:59:02,267 INFO     iteration 450
+2022-04-16 15:59:20,700 INFO     iteration 460
+2022-04-16 15:59:37,853 INFO     iteration 470
+2022-04-16 15:59:55,652 INFO     iteration 480
+2022-04-16 16:00:13,100 INFO     iteration 490
+2022-04-16 16:00:30,104 INFO     iteration 500
+2022-04-16 16:00:47,879 INFO     iteration 510
+2022-04-16 16:01:05,640 INFO     iteration 520
+2022-04-16 16:01:22,479 INFO     iteration 530
+2022-04-16 16:01:39,689 INFO     iteration 540
+2022-04-16 16:01:57,865 INFO     iteration 550
+2022-04-16 16:02:14,793 INFO     iteration 560
+2022-04-16 16:02:32,855 INFO     iteration 570
+2022-04-16 16:02:49,231 INFO     iteration 580
+2022-04-16 16:03:08,057 INFO     iteration 590
+2022-04-16 16:04:18,718 INFO     epoch 3, training
+2022-04-16 16:04:18,719 INFO     iteration 0
+2022-04-16 16:04:36,696 INFO     iteration 10
+2022-04-16 16:04:54,140 INFO     iteration 20
+2022-04-16 16:05:11,558 INFO     iteration 30
+2022-04-16 16:05:28,914 INFO     iteration 40
+2022-04-16 16:05:46,917 INFO     iteration 50
+2022-04-16 16:06:05,950 INFO     iteration 60
+2022-04-16 16:06:23,415 INFO     iteration 70
+2022-04-16 16:06:41,417 INFO     iteration 80
+2022-04-16 16:06:58,614 INFO     iteration 90
+2022-04-16 16:07:15,831 INFO     iteration 100
+2022-04-16 16:07:33,036 INFO     iteration 110
+2022-04-16 16:07:51,588 INFO     iteration 120
+2022-04-16 16:08:10,246 INFO     iteration 130
+2022-04-16 16:08:28,928 INFO     iteration 140
+2022-04-16 16:08:46,456 INFO     iteration 150
+2022-04-16 16:09:03,424 INFO     iteration 160
+2022-04-16 16:09:21,414 INFO     iteration 170
+2022-04-16 16:09:38,688 INFO     iteration 180
+2022-04-16 16:09:56,152 INFO     iteration 190
+2022-04-16 16:10:13,859 INFO     iteration 200
+2022-04-16 16:10:31,216 INFO     iteration 210
+2022-04-16 16:10:48,319 INFO     iteration 220
+2022-04-16 16:11:05,831 INFO     iteration 230
+2022-04-16 16:11:22,561 INFO     iteration 240
+2022-04-16 16:11:40,548 INFO     iteration 250
+2022-04-16 16:11:59,547 INFO     iteration 260
+2022-04-16 16:12:17,021 INFO     iteration 270
+2022-04-16 16:12:33,251 INFO     iteration 280
+2022-04-16 16:12:51,256 INFO     iteration 290
+2022-04-16 16:13:08,177 INFO     iteration 300
+2022-04-16 16:13:26,266 INFO     iteration 310
+2022-04-16 16:13:42,951 INFO     iteration 320
+2022-04-16 16:14:01,797 INFO     iteration 330
+2022-04-16 16:14:19,614 INFO     iteration 340
+2022-04-16 16:14:36,597 INFO     iteration 350
+2022-04-16 16:14:53,844 INFO     iteration 360
+2022-04-16 16:15:10,687 INFO     iteration 370
+2022-04-16 16:15:27,317 INFO     iteration 380
+2022-04-16 16:15:44,573 INFO     iteration 390
+2022-04-16 16:16:01,684 INFO     iteration 400
+2022-04-16 16:16:18,771 INFO     iteration 410
+2022-04-16 16:16:36,206 INFO     iteration 420
+2022-04-16 16:16:52,880 INFO     iteration 430
+2022-04-16 16:17:11,131 INFO     iteration 440
+2022-04-16 16:17:28,618 INFO     iteration 450
+2022-04-16 16:17:46,519 INFO     iteration 460
+2022-04-16 16:18:03,867 INFO     iteration 470
+2022-04-16 16:18:20,609 INFO     iteration 480
+2022-04-16 16:18:38,449 INFO     iteration 490
+2022-04-16 16:18:55,255 INFO     iteration 500
+2022-04-16 16:19:12,664 INFO     iteration 510
+2022-04-16 16:19:31,172 INFO     iteration 520
+2022-04-16 16:19:48,525 INFO     iteration 530
+2022-04-16 16:20:05,577 INFO     iteration 540
+2022-04-16 16:20:22,928 INFO     iteration 550
+2022-04-16 16:20:40,966 INFO     iteration 560
+2022-04-16 16:20:59,050 INFO     iteration 570
+2022-04-16 16:21:16,104 INFO     iteration 580
+2022-04-16 16:21:34,210 INFO     iteration 590
+2022-04-16 16:22:44,881 INFO     epoch 4, training
+2022-04-16 16:22:44,882 INFO     iteration 0
+2022-04-16 16:23:03,421 INFO     iteration 10
+2022-04-16 16:23:20,213 INFO     iteration 20
+2022-04-16 16:23:38,209 INFO     iteration 30
+2022-04-16 16:23:55,834 INFO     iteration 40
+2022-04-16 16:24:13,337 INFO     iteration 50
+2022-04-16 16:24:30,855 INFO     iteration 60
+2022-04-16 16:24:46,650 INFO     iteration 70
+2022-04-16 16:25:04,040 INFO     iteration 80
+2022-04-16 16:25:20,837 INFO     iteration 90
+2022-04-16 16:25:38,442 INFO     iteration 100
+2022-04-16 16:25:55,637 INFO     iteration 110
+2022-04-16 16:26:14,395 INFO     iteration 120
+2022-04-16 16:26:32,041 INFO     iteration 130
+2022-04-16 16:26:50,150 INFO     iteration 140
+2022-04-16 16:27:09,671 INFO     iteration 150
+2022-04-16 16:27:27,405 INFO     iteration 160
+2022-04-16 16:27:45,096 INFO     iteration 170
+2022-04-16 16:28:02,933 INFO     iteration 180

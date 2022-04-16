@@ -42,7 +42,7 @@ def lm_loss(model, input, loss_fn):
 
 def forward_pass(x, y, model_pos, model_neg, tokenizer, loss_fn_lm, loss_fn_cls):
     scores = []
-    tokenized_all = tokenizer(x, return_tensors='pt', padding=True, truncation=True).input_ids.to('cuda:0')
+    tokenized_all = tokenizer(list(x), return_tensors='pt', padding=True, truncation=True).input_ids.to('cuda:0')
 
     language_loss_pos, language_loss_neg = lm_loss(model_pos, tokenized_all, loss_fn_lm), lm_loss(model_neg, tokenized_all, loss_fn_lm)
     scores= [language_loss_neg, language_loss_pos]
