@@ -555,3 +555,17 @@
 2022-04-19 17:44:25,404 INFO     epoch 5, training
 2022-04-19 17:48:31,042 INFO     testing accuracytensor(0.7348)
 2022-04-19 17:48:31,042 INFO     iteration 0
+2022-04-19 17:48:36,181 INFO     iteration 10
+2022-04-19 17:48:40,964 INFO     iteration 20
+2022-04-19 17:48:45,750 INFO     iteration 30
+2022-04-19 17:48:50,345 INFO     iteration 40
+2022-04-19 17:48:55,006 INFO     training accuracytensor(1.)
+2022-04-19 17:48:55,007 INFO     epoch 6, training
+2022-04-19 17:53:00,954 INFO     testing accuracytensor(0.7104)
+2022-04-19 17:53:00,955 INFO     iteration 0
+2022-04-19 17:53:06,198 INFO     iteration 10
+2022-04-19 17:53:11,035 INFO     iteration 20
+2022-04-19 17:53:15,865 INFO     iteration 30
+2022-04-19 17:53:20,628 INFO     iteration 40
+2022-04-19 17:53:25,200 INFO     training accuracytensor(1.)
+2022-04-19 17:53:25,200 INFO     epoch 7, training
