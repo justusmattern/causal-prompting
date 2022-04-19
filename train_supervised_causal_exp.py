@@ -37,12 +37,11 @@ def forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls):
         tokenized_prompt = tokenizer([prompt]*len(x_new), return_tensors='pt', padding=True, truncation=True).input_ids.to('cuda:0')
         print('all loss', lm_loss(model, tokenized_all, loss_fn_lm))
         print('prompt loss', lm_loss(model, tokenized_prompt, loss_fn_lm))
-        language_loss = lm_loss(model, tokenized_all, loss_fn_lm) - lm_loss(model, tokenized_prompt, loss_fn_lm)
+        language_loss = model(tokenized_all, labels=tokenized_all).loss - model(tokenized_prompt, labels=tokenized_prompt).loss
         scores.append(language_loss)
     print('scores', scores)
-    print('pre softmax', torch.add(-1* torch.stack(scores).permute(1,0), 5000))
-    label_probs = torch.softmax(-1* torch.stack(scores).permute(1,0), dim=1)
-    print('label probs', label_probs)
+    label_probs = -1* torch.stack(scores).unsqueeze(dim=0)
+    #print('label probs', label_probs)
     cls_loss = loss_fn_cls(label_probs.cpu(), y)
     
     return cls_loss, label_probs
@@ -63,25 +62,13 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
     tokenizer.pad_token = tokenizer.eos_token
     loss_fn_lm = nn.CrossEntropyLoss(reduction='none')
     loss_fn_cls = nn.CrossEntropyLoss(reduction='mean')
-    optimizer = torch.optim.Adam(model.parameters(), lr = 5e-6)
+    optimizer = torch.optim.Adam(model.parameters(), lr = 5e-3)
     optimizer.zero_grad()
 
     for epoch in range(num_epochs):
 
         logging.info(f'epoch {epoch}, training')
         t = 0
-
-        test_acc = 0
-        for x, y in test_generator:
-            loss, label_probs = forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls)
-
-            preds = torch.argmax(label_probs, dim=1)
-            correct_predictions = torch.sum(preds.cpu() == y.long())
-            test_acc += correct_predictions
-
-        logging.info('testing accuracy'+str(test_acc/len(test_data)))
-        print('testing accuracy', test_acc/len(test_data))
-
         train_acc = 0
         for x, y in training_generator:
             if t % 10 == 0:
@@ -99,14 +86,24 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
             correct_predictions = torch.sum(preds.cpu() == y.long())
             train_acc += correct_predictions
 
-        logging.info('training accuracy'+str(train_acc/len(train_data)))
+        #logging.info('training accuracy', train_acc/len(train_data))
         print('training accuracy', train_acc/len(train_data))
-        #torch.save(model.state_dict(), f'model_mr_epoch_{epoch}.pt')
-        model.save_pretrained(f'model_mr_epoch_{epoch}.pt')
+        test_acc = 0
+        for x, y in test_generator:
+            loss, label_probs = forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls)
+
+            preds = torch.argmax(label_probs, dim=1)
+            correct_predictions = torch.sum(preds.cpu() == y.long())
+            test_acc += correct_predictions
+        
+        #logging.info('testing accuracy', test_acc/len(test_data))
+        print('testing accuracy', test_acc/len(test_data))
+        torch.save(model.state_dict(), f'model_mr_epoch_{epoch}.pt')
+
 
 if __name__=='__main__':
     
-    logging.basicConfig(level=logging.DEBUG, filename="logfile_mr_run", filemode="a+",
+    logging.basicConfig(level=logging.DEBUG, filename="logfile_mr", filemode="a+",
                         format="%(asctime)-15s %(levelname)-8s %(message)s")
     logging.info("script is running!!")
 

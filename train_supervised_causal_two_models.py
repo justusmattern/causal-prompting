@@ -110,13 +110,13 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
             test_acc += correct_predictions
         
         logging.info('testing accuracy', str(test_acc/len(test_data)))
-        torch.save(model_pos.state_dict(), f'modelpos_mr_epoch_{epoch}.pt')
-        torch.save(model_pos.state_dict(), f'modelneg_mr_epoch_{epoch}.pt')
+        model_pos.save_pretrained(f'modelpos_mr_epoch_{epoch}.pt')
+        model_neg.save_pretrained(f'modelneg_mr_epoch_{epoch}.pt')
 
 
 if __name__=='__main__':
     
-    logging.basicConfig(level=logging.DEBUG, filename="logfile_mr", filemode="a+",
+    logging.basicConfig(level=logging.DEBUG, filename="logfile_mr2", filemode="a+",
                         format="%(asctime)-15s %(levelname)-8s %(message)s")
     logging.info("script is running!!")
 
