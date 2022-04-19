@@ -1,0 +1,130 @@
+2022-04-19 13:26:30,958 INFO     script is running!!
+2022-04-19 13:26:30,964 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:26:31,428 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-19 13:26:31,481 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:26:31,934 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-19 13:26:52,452 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:26:52,907 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-19 13:26:52,912 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:26:53,360 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-19 13:26:53,380 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:26:53,830 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-19 13:26:53,835 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:26:54,280 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/vocab.json HTTP/1.1" 200 0
+2022-04-19 13:26:54,284 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:26:54,747 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/merges.txt HTTP/1.1" 200 0
+2022-04-19 13:26:54,751 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:26:55,203 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2022-04-19 13:26:55,208 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:26:56,684 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2022-04-19 13:26:56,689 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:26:57,147 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+2022-04-19 13:26:57,151 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:26:57,610 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-19 13:26:57,615 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:26:58,072 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-19 13:26:58,163 INFO     epoch 0, training
+2022-04-19 13:29:36,891 INFO     script is running!!
+2022-04-19 13:29:46,960 INFO     script is running!!
+2022-04-19 13:29:46,966 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:29:47,426 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-19 13:29:47,486 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:29:47,932 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-19 13:30:07,917 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:30:08,367 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-19 13:30:08,372 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:30:08,817 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-19 13:30:08,838 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:30:09,290 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-19 13:30:09,294 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:30:09,741 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/vocab.json HTTP/1.1" 200 0
+2022-04-19 13:30:09,745 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:30:10,198 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/merges.txt HTTP/1.1" 200 0
+2022-04-19 13:30:10,203 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:30:10,650 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2022-04-19 13:30:10,654 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:30:11,103 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2022-04-19 13:30:11,107 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:30:11,572 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+2022-04-19 13:30:11,576 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:30:12,025 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-19 13:30:12,029 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:30:12,477 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-19 13:30:12,573 INFO     epoch 0, training
+2022-04-19 13:30:14,195 INFO     testing accuracytensor(0.5000)
+2022-04-19 13:30:14,195 INFO     iteration 0
+2022-04-19 13:30:16,906 INFO     training accuracytensor(0.5000)
+2022-04-19 13:30:19,206 INFO     epoch 1, training
+2022-04-19 13:30:20,446 INFO     testing accuracytensor(0.7000)
+2022-04-19 13:30:20,447 INFO     iteration 0
+2022-04-19 13:30:22,588 INFO     training accuracytensor(0.7000)
+2022-04-19 13:30:25,537 INFO     epoch 2, training
+2022-04-19 13:30:26,635 INFO     testing accuracytensor(0.9000)
+2022-04-19 13:30:26,637 INFO     iteration 0
+2022-04-19 13:30:28,535 INFO     training accuracytensor(0.9000)
+2022-04-19 13:30:31,474 INFO     epoch 3, training
+2022-04-19 13:30:32,511 INFO     testing accuracytensor(1.)
+2022-04-19 13:30:32,512 INFO     iteration 0
+2022-04-19 13:30:34,357 INFO     training accuracytensor(1.)
+2022-04-19 13:30:36,519 INFO     epoch 4, training
+2022-04-19 13:30:37,563 INFO     testing accuracytensor(1.)
+2022-04-19 13:30:37,565 INFO     iteration 0
+2022-04-19 13:30:39,405 INFO     training accuracytensor(1.)
+2022-04-19 13:43:15,487 INFO     script is running!!
+2022-04-19 13:43:15,496 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:43:15,965 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-19 13:43:16,025 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:43:16,475 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-19 13:43:36,882 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:43:37,331 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-19 13:43:37,336 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:43:37,783 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-19 13:43:37,803 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:43:38,256 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-19 13:43:38,261 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:43:38,720 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/vocab.json HTTP/1.1" 200 0
+2022-04-19 13:43:38,724 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:43:39,174 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/merges.txt HTTP/1.1" 200 0
+2022-04-19 13:43:39,178 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:43:39,623 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2022-04-19 13:43:39,627 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:43:40,073 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2022-04-19 13:43:40,077 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:43:40,524 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+2022-04-19 13:43:40,528 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:43:40,981 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-19 13:43:40,985 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:43:41,433 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-19 13:43:41,526 INFO     epoch 0, training
+2022-04-19 13:43:46,941 INFO     testing accuracytensor(0.5000)
+2022-04-19 13:43:46,943 INFO     iteration 0
+2022-04-19 13:43:54,930 INFO     training accuracytensor(0.4000)
+2022-04-19 13:46:44,519 INFO     script is running!!
+2022-04-19 13:46:44,525 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:46:44,999 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-19 13:46:45,058 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:46:45,506 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-19 13:47:07,957 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:47:08,408 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-19 13:47:08,413 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:47:08,859 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-19 13:47:08,886 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:47:09,337 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-19 13:47:09,342 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:47:09,789 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/vocab.json HTTP/1.1" 200 0
+2022-04-19 13:47:09,794 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:47:10,246 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/merges.txt HTTP/1.1" 200 0
+2022-04-19 13:47:10,251 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:47:10,698 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2022-04-19 13:47:10,703 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:47:11,154 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2022-04-19 13:47:11,159 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:47:11,607 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+2022-04-19 13:47:11,612 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:47:12,058 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-04-19 13:47:12,064 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-19 13:47:12,505 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-19 13:47:12,597 INFO     epoch 0, training
+2022-04-19 13:47:15,406 INFO     testing accuracytensor(0.5000)
+2022-04-19 13:47:15,408 INFO     iteration 0
+2022-04-19 13:47:21,183 INFO     training accuracytensor(0.4000)
