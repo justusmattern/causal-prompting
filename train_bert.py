@@ -38,7 +38,7 @@ class Dataset(torch.utils.data.Dataset):
 
 use_cuda = torch.cuda.is_available()
 device = torch.device("cuda:2")
-params = {'batch_size': 16,
+params = {'batch_size': 1,
           'shuffle': True,
           'num_workers': 0}
 
@@ -54,8 +54,9 @@ class Model(torch.nn.Module):
     def __init__(self):
         super(Model, self).__init__()
         self.bert_model = BertModel.from_pretrained('bert-large-uncased')
+        #self.bert_model.parallelize()
         self.drop = torch.nn.Dropout(p=0.5)
-        self.l1 = torch.nn.Linear(768,2)
+        self.l1 = torch.nn.Linear(1024,2)
     
     def forward(self, tokenized_text):
         text_rep = self.drop(self.bert_model(tokenized_text).pooler_output)
@@ -81,7 +82,7 @@ for epoch in range(6):
     truth_labels = []
     iter = 0
     for texts, label in train_loader:
-        if iter%100 ==0:
+        if iter%10 ==0:
             print(iter)
         iter += 1
         input_tokens = tokenizer(texts, padding=True, return_tensors='pt', truncation=True, max_length=512).input_ids.to(device)

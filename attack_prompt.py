@@ -10,20 +10,22 @@ import random
 
 
 #torch.cuda.is_available = lambda : False
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+torch.cuda.is_available = lambda : False
 
 class ClassificationModel(nn.Module):
     def __init__(self, model, pos_prompt, neg_prompt):
         super(ClassificationModel, self).__init__()
         self.tokenizer = GPT2Tokenizer.from_pretrained('gpt2-medium')
         self.model = GPT2LMHeadModel.from_pretrained(model)
-        self.model.to('cuda:0')
+        #self.model.to('cuda:1')
         self.model.eval()
         self.pos_prompt = pos_prompt
         self.neg_prompt = neg_prompt
 
     def score(self, prompt, sentence, model):
-        tokenized_prompt = self.tokenizer.encode(prompt , max_length=1024, truncation=True, return_tensors='pt').to('cuda:0')
-        tokenized_all = self.tokenizer.encode(prompt + ' ' + sentence, max_length=1024, truncation=True, return_tensors='pt').to('cuda:0')
+        tokenized_prompt = self.tokenizer.encode(prompt , max_length=1024, truncation=True, return_tensors='pt')#.to('cuda:1')
+        tokenized_all = self.tokenizer.encode(prompt + ' ' + sentence, max_length=1024, truncation=True, return_tensors='pt')#.to('cuda:1')
 
         loss1=model(tokenized_all, labels=tokenized_all).loss 
         loss2 = model(tokenized_prompt, labels=tokenized_prompt).loss*len(tokenized_prompt[0])/len(tokenized_all[0])
@@ -68,7 +70,7 @@ class CustomWrapper(textattack.models.wrappers.ModelWrapper):
 
 
 #model = ClassificationModel('gpt2-xl', ['I loved this movie!','A great film!', "This was an awesome movie!", "This movie was extremely good!", "This was the best movie I have ever seen!", "I found the movie to be very good.", "This film was fantastic!"], ['I hated this movie!', 'A bad film!', "This was a terrible movie!", "This movie was really bad!", "This was the worst movie I have ever seen!", "I found the movie to be very bad.", "This film was boring."]).to('cuda:2')
-model = ClassificationModel('model_imdb_epoch_2.pt', ['Positive:'], ['Negative:'])
+model = ClassificationModel('gpt2-medium', ['This was a great movie!'], ['This was a bad movie!'])
 class_model = CustomWrapper(model)
 
 
@@ -79,11 +81,11 @@ from textattack import Attacker, AttackArgs
 
 
 attack = TextFoolerJin2019.build(class_model)
-attack.cuda_()
+attack#.cuda_()
 
 dataset = []
 count= 0
-with open('data/imdb_test.txt', 'r') as f:
+with open('data/mr_test.txt', 'r') as f:
     count+=1
     for line in f:
         dataset.append((' '.join(line.split(' ')[1:]).replace('\n', ''), int(line.split(' ')[0])))
