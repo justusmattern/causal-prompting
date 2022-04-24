@@ -81,6 +81,7 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
 
         logging.info('testing accuracy'+str(test_acc/len(test_data)))
         print('testing accuracy', test_acc/len(test_data))
+        model.save_pretrained(f'model_imdb_epoch_{epoch}.pt')
         #torch.save(model.state_dict(), f'model_mr_epoch_{epoch}.pt')
 
         train_acc = 0
@@ -106,7 +107,7 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
 
 if __name__=='__main__':
     
-    logging.basicConfig(level=logging.DEBUG, filename="logfile_mr", filemode="a+",
+    logging.basicConfig(level=logging.DEBUG, filename="logfile_imdb", filemode="a+",
                         format="%(asctime)-15s %(levelname)-8s %(message)s")
     logging.info("script is running!!")
 
