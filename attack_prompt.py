@@ -70,7 +70,7 @@ class CustomWrapper(textattack.models.wrappers.ModelWrapper):
 
 
 #model = ClassificationModel('gpt2-xl', ['I loved this movie!','A great film!', "This was an awesome movie!", "This movie was extremely good!", "This was the best movie I have ever seen!", "I found the movie to be very good.", "This film was fantastic!"], ['I hated this movie!', 'A bad film!', "This was a terrible movie!", "This movie was really bad!", "This was the worst movie I have ever seen!", "I found the movie to be very bad.", "This film was boring."]).to('cuda:2')
-model = ClassificationModel('gpt2-medium', ['This was a great movie!'], ['This was a bad movie!'])
+model = ClassificationModel('model_imdb_epoch2', ['Positive:'], ['Negative:'])
 class_model = CustomWrapper(model)
 
 
@@ -85,7 +85,7 @@ attack#.cuda_()
 
 dataset = []
 count= 0
-with open('data/mr_test.txt', 'r') as f:
+with open('data/imdb_test.txt', 'r') as f:
     count+=1
     for line in f:
         dataset.append((' '.join(line.split(' ')[1:]).replace('\n', ''), int(line.split(' ')[0])))

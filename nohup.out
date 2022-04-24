@@ -1,0 +1,1414 @@
+2022-04-24 20:54:33.620511: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-04-24 20:54:33.620575: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+textattack: Unknown if model of class <class '__main__.ClassificationModel'> compatible with goal function <class 'textattack.goal_functions.classification.untargeted_classification.UntargetedClassification'>.
+  0%|          | 0/1000 [00:00<?, ?it/s]2022-04-24 20:55:11.009013: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-04-24 20:55:11.009143: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublas.so.11'; dlerror: libcublas.so.11: cannot open shared object file: No such file or directory
+2022-04-24 20:55:11.009232: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublasLt.so.11'; dlerror: libcublasLt.so.11: cannot open shared object file: No such file or directory
+2022-04-24 20:55:11.011278: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusolver.so.11'; dlerror: libcusolver.so.11: cannot open shared object file: No such file or directory
+2022-04-24 20:55:11.011374: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusparse.so.11'; dlerror: libcusparse.so.11: cannot open shared object file: No such file or directory
+2022-04-24 20:55:11.011462: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory
+2022-04-24 20:55:11.011482: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1850] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2022-04-24 20:55:11.011761: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+  0%|          | 1/1000 [00:54<15:10:04, 54.66s/it][Succeeded / Failed / Skipped / Total] 1 / 0 / 0 / 1:   0%|          | 1/1000 [00:54<15:10:05, 54.66s/it][Succeeded / Failed / Skipped / Total] 1 / 0 / 0 / 1:   0%|          | 2/1000 [00:55<7:39:31, 27.63s/it] [Succeeded / Failed / Skipped / Total] 1 / 0 / 1 / 2:   0%|          | 2/1000 [00:55<7:39:31, 27.63s/it][Succeeded / Failed / Skipped / Total] 1 / 0 / 1 / 2:   0%|          | 3/1000 [01:40<9:14:49, 33.39s/it][Succeeded / Failed / Skipped / Total] 2 / 0 / 1 / 3:   0%|          | 3/1000 [01:40<9:14:50, 33.39s/it][Succeeded / Failed / Skipped / Total] 2 / 0 / 1 / 3:   0%|          | 4/1000 [02:32<10:34:21, 38.21s/it][Succeeded / Failed / Skipped / Total] 3 / 0 / 1 / 4:   0%|          | 4/1000 [02:32<10:34:22, 38.22s/it][Succeeded / Failed / Skipped / Total] 3 / 0 / 1 / 4:   0%|          | 5/1000 [03:23<11:13:52, 40.64s/it][Succeeded / Failed / Skipped / Total] 4 / 0 / 1 / 5:   0%|          | 5/1000 [03:23<11:13:52, 40.64s/it][Succeeded / Failed / Skipped / Total] 4 / 0 / 1 / 5:   1%|          | 6/1000 [03:23<9:22:42, 33.97s/it] [Succeeded / Failed / Skipped / Total] 4 / 0 / 2 / 6:   1%|          | 6/1000 [03:23<9:22:42, 33.97s/it][Succeeded / Failed / Skipped / Total] 4 / 0 / 2 / 6:   1%|          | 7/1000 [04:08<9:47:21, 35.49s/it][Succeeded / Failed / Skipped / Total] 5 / 0 / 2 / 7:   1%|          | 7/1000 [04:08<9:47:22, 35.49s/it][Succeeded / Failed / Skipped / Total] 5 / 0 / 2 / 7:   1%|          | 8/1000 [04:09<8:34:38, 31.13s/it][Succeeded / Failed / Skipped / Total] 5 / 0 / 3 / 8:   1%|          | 8/1000 [04:09<8:34:38, 31.13s/it][Succeeded / Failed / Skipped / Total] 5 / 0 / 3 / 8:   1%|          | 9/1000 [04:57<9:06:15, 33.07s/it][Succeeded / Failed / Skipped / Total] 6 / 0 / 3 / 9:   1%|          | 9/1000 [04:57<9:06:15, 33.07s/it][Succeeded / Failed / Skipped / Total] 6 / 0 / 3 / 9:   1%|          | 10/1000 [06:25<10:35:20, 38.51s/it][Succeeded / Failed / Skipped / Total] 7 / 0 / 3 / 10:   1%|          | 10/1000 [06:25<10:35:20, 38.51s/it][Succeeded / Failed / Skipped / Total] 7 / 0 / 3 / 10:   1%|          | 11/1000 [07:25<11:07:44, 40.51s/it][Succeeded / Failed / Skipped / Total] 8 / 0 / 3 / 11:   1%|          | 11/1000 [07:25<11:07:44, 40.51s/it][Succeeded / Failed / Skipped / Total] 8 / 0 / 3 / 11:   1%|          | 12/1000 [10:12<14:00:43, 51.06s/it][Succeeded / Failed / Skipped / Total] 9 / 0 / 3 / 12:   1%|          | 12/1000 [10:12<14:00:43, 51.06s/it][Succeeded / Failed / Skipped / Total] 9 / 0 / 3 / 12:   1%|▏         | 13/1000 [12:42<16:04:40, 58.64s/it][Succeeded / Failed / Skipped / Total] 10 / 0 / 3 / 13:   1%|▏         | 13/1000 [12:42<16:04:41, 58.64s/it][Succeeded / Failed / Skipped / Total] 10 / 0 / 3 / 13:   1%|▏         | 14/1000 [14:06<16:33:16, 60.44s/it][Succeeded / Failed / Skipped / Total] 11 / 0 / 3 / 14:   1%|▏         | 14/1000 [14:06<16:33:16, 60.44s/it][Succeeded / Failed / Skipped / Total] 11 / 0 / 3 / 14:   2%|▏         | 15/1000 [14:06<15:26:47, 56.45s/it][Succeeded / Failed / Skipped / Total] 11 / 0 / 4 / 15:   2%|▏         | 15/1000 [14:06<15:26:47, 56.45s/it][Succeeded / Failed / Skipped / Total] 11 / 0 / 4 / 15:   2%|▏         | 16/1000 [14:35<14:57:17, 54.71s/it][Succeeded / Failed / Skipped / Total] 12 / 0 / 4 / 16:   2%|▏         | 16/1000 [14:35<14:57:17, 54.71s/it][Succeeded / Failed / Skipped / Total] 12 / 0 / 4 / 16:   2%|▏         | 17/1000 [15:02<14:30:12, 53.11s/it][Succeeded / Failed / Skipped / Total] 13 / 0 / 4 / 17:   2%|▏         | 17/1000 [15:02<14:30:12, 53.12s/it][Succeeded / Failed / Skipped / Total] 13 / 0 / 4 / 17:   2%|▏         | 18/1000 [15:41<14:16:24, 52.33s/it]Attack(
+  (search_method): GreedyWordSwapWIR(
+    (wir_method):  delete
+  )
+  (goal_function):  UntargetedClassification
+  (transformation):  WordSwapEmbedding(
+    (max_candidates):  50
+    (embedding):  WordEmbedding
+  )
+  (constraints): 
+    (0): WordEmbeddingDistance(
+        (embedding):  WordEmbedding
+        (min_cos_sim):  0.5
+        (cased):  False
+        (include_unknown_words):  True
+        (compare_against_original):  True
+      )
+    (1): PartOfSpeech(
+        (tagger_type):  nltk
+        (tagset):  universal
+        (allow_verb_noun_swap):  True
+        (compare_against_original):  True
+      )
+    (2): UniversalSentenceEncoder(
+        (metric):  angular
+        (threshold):  0.840845057
+        (window_size):  15
+        (skip_text_shorter_than_window):  True
+        (compare_against_original):  False
+      )
+    (3): RepeatModification
+    (4): StopwordModification
+    (5): InputColumnModification(
+        (matching_column_labels):  ['premise', 'hypothesis']
+        (columns_to_ignore):  {'premise'}
+      )
+  (is_black_box):  True
+) 
+
+--------------------------------------------- Result 1 ---------------------------------------------
+[[1 (72%)]] --> [[0 (71%)]]
+
+lasker 's [[canny]] , meditative [[script]] distances sex and love , as byron and luther realize they ca n't get no satisfaction without the latter
+
+lasker 's [[termite]] , meditative [[scripts]] distances sex and love , as byron and luther realize they ca n't get no satisfaction without the latter
+
+
+--------------------------------------------- Result 2 ---------------------------------------------
+[[1 (61%)]] --> [[[SKIPPED]]]
+
+well , it does go on forever
+
+
+--------------------------------------------- Result 3 ---------------------------------------------
+[[1 (64%)]] --> [[0 (51%)]]
+
+combines [[sharp]] comedy , old fashioned monster movie atmospherics , and genuine heart to create a film that 's not merely about kicking undead , but also about dealing with regret and , ultimately , finding redemption
+
+combines [[brutish]] comedy , old fashioned monster movie atmospherics , and genuine heart to create a film that 's not merely about kicking undead , but also about dealing with regret and , ultimately , finding redemption
+
+
+--------------------------------------------- Result 4 ---------------------------------------------
+[[1 (73%)]] --> [[0 (53%)]]
+
+the [[laser]] [[projected]] paintings provide a spell casting beauty , while russell and dreyfus are a romantic pairing of hearts , preciously exposed as history corners them
+
+the [[lasers]] [[expectation]] paintings provide a spell casting beauty , while russell and dreyfus are a romantic pairing of hearts , preciously exposed as history corners them
+
+
+--------------------------------------------- Result 5 ---------------------------------------------
+[[1 (69%)]] --> [[0 (60%)]]
+
+the [[pianist]] is a supremely hopeful cautionary tale of war 's madness remembered that we , today , can prevent its tragic waste of life here is a divine monument to a single man 's struggle to regain his life , his dignity and his music
+
+the [[pianists]] is a supremely hopeful cautionary tale of war 's madness remembered that we , today , can prevent its tragic waste of life here is a divine monument to a single man 's struggle to regain his life , his dignity and his music
+
+
+--------------------------------------------- Result 6 ---------------------------------------------
+[[0 (52%)]] --> [[[SKIPPED]]]
+
+those outside show business will enjoy a close look at people they do n't really want to know
+
+
+--------------------------------------------- Result 7 ---------------------------------------------
+[[1 (71%)]] --> [[0 (55%)]]
+
+an eerily suspenseful , deeply [[absorbing]] [[piece]] that works as a treatise on [[spirituality]] as well as a solid sci fi thriller
+
+an eerily suspenseful , deeply [[acquires]] [[hunk]] that works as a treatise on [[spiritualism]] as well as a solid sci fi thriller
+
+
+--------------------------------------------- Result 8 ---------------------------------------------
+[[0 (73%)]] --> [[[SKIPPED]]]
+
+waiting for godard can be fruitful 'in praise of love' is the director 's epitaph for himself
+
+
+--------------------------------------------- Result 9 ---------------------------------------------
+[[1 (66%)]] --> [[0 (73%)]]
+
+an [[interesting]] slice of [[history]]
+
+an [[nosy]] slice of [[anecdote]]
+
+
+--------------------------------------------- Result 10 ---------------------------------------------
+[[0 (73%)]] --> [[1 (64%)]]
+
+that neither protagonist has a distinguishable condition hardly [[matters]] because both are just actory concoctions , [[defined]] by [[childlike]] dimness and a handful of quirks
+
+that neither protagonist has a distinguishable condition hardly [[challenges]] because both are just actory concoctions , [[articulated]] by [[playfulness]] dimness and a handful of quirks
+
+
+--------------------------------------------- Result 11 ---------------------------------------------
+[[0 (72%)]] --> [[1 (51%)]]
+
+just a bunch of [[good]] actors [[flailing]] around in a [[caper]] that 's neither original nor terribly funny
+
+just a bunch of [[super]] actors [[floundering]] around in a [[madcap]] that 's neither original nor terribly funny
+
+
+--------------------------------------------- Result 12 ---------------------------------------------
+[[0 (73%)]] --> [[1 (59%)]]
+
+what could have been a [[pointed]] [[little]] chiller about the [[frightening]] seductiveness of [[new]] technology loses faith in its own [[viability]] and succumbs to [[joyless]] [[special]] effects excess
+
+what could have been a [[stated]] [[slight]] chiller about the [[disquieting]] seductiveness of [[ny]] technology loses faith in its own [[pragmatism]] and succumbs to [[sullen]] [[especial]] effects excess
+
+
+--------------------------------------------- Result 13 ---------------------------------------------
+[[0 (73%)]] --> [[1 (52%)]]
+
+the story drifts so inexorably into [[cliches]] about [[tortured]] \( and [[torturing]] \) [[artists]] and [[consuming]] but impossible love that you ca n't help but become more [[disappointed]] as each [[overwrought]] [[new]] sequence plods on
+
+the story drifts so inexorably into [[carrion]] about [[torturous]] \( and [[torturous]] \) [[painters]] and [[consume]] but impossible love that you ca n't help but become more [[indignant]] as each [[weepy]] [[innovative]] sequence plods on
+
+
+--------------------------------------------- Result 14 ---------------------------------------------
+[[0 (73%)]] --> [[1 (63%)]]
+
+it 's a long way from orwell 's [[dark]] , [[intelligent]] [[warning]] cry 1984 to the empty stud knockabout of equilibrium , and what once was conviction is now affectation
+
+it 's a long way from orwell 's [[foggy]] , [[astute]] [[cautioned]] cry 1984 to the empty stud knockabout of equilibrium , and what once was conviction is now affectation
+
+
+--------------------------------------------- Result 15 ---------------------------------------------
+[[1 (71%)]] --> [[[SKIPPED]]]
+
+a film that will probably please people already fascinated by behan but leave everyone else yawning with admiration
+
+
+--------------------------------------------- Result 16 ---------------------------------------------
+[[1 (73%)]] --> [[0 (73%)]]
+
+a [[hypnotic]] cyber hymn and a cruel story of youth culture
+
+a [[otherworldly]] cyber hymn and a cruel story of youth culture
+
+
+--------------------------------------------- Result 17 ---------------------------------------------
+[[1 (73%)]] --> [[0 (68%)]]
+
+[[spielberg]] 's picture is smarter and subtler than total recall and blade runner , although its plot may prove too convoluted for fun seeking summer audiences
+
+[[abrams]] 's picture is smarter and subtler than total recall and blade runner , although its plot may prove too convoluted for fun seeking summer audiences
+
+
+--------------------------------------------- Result 18 ---------------------------------------------
+[Succeeded / Failed / Skipped / Total] 14 / 0 / 4 / 18:   2%|▏         | 18/1000 [15:41<14:16:24, 52.33s/it][Succeeded / Failed / Skipped / Total] 14 / 0 / 4 / 18:   2%|▏         | 19/1000 [15:43<13:31:29, 49.63s/it][Succeeded / Failed / Skipped / Total] 14 / 0 / 5 / 19:   2%|▏         | 19/1000 [15:43<13:31:29, 49.63s/it][Succeeded / Failed / Skipped / Total] 14 / 0 / 5 / 19:   2%|▏         | 20/1000 [16:09<13:11:25, 48.45s/it][Succeeded / Failed / Skipped / Total] 15 / 0 / 5 / 20:   2%|▏         | 20/1000 [16:09<13:11:25, 48.45s/it][Succeeded / Failed / Skipped / Total] 15 / 0 / 5 / 20:   2%|▏         | 21/1000 [17:25<13:32:30, 49.80s/it][Succeeded / Failed / Skipped / Total] 16 / 0 / 5 / 21:   2%|▏         | 21/1000 [17:25<13:32:30, 49.80s/it][Succeeded / Failed / Skipped / Total] 16 / 0 / 5 / 21:   2%|▏         | 22/1000 [17:51<13:13:36, 48.69s/it][Succeeded / Failed / Skipped / Total] 17 / 0 / 5 / 22:   2%|▏         | 22/1000 [17:51<13:13:36, 48.69s/it][Succeeded / Failed / Skipped / Total] 17 / 0 / 5 / 22:   2%|▏         | 23/1000 [18:28<13:05:00, 48.21s/it][Succeeded / Failed / Skipped / Total] 18 / 0 / 5 / 23:   2%|▏         | 23/1000 [18:28<13:05:00, 48.21s/it][Succeeded / Failed / Skipped / Total] 18 / 0 / 5 / 23:   2%|▏         | 24/1000 [18:53<12:48:17, 47.23s/it][Succeeded / Failed / Skipped / Total] 18 / 1 / 5 / 24:   2%|▏         | 24/1000 [18:53<12:48:17, 47.23s/it][Succeeded / Failed / Skipped / Total] 18 / 1 / 5 / 24:   2%|▎         | 25/1000 [19:34<12:43:25, 46.98s/it][Succeeded / Failed / Skipped / Total] 19 / 1 / 5 / 25:   2%|▎         | 25/1000 [19:34<12:43:25, 46.98s/it][Succeeded / Failed / Skipped / Total] 19 / 1 / 5 / 25:   3%|▎         | 26/1000 [20:24<12:44:39, 47.10s/it][Succeeded / Failed / Skipped / Total] 20 / 1 / 5 / 26:   3%|▎         | 26/1000 [20:24<12:44:39, 47.10s/it][Succeeded / Failed / Skipped / Total] 20 / 1 / 5 / 26:   3%|▎         | 27/1000 [21:01<12:37:48, 46.73s/it][Succeeded / Failed / Skipped / Total] 21 / 1 / 5 / 27:   3%|▎         | 27/1000 [21:01<12:37:48, 46.73s/it][Succeeded / Failed / Skipped / Total] 21 / 1 / 5 / 27:   3%|▎         | 28/1000 [21:37<12:30:46, 46.34s/it][Succeeded / Failed / Skipped / Total] 22 / 1 / 5 / 28:   3%|▎         | 28/1000 [21:37<12:30:46, 46.34s/it][Succeeded / Failed / Skipped / Total] 22 / 1 / 5 / 28:   3%|▎         | 29/1000 [21:50<12:11:32, 45.20s/it][Succeeded / Failed / Skipped / Total] 23 / 1 / 5 / 29:   3%|▎         | 29/1000 [21:50<12:11:32, 45.20s/it][Succeeded / Failed / Skipped / Total] 23 / 1 / 5 / 29:   3%|▎         | 30/1000 [22:12<11:58:04, 44.42s/it][Succeeded / Failed / Skipped / Total] 24 / 1 / 5 / 30:   3%|▎         | 30/1000 [22:12<11:58:04, 44.42s/it][Succeeded / Failed / Skipped / Total] 24 / 1 / 5 / 30:   3%|▎         | 31/1000 [22:22<11:39:32, 43.31s/it][Succeeded / Failed / Skipped / Total] 25 / 1 / 5 / 31:   3%|▎         | 31/1000 [22:22<11:39:32, 43.32s/it][Succeeded / Failed / Skipped / Total] 25 / 1 / 5 / 31:   3%|▎         | 32/1000 [22:49<11:30:19, 42.79s/it][Succeeded / Failed / Skipped / Total] 26 / 1 / 5 / 32:   3%|▎         | 32/1000 [22:49<11:30:19, 42.79s/it][Succeeded / Failed / Skipped / Total] 26 / 1 / 5 / 32:   3%|▎         | 33/1000 [23:48<11:37:33, 43.28s/it][Succeeded / Failed / Skipped / Total] 27 / 1 / 5 / 33:   3%|▎         | 33/1000 [23:48<11:37:33, 43.28s/it][Succeeded / Failed / Skipped / Total] 27 / 1 / 5 / 33:   3%|▎         | 34/1000 [24:51<11:46:24, 43.88s/it][Succeeded / Failed / Skipped / Total] 28 / 1 / 5 / 34:   3%|▎         | 34/1000 [24:51<11:46:24, 43.88s/it][Succeeded / Failed / Skipped / Total] 28 / 1 / 5 / 34:   4%|▎         | 35/1000 [26:48<12:19:05, 45.95s/it][Succeeded / Failed / Skipped / Total] 29 / 1 / 5 / 35:   4%|▎         | 35/1000 [26:48<12:19:05, 45.95s/it][Succeeded / Failed / Skipped / Total] 29 / 1 / 5 / 35:   4%|▎         | 36/1000 [27:23<12:13:36, 45.66s/it][Succeeded / Failed / Skipped / Total] 30 / 1 / 5 / 36:   4%|▎         | 36/1000 [27:23<12:13:36, 45.66s/it][Succeeded / Failed / Skipped / Total] 30 / 1 / 5 / 36:   4%|▎         | 37/1000 [27:24<11:53:18, 44.44s/it][Succeeded / Failed / Skipped / Total] 30 / 1 / 6 / 37:   4%|▎         | 37/1000 [27:24<11:53:18, 44.44s/it][Succeeded / Failed / Skipped / Total] 30 / 1 / 6 / 37:   4%|▍         | 38/1000 [27:57<11:47:45, 44.14s/it][Succeeded / Failed / Skipped / Total] 31 / 1 / 6 / 38:   4%|▍         | 38/1000 [27:57<11:47:45, 44.14s/it][Succeeded / Failed / Skipped / Total] 31 / 1 / 6 / 38:   4%|▍         | 39/1000 [30:15<12:25:41, 46.56s/it][Succeeded / Failed / Skipped / Total] 32 / 1 / 6 / 39:   4%|▍         | 39/1000 [30:15<12:25:41, 46.56s/it][Succeeded / Failed / Skipped / Total] 32 / 1 / 6 / 39:   4%|▍         | 40/1000 [30:58<12:23:17, 46.46s/it][Succeeded / Failed / Skipped / Total] 33 / 1 / 6 / 40:   4%|▍         | 40/1000 [30:58<12:23:17, 46.46s/it][Succeeded / Failed / Skipped / Total] 33 / 1 / 6 / 40:   4%|▍         | 41/1000 [31:46<12:23:23, 46.51s/it][Succeeded / Failed / Skipped / Total] 34 / 1 / 6 / 41:   4%|▍         | 41/1000 [31:46<12:23:23, 46.51s/it][Succeeded / Failed / Skipped / Total] 34 / 1 / 6 / 41:   4%|▍         | 42/1000 [31:47<12:05:09, 45.42s/it][Succeeded / Failed / Skipped / Total] 34 / 1 / 7 / 42:   4%|▍         | 42/1000 [31:47<12:05:09, 45.42s/it][Succeeded / Failed / Skipped / Total] 34 / 1 / 7 / 42:   4%|▍         | 43/1000 [31:48<11:47:46, 44.37s/it][Succeeded / Failed / Skipped / Total] 34 / 1 / 8 / 43:   4%|▍         | 43/1000 [31:48<11:47:46, 44.37s/it][Succeeded / Failed / Skipped / Total] 34 / 1 / 8 / 43:   4%|▍         | 44/1000 [31:48<11:31:16, 43.39s/it][[0 (70%)]] --> [[1 (62%)]]
+
+the three leads [[produce]] adequate performances , but what 's missing from this material is any depth of feeling
+
+the three leads [[production]] adequate performances , but what 's missing from this material is any depth of feeling
+
+
+--------------------------------------------- Result 19 ---------------------------------------------
+[[1 (51%)]] --> [[[SKIPPED]]]
+
+has an uppity musical beat that you can dance to , but its energy ca n't compare to the wit , humor and snappy dialogue of the original if i want music , i 'll buy the soundtrack if i want a real movie , i 'll buy the criterion dvd
+
+
+--------------------------------------------- Result 20 ---------------------------------------------
+[[0 (73%)]] --> [[1 (54%)]]
+
+in the [[real]] world , an [[actor]] this uncharismatically beautiful would have a r sum loaded with credits like girl in bar 3
+
+in the [[veritable]] world , an [[actress]] this uncharismatically beautiful would have a r sum loaded with credits like girl in bar 3
+
+
+--------------------------------------------- Result 21 ---------------------------------------------
+[[0 (72%)]] --> [[1 (53%)]]
+
+it 's hard to imagine that even very small [[children]] will be [[impressed]] by this [[tired]] [[retread]]
+
+it 's hard to imagine that even very small [[enfant]] will be [[amazed]] by this [[listless]] [[rehash]]
+
+
+--------------------------------------------- Result 22 ---------------------------------------------
+[[0 (70%)]] --> [[1 (73%)]]
+
+[[low]] rent from frame one
+
+[[humble]] rent from frame one
+
+
+--------------------------------------------- Result 23 ---------------------------------------------
+[[0 (73%)]] --> [[1 (73%)]]
+
+[[madonna]] still [[ca]] n't act a [[lick]]
+
+[[maven]] still [[california]] n't act a [[chubby]]
+
+
+--------------------------------------------- Result 24 ---------------------------------------------
+[[0 (67%)]] --> [[[FAILED]]]
+
+a mess
+
+
+--------------------------------------------- Result 25 ---------------------------------------------
+[[1 (73%)]] --> [[0 (71%)]]
+
+a [[terrific]] [[date]] movie , whatever your orientation
+
+a [[admirable]] [[period]] movie , whatever your orientation
+
+
+--------------------------------------------- Result 26 ---------------------------------------------
+[[1 (69%)]] --> [[0 (66%)]]
+
+gosling [[creates]] a staggeringly compelling character , a young man whose sharp intellect is at the very root of his contradictory , self hating , self destructive ways
+
+gosling [[arises]] a staggeringly compelling character , a young man whose sharp intellect is at the very root of his contradictory , self hating , self destructive ways
+
+
+--------------------------------------------- Result 27 ---------------------------------------------
+[[0 (71%)]] --> [[1 (69%)]]
+
+an uneven film [[dealing]] with too many problems to be taken seriously
+
+an uneven film [[refers]] with too many problems to be taken seriously
+
+
+--------------------------------------------- Result 28 ---------------------------------------------
+[[0 (68%)]] --> [[1 (65%)]]
+
+one of the oddest and most [[inexplicable]] sequels in movie history
+
+one of the oddest and most [[intriguing]] sequels in movie history
+
+
+--------------------------------------------- Result 29 ---------------------------------------------
+[[0 (70%)]] --> [[1 (66%)]]
+
+this is nothing but [[familiar]] territory
+
+this is nothing but [[knowledgeable]] territory
+
+
+--------------------------------------------- Result 30 ---------------------------------------------
+[[1 (73%)]] --> [[0 (73%)]]
+
+the script is [[smart]] , not cloying
+
+the script is [[termite]] , not cloying
+
+
+--------------------------------------------- Result 31 ---------------------------------------------
+[[0 (66%)]] --> [[1 (60%)]]
+
+despite the [[pyrotechnics]] , narc is strictly by the book
+
+despite the [[firecrackers]] , narc is strictly by the book
+
+
+--------------------------------------------- Result 32 ---------------------------------------------
+[[0 (73%)]] --> [[1 (69%)]]
+
+some elements of it really [[blow]] the big one , but other parts are decent
+
+some elements of it really [[coup]] the big one , but other parts are decent
+
+
+--------------------------------------------- Result 33 ---------------------------------------------
+[[0 (73%)]] --> [[1 (72%)]]
+
+bisset [[delivers]] a [[game]] performance , but she is [[unable]] to save the movie
+
+bisset [[establishes]] a [[set]] performance , but she is [[capable]] to save the movie
+
+
+--------------------------------------------- Result 34 ---------------------------------------------
+[[0 (73%)]] --> [[1 (58%)]]
+
+this re do is so [[dumb]] and so exploitative in its violence that , ironically , it becomes everything that the rather clumsy original was [[railing]] against
+
+this re do is so [[imbecilic]] and so exploitative in its violence that , ironically , it becomes everything that the rather clumsy original was [[railings]] against
+
+
+--------------------------------------------- Result 35 ---------------------------------------------
+[[0 (73%)]] --> [[1 (55%)]]
+
+this is a movie [[filled]] with unlikable , spiteful [[idiots]] whether or not their friendship is [[salvaged]] makes no difference in the least
+
+this is a movie [[bridge]] with unlikable , spiteful [[assholes]] whether or not their friendship is [[rehabilitated]] makes no difference in the least
+
+
+--------------------------------------------- Result 36 ---------------------------------------------
+[[1 (69%)]] --> [[0 (71%)]]
+
+the draw for big bad love is a solid [[performance]] by arliss howard
+
+the draw for big bad love is a solid [[successes]] by arliss howard
+
+
+--------------------------------------------- Result 37 ---------------------------------------------
+[[0 (73%)]] --> [[[SKIPPED]]]
+
+much of what we see is horrible but it 's also undeniably exceedingly clever
+
+
+--------------------------------------------- Result 38 ---------------------------------------------
+[[1 (56%)]] --> [[0 (52%)]]
+
+an old [[fashioned]] drama of substance about a teacher 's slide down the slippery slope of dishonesty after an encounter with the rich and the powerful who have nothing but disdain for virtue
+
+an old [[adorned]] drama of substance about a teacher 's slide down the slippery slope of dishonesty after an encounter with the rich and the powerful who have nothing but disdain for virtue
+
+
+--------------------------------------------- Result 39 ---------------------------------------------
+[[0 (73%)]] --> [[1 (68%)]]
+
+[[flotsam]] in the sea of moviemaking , not [[big]] enough for us to worry about it causing [[significant]] harm and not smelly enough to [[bother]] [[despising]]
+
+[[ruins]] in the sea of moviemaking , not [[broad]] enough for us to worry about it causing [[dramatic]] harm and not smelly enough to [[intervene]] [[badmouthing]]
+
+
+--------------------------------------------- Result 40 ---------------------------------------------
+[[0 (73%)]] --> [[1 (56%)]]
+
+this off putting french romantic comedy is sure to test [[severely]] the indulgence of fans of am lie
+
+this off putting french romantic comedy is sure to test [[fiercely]] the indulgence of fans of am lie
+
+
+--------------------------------------------- Result 41 ---------------------------------------------
+[[1 (52%)]] --> [[0 (58%)]]
+
+for once , a movie does not [[proclaim]] the truth about two love struck somebodies , but permits them time and space to convince us of that all on their own
+
+for once , a movie does not [[professed]] the truth about two love struck somebodies , but permits them time and space to convince us of that all on their own
+
+
+--------------------------------------------- Result 42 ---------------------------------------------
+[[0 (73%)]] --> [[[SKIPPED]]]
+
+if you do n't flee , you might be seduced if you do n't laugh , flee
+
+
+--------------------------------------------- Result 43 ---------------------------------------------
+[[1 (71%)]] --> [[[SKIPPED]]]
+
+h ad i suffered and bled on the hard ground of ia drang , i 'd want something a bit more complex than we were soldiers to be remembered by
+
+
+[Succeeded / Failed / Skipped / Total] 34 / 1 / 9 / 44:   4%|▍         | 44/1000 [31:48<11:31:16, 43.39s/it][Succeeded / Failed / Skipped / Total] 34 / 1 / 9 / 44:   4%|▍         | 45/1000 [32:15<11:24:44, 43.02s/it][Succeeded / Failed / Skipped / Total] 35 / 1 / 9 / 45:   4%|▍         | 45/1000 [32:15<11:24:44, 43.02s/it][Succeeded / Failed / Skipped / Total] 35 / 1 / 9 / 45:   5%|▍         | 46/1000 [32:16<11:09:21, 42.10s/it][Succeeded / Failed / Skipped / Total] 35 / 1 / 10 / 46:   5%|▍         | 46/1000 [32:16<11:09:21, 42.10s/it][Succeeded / Failed / Skipped / Total] 35 / 1 / 10 / 46:   5%|▍         | 47/1000 [33:04<11:10:29, 42.21s/it][Succeeded / Failed / Skipped / Total] 36 / 1 / 10 / 47:   5%|▍         | 47/1000 [33:04<11:10:29, 42.21s/it][Succeeded / Failed / Skipped / Total] 36 / 1 / 10 / 47:   5%|▍         | 48/1000 [33:18<11:00:28, 41.63s/it][Succeeded / Failed / Skipped / Total] 37 / 1 / 10 / 48:   5%|▍         | 48/1000 [33:18<11:00:28, 41.63s/it][Succeeded / Failed / Skipped / Total] 37 / 1 / 10 / 48:   5%|▍         | 49/1000 [33:18<10:46:32, 40.79s/it][Succeeded / Failed / Skipped / Total] 37 / 1 / 11 / 49:   5%|▍         | 49/1000 [33:18<10:46:32, 40.79s/it][Succeeded / Failed / Skipped / Total] 37 / 1 / 11 / 49:   5%|▌         | 50/1000 [34:03<10:47:00, 40.86s/it][Succeeded / Failed / Skipped / Total] 38 / 1 / 11 / 50:   5%|▌         | 50/1000 [34:03<10:47:00, 40.86s/it][Succeeded / Failed / Skipped / Total] 38 / 1 / 11 / 50:   5%|▌         | 51/1000 [34:03<10:33:49, 40.07s/it][Succeeded / Failed / Skipped / Total] 38 / 1 / 12 / 51:   5%|▌         | 51/1000 [34:03<10:33:49, 40.07s/it][Succeeded / Failed / Skipped / Total] 38 / 1 / 12 / 51:   5%|▌         | 52/1000 [35:11<10:41:32, 40.60s/it][Succeeded / Failed / Skipped / Total] 39 / 1 / 12 / 52:   5%|▌         | 52/1000 [35:11<10:41:32, 40.60s/it][Succeeded / Failed / Skipped / Total] 39 / 1 / 12 / 52:   5%|▌         | 53/1000 [35:31<10:34:36, 40.21s/it][Succeeded / Failed / Skipped / Total] 40 / 1 / 12 / 53:   5%|▌         | 53/1000 [35:31<10:34:36, 40.21s/it][Succeeded / Failed / Skipped / Total] 40 / 1 / 12 / 53:   5%|▌         | 54/1000 [35:48<10:27:25, 39.79s/it][Succeeded / Failed / Skipped / Total] 41 / 1 / 12 / 54:   5%|▌         | 54/1000 [35:48<10:27:25, 39.79s/it][Succeeded / Failed / Skipped / Total] 41 / 1 / 12 / 54:   6%|▌         | 55/1000 [35:49<10:15:32, 39.08s/it][Succeeded / Failed / Skipped / Total] 41 / 1 / 13 / 55:   6%|▌         | 55/1000 [35:49<10:15:32, 39.08s/it][Succeeded / Failed / Skipped / Total] 41 / 1 / 13 / 55:   6%|▌         | 56/1000 [36:26<10:14:13, 39.04s/it][Succeeded / Failed / Skipped / Total] 42 / 1 / 13 / 56:   6%|▌         | 56/1000 [36:26<10:14:13, 39.04s/it][Succeeded / Failed / Skipped / Total] 42 / 1 / 13 / 56:   6%|▌         | 57/1000 [36:50<10:09:26, 38.78s/it][Succeeded / Failed / Skipped / Total] 43 / 1 / 13 / 57:   6%|▌         | 57/1000 [36:50<10:09:26, 38.78s/it][Succeeded / Failed / Skipped / Total] 43 / 1 / 13 / 57:   6%|▌         | 58/1000 [36:51<9:58:32, 38.12s/it] [Succeeded / Failed / Skipped / Total] 43 / 1 / 14 / 58:   6%|▌         | 58/1000 [36:51<9:58:32, 38.12s/it][Succeeded / Failed / Skipped / Total] 43 / 1 / 14 / 58:   6%|▌         | 59/1000 [37:57<10:05:32, 38.61s/it][Succeeded / Failed / Skipped / Total] 44 / 1 / 14 / 59:   6%|▌         | 59/1000 [37:57<10:05:32, 38.61s/it][Succeeded / Failed / Skipped / Total] 44 / 1 / 14 / 59:   6%|▌         | 60/1000 [38:20<10:00:36, 38.34s/it][Succeeded / Failed / Skipped / Total] 45 / 1 / 14 / 60:   6%|▌         | 60/1000 [38:20<10:00:36, 38.34s/it][Succeeded / Failed / Skipped / Total] 45 / 1 / 14 / 60:   6%|▌         | 61/1000 [39:10<10:03:01, 38.53s/it][Succeeded / Failed / Skipped / Total] 46 / 1 / 14 / 61:   6%|▌         | 61/1000 [39:10<10:03:01, 38.53s/it][Succeeded / Failed / Skipped / Total] 46 / 1 / 14 / 61:   6%|▌         | 62/1000 [39:41<10:00:36, 38.42s/it][Succeeded / Failed / Skipped / Total] 47 / 1 / 14 / 62:   6%|▌         | 62/1000 [39:41<10:00:36, 38.42s/it][Succeeded / Failed / Skipped / Total] 47 / 1 / 14 / 62:   6%|▋         | 63/1000 [39:42<9:50:38, 37.82s/it] [Succeeded / Failed / Skipped / Total] 47 / 1 / 15 / 63:   6%|▋         | 63/1000 [39:42<9:50:38, 37.82s/it][Succeeded / Failed / Skipped / Total] 47 / 1 / 15 / 63:   6%|▋         | 64/1000 [40:30<9:52:27, 37.98s/it][Succeeded / Failed / Skipped / Total] 48 / 1 / 15 / 64:   6%|▋         | 64/1000 [40:30<9:52:27, 37.98s/it][Succeeded / Failed / Skipped / Total] 48 / 1 / 15 / 64:   6%|▋         | 65/1000 [41:07<9:51:29, 37.96s/it][Succeeded / Failed / Skipped / Total] 49 / 1 / 15 / 65:   6%|▋         | 65/1000 [41:07<9:51:29, 37.96s/it][Succeeded / Failed / Skipped / Total] 49 / 1 / 15 / 65:   7%|▋         | 66/1000 [41:39<9:49:25, 37.86s/it]--------------------------------------------- Result 44 ---------------------------------------------
+[[0 (73%)]] --> [[[SKIPPED]]]
+
+suffers from its timid parsing of the barn side target of sons trying to breach gaps in their relationships with their fathers
+
+
+--------------------------------------------- Result 45 ---------------------------------------------
+[[0 (73%)]] --> [[1 (62%)]]
+
+as [[spent]] screen series go , star trek nemesis is even more suggestive of a 65th class reunion mixer where only eight surviving members show up and there 's nothing to drink
+
+as [[earmarked]] screen series go , star trek nemesis is even more suggestive of a 65th class reunion mixer where only eight surviving members show up and there 's nothing to drink
+
+
+--------------------------------------------- Result 46 ---------------------------------------------
+[[0 (53%)]] --> [[[SKIPPED]]]
+
+a memorable experience that , like many of his works , presents weighty issues colorfully wrapped up in his own idiosyncratic strain of kitschy goodwill
+
+
+--------------------------------------------- Result 47 ---------------------------------------------
+[[1 (73%)]] --> [[0 (55%)]]
+
+[[full]] of profound , real [[life]] [[moments]] that anyone can relate to , it deserves a wide audience
+
+[[overall]] of profound , real [[hayat]] [[days]] that anyone can relate to , it deserves a wide audience
+
+
+--------------------------------------------- Result 48 ---------------------------------------------
+[[0 (60%)]] --> [[1 (50%)]]
+
+the overall vibe is druggy and [[self]] indulgent , like a spring break orgy for pretentious arts majors
+
+the overall vibe is druggy and [[independence]] indulgent , like a spring break orgy for pretentious arts majors
+
+
+--------------------------------------------- Result 49 ---------------------------------------------
+[[1 (59%)]] --> [[[SKIPPED]]]
+
+if you liked the 1982 film then , you 'll still like it now
+
+
+--------------------------------------------- Result 50 ---------------------------------------------
+[[1 (73%)]] --> [[0 (62%)]]
+
+[[led]] by griffin 's smartly nuanced performance and enthusiasm , the cast has a lot of fun with the material
+
+[[culminate]] by griffin 's smartly nuanced performance and enthusiasm , the cast has a lot of fun with the material
+
+
+--------------------------------------------- Result 51 ---------------------------------------------
+[[0 (61%)]] --> [[[SKIPPED]]]
+
+a delirious celebration of the female orgasm
+
+
+--------------------------------------------- Result 52 ---------------------------------------------
+[[0 (73%)]] --> [[1 (63%)]]
+
+this goofy gangster [[yarn]] never really elevates itself from being yet another earnestly generic crime busting [[comic]] vehicle a well intentioned remake that shows some spunk and promise but fails to register as anything distinctive or daring
+
+this goofy gangster [[worsted]] never really elevates itself from being yet another earnestly generic crime busting [[zany]] vehicle a well intentioned remake that shows some spunk and promise but fails to register as anything distinctive or daring
+
+
+--------------------------------------------- Result 53 ---------------------------------------------
+[[0 (56%)]] --> [[1 (66%)]]
+
+too [[simple]] for its [[own]] good
+
+too [[simplify]] for its [[especial]] good
+
+
+--------------------------------------------- Result 54 ---------------------------------------------
+[[1 (59%)]] --> [[0 (50%)]]
+
+the movie , [[despite]] its rough edges and a tendency to sag in certain places , is wry and engrossing
+
+the movie , [[although]] its rough edges and a tendency to sag in certain places , is wry and engrossing
+
+
+--------------------------------------------- Result 55 ---------------------------------------------
+[[0 (72%)]] --> [[[SKIPPED]]]
+
+the film 's plot may be shallow , but you 've never seen the deep like you see it in these harrowing surf shots
+
+
+--------------------------------------------- Result 56 ---------------------------------------------
+[[1 (59%)]] --> [[0 (51%)]]
+
+a delectable and intriguing thriller filled with [[surprises]] , read my lips is an original this is a story of two misfits who do n't stand a chance alone , but together they are magnificent
+
+a delectable and intriguing thriller filled with [[astonishment]] , read my lips is an original this is a story of two misfits who do n't stand a chance alone , but together they are magnificent
+
+
+--------------------------------------------- Result 57 ---------------------------------------------
+[[1 (73%)]] --> [[0 (73%)]]
+
+an [[entertaining]] documentary that freshly considers arguments the bard 's immortal plays were written by somebody else
+
+an [[entertained]] documentary that freshly considers arguments the bard 's immortal plays were written by somebody else
+
+
+--------------------------------------------- Result 58 ---------------------------------------------
+[[0 (73%)]] --> [[[SKIPPED]]]
+
+only an epic documentary could get it all down , and spike lee 's jim brown all american at long last gives its subject a movie worthy of his talents
+
+
+--------------------------------------------- Result 59 ---------------------------------------------
+[[0 (73%)]] --> [[1 (72%)]]
+
+so clich d that , at one point , they [[literally]] [[upset]] an apple [[cart]]
+
+so clich d that , at one point , they [[almost]] [[frantic]] an apple [[streetcar]]
+
+
+--------------------------------------------- Result 60 ---------------------------------------------
+[[1 (72%)]] --> [[0 (72%)]]
+
+a thoroughly [[entertaining]] comedy that uses grant 's own twist of acidity to prevent itself from succumbing to its own bathos
+
+a thoroughly [[comical]] comedy that uses grant 's own twist of acidity to prevent itself from succumbing to its own bathos
+
+
+--------------------------------------------- Result 61 ---------------------------------------------
+[[1 (72%)]] --> [[0 (54%)]]
+
+this movie [[got]] me grinning there 's a part of us that cannot help be entertained by the sight of someone getting away with something
+
+this movie [[es]] me grinning there 's a part of us that cannot help be entertained by the sight of someone getting away with something
+
+
+--------------------------------------------- Result 62 ---------------------------------------------
+[[1 (73%)]] --> [[0 (73%)]]
+
+the [[cast]] is [[uniformly]] excellent and [[relaxed]]
+
+the [[hurled]] is [[uniformed]] excellent and [[indulgent]]
+
+
+--------------------------------------------- Result 63 ---------------------------------------------
+[[1 (73%)]] --> [[[SKIPPED]]]
+
+christians sensitive to a reductionist view of their lord as a luv spreading dr feelgood or omnipotent slacker will feel vastly more affronted than secularists , who might even praise god for delivering such an instant camp classic
+
+
+--------------------------------------------- Result 64 ---------------------------------------------
+[[0 (72%)]] --> [[1 (53%)]]
+
+mckay [[seems]] embarrassed by his own invention and tries to rush through the intermediary passages , apparently hoping that the audience will not notice the [[glaring]] triteness of the [[plot]] device he has put in service
+
+mckay [[transpires]] embarrassed by his own invention and tries to rush through the intermediary passages , apparently hoping that the audience will not notice the [[seeming]] triteness of the [[intrigue]] device he has put in service
+
+
+--------------------------------------------- Result 65 ---------------------------------------------
+[[1 (69%)]] --> [[0 (53%)]]
+
+in [[addition]] to hoffman 's powerful acting clinic , this is that rare drama that offers a thoughtful and rewarding glimpse into the sort of heartache everyone has felt , or will feel someday
+
+in [[supplement]] to hoffman 's powerful acting clinic , this is that rare drama that offers a thoughtful and rewarding glimpse into the sort of heartache everyone has felt , or will feel someday
+
+
+--------------------------------------------- Result 66 ---------------------------------------------
+[Succeeded / Failed / Skipped / Total] 50 / 1 / 15 / 66:   7%|▋         | 66/1000 [41:39<9:49:25, 37.86s/it][Succeeded / Failed / Skipped / Total] 50 / 1 / 15 / 66:   7%|▋         | 67/1000 [41:44<9:41:17, 37.38s/it][Succeeded / Failed / Skipped / Total] 51 / 1 / 15 / 67:   7%|▋         | 67/1000 [41:44<9:41:17, 37.38s/it][Succeeded / Failed / Skipped / Total] 51 / 1 / 15 / 67:   7%|▋         | 68/1000 [42:35<9:43:47, 37.58s/it][Succeeded / Failed / Skipped / Total] 52 / 1 / 15 / 68:   7%|▋         | 68/1000 [42:35<9:43:47, 37.58s/it][Succeeded / Failed / Skipped / Total] 52 / 1 / 15 / 68:   7%|▋         | 69/1000 [43:21<9:45:04, 37.71s/it][Succeeded / Failed / Skipped / Total] 53 / 1 / 15 / 69:   7%|▋         | 69/1000 [43:21<9:45:04, 37.71s/it][Succeeded / Failed / Skipped / Total] 53 / 1 / 15 / 69:   7%|▋         | 70/1000 [43:22<9:36:13, 37.18s/it][Succeeded / Failed / Skipped / Total] 53 / 1 / 16 / 70:   7%|▋         | 70/1000 [43:22<9:36:13, 37.18s/it][Succeeded / Failed / Skipped / Total] 53 / 1 / 16 / 70:   7%|▋         | 71/1000 [43:22<9:27:37, 36.66s/it][Succeeded / Failed / Skipped / Total] 53 / 1 / 17 / 71:   7%|▋         | 71/1000 [43:22<9:27:37, 36.66s/it][Succeeded / Failed / Skipped / Total] 53 / 1 / 17 / 71:   7%|▋         | 72/1000 [43:45<9:24:00, 36.47s/it][Succeeded / Failed / Skipped / Total] 54 / 1 / 17 / 72:   7%|▋         | 72/1000 [43:45<9:24:00, 36.47s/it][Succeeded / Failed / Skipped / Total] 54 / 1 / 17 / 72:   7%|▋         | 73/1000 [43:46<9:15:48, 35.98s/it][Succeeded / Failed / Skipped / Total] 54 / 1 / 18 / 73:   7%|▋         | 73/1000 [43:46<9:15:48, 35.98s/it][Succeeded / Failed / Skipped / Total] 54 / 1 / 18 / 73:   7%|▋         | 74/1000 [43:46<9:07:49, 35.50s/it][Succeeded / Failed / Skipped / Total] 54 / 1 / 19 / 74:   7%|▋         | 74/1000 [43:46<9:07:49, 35.50s/it][Succeeded / Failed / Skipped / Total] 54 / 1 / 19 / 74:   8%|▊         | 75/1000 [43:47<9:00:02, 35.03s/it][Succeeded / Failed / Skipped / Total] 54 / 1 / 20 / 75:   8%|▊         | 75/1000 [43:47<9:00:02, 35.03s/it][Succeeded / Failed / Skipped / Total] 54 / 1 / 20 / 75:   8%|▊         | 76/1000 [43:47<8:52:29, 34.58s/it][Succeeded / Failed / Skipped / Total] 54 / 1 / 21 / 76:   8%|▊         | 76/1000 [43:47<8:52:29, 34.58s/it][Succeeded / Failed / Skipped / Total] 54 / 1 / 21 / 76:   8%|▊         | 77/1000 [43:48<8:45:09, 34.14s/it][Succeeded / Failed / Skipped / Total] 54 / 1 / 22 / 77:   8%|▊         | 77/1000 [43:48<8:45:09, 34.14s/it][Succeeded / Failed / Skipped / Total] 54 / 1 / 22 / 77:   8%|▊         | 78/1000 [43:49<8:38:01, 33.71s/it][Succeeded / Failed / Skipped / Total] 54 / 1 / 23 / 78:   8%|▊         | 78/1000 [43:49<8:38:01, 33.71s/it][Succeeded / Failed / Skipped / Total] 54 / 1 / 23 / 78:   8%|▊         | 79/1000 [44:31<8:39:09, 33.82s/it][Succeeded / Failed / Skipped / Total] 55 / 1 / 23 / 79:   8%|▊         | 79/1000 [44:31<8:39:09, 33.82s/it][Succeeded / Failed / Skipped / Total] 55 / 1 / 23 / 79:   8%|▊         | 80/1000 [45:30<8:43:16, 34.13s/it][Succeeded / Failed / Skipped / Total] 56 / 1 / 23 / 80:   8%|▊         | 80/1000 [45:30<8:43:16, 34.13s/it][Succeeded / Failed / Skipped / Total] 56 / 1 / 23 / 80:   8%|▊         | 81/1000 [45:43<8:38:46, 33.87s/it][Succeeded / Failed / Skipped / Total] 57 / 1 / 23 / 81:   8%|▊         | 81/1000 [45:43<8:38:46, 33.87s/it][Succeeded / Failed / Skipped / Total] 57 / 1 / 23 / 81:   8%|▊         | 82/1000 [46:03<8:35:40, 33.70s/it][Succeeded / Failed / Skipped / Total] 58 / 1 / 23 / 82:   8%|▊         | 82/1000 [46:03<8:35:40, 33.70s/it][Succeeded / Failed / Skipped / Total] 58 / 1 / 23 / 82:   8%|▊         | 83/1000 [46:30<8:33:47, 33.62s/it][Succeeded / Failed / Skipped / Total] 59 / 1 / 23 / 83:   8%|▊         | 83/1000 [46:30<8:33:47, 33.62s/it][Succeeded / Failed / Skipped / Total] 59 / 1 / 23 / 83:   8%|▊         | 84/1000 [47:31<8:38:11, 33.94s/it][Succeeded / Failed / Skipped / Total] 60 / 1 / 23 / 84:   8%|▊         | 84/1000 [47:31<8:38:11, 33.94s/it][Succeeded / Failed / Skipped / Total] 60 / 1 / 23 / 84:   8%|▊         | 85/1000 [48:24<8:41:01, 34.17s/it][Succeeded / Failed / Skipped / Total] 61 / 1 / 23 / 85:   8%|▊         | 85/1000 [48:24<8:41:01, 34.17s/it][Succeeded / Failed / Skipped / Total] 61 / 1 / 23 / 85:   9%|▊         | 86/1000 [48:24<8:34:30, 33.78s/it][Succeeded / Failed / Skipped / Total] 61 / 1 / 24 / 86:   9%|▊         | 86/1000 [48:24<8:34:30, 33.78s/it][Succeeded / Failed / Skipped / Total] 61 / 1 / 24 / 86:   9%|▊         | 87/1000 [49:13<8:36:39, 33.95s/it][Succeeded / Failed / Skipped / Total] 62 / 1 / 24 / 87:   9%|▊         | 87/1000 [49:13<8:36:39, 33.95s/it][Succeeded / Failed / Skipped / Total] 62 / 1 / 24 / 87:   9%|▉         | 88/1000 [49:37<8:34:18, 33.84s/it][Succeeded / Failed / Skipped / Total] 63 / 1 / 24 / 88:   9%|▉         | 88/1000 [49:37<8:34:18, 33.84s/it][Succeeded / Failed / Skipped / Total] 63 / 1 / 24 / 88:   9%|▉         | 89/1000 [50:18<8:34:54, 33.91s/it][Succeeded / Failed / Skipped / Total] 64 / 1 / 24 / 89:   9%|▉         | 89/1000 [50:18<8:34:54, 33.91s/it][Succeeded / Failed / Skipped / Total] 64 / 1 / 24 / 89:   9%|▉         | 90/1000 [51:22<8:39:24, 34.25s/it][Succeeded / Failed / Skipped / Total] 65 / 1 / 24 / 90:   9%|▉         | 90/1000 [51:22<8:39:24, 34.25s/it][Succeeded / Failed / Skipped / Total] 65 / 1 / 24 / 90:   9%|▉         | 91/1000 [51:22<8:33:13, 33.88s/it][Succeeded / Failed / Skipped / Total] 65 / 1 / 25 / 91:   9%|▉         | 91/1000 [51:22<8:33:13, 33.88s/it][Succeeded / Failed / Skipped / Total] 65 / 1 / 25 / 91:   9%|▉         | 92/1000 [52:03<8:33:45, 33.95s/it][[1 (73%)]] --> [[0 (63%)]]
+
+[[brilliantly]] explores the conflict between following one 's heart and following the demands of tradition
+
+[[flawlessly]] explores the conflict between following one 's heart and following the demands of tradition
+
+
+--------------------------------------------- Result 67 ---------------------------------------------
+[[1 (55%)]] --> [[0 (71%)]]
+
+[[awkward]] but sincere and , ultimately , it wins you over
+
+[[squirrelly]] but sincere and , ultimately , it wins you over
+
+
+--------------------------------------------- Result 68 ---------------------------------------------
+[[0 (70%)]] --> [[1 (67%)]]
+
+[[ultimately]] , the film amounts to being [[lectured]] to by tech geeks , if you 're up for that sort of thing
+
+[[latter]] , the film amounts to being [[teacher]] to by tech geeks , if you 're up for that sort of thing
+
+
+--------------------------------------------- Result 69 ---------------------------------------------
+[[0 (73%)]] --> [[1 (65%)]]
+
+the humor is forced and heavy [[handed]] , and occasionally [[simply]] unpleasant
+
+the humor is forced and heavy [[lodged]] , and occasionally [[just]] unpleasant
+
+
+--------------------------------------------- Result 70 ---------------------------------------------
+[[0 (71%)]] --> [[[SKIPPED]]]
+
+long after you leave justine , you 'll be wondering what will happen to her and wishing her the best whatever that might mean
+
+
+--------------------------------------------- Result 71 ---------------------------------------------
+[[0 (73%)]] --> [[[SKIPPED]]]
+
+the mothman prophecies is a difficult film to shake from your conscience when night falls
+
+
+--------------------------------------------- Result 72 ---------------------------------------------
+[[0 (73%)]] --> [[1 (50%)]]
+
+like life on the island , the movie grows [[boring]] despite the scenery
+
+like life on the island , the movie grows [[pierce]] despite the scenery
+
+
+--------------------------------------------- Result 73 ---------------------------------------------
+[[0 (71%)]] --> [[[SKIPPED]]]
+
+the movie sticks much closer to hornby 's drop dead confessional tone than the film version of high fidelity did
+
+
+--------------------------------------------- Result 74 ---------------------------------------------
+[[0 (53%)]] --> [[[SKIPPED]]]
+
+it 's sobering , particularly if anyone still thinks this conflict can be resolved easily , or soon
+
+
+--------------------------------------------- Result 75 ---------------------------------------------
+[[0 (73%)]] --> [[[SKIPPED]]]
+
+displaying about equal amounts of naivet , passion and talent , beneath clouds establishes sen as a filmmaker of considerable potential
+
+
+--------------------------------------------- Result 76 ---------------------------------------------
+[[1 (61%)]] --> [[[SKIPPED]]]
+
+a gushy episode of m a s h only this time from an asian perspective
+
+
+--------------------------------------------- Result 77 ---------------------------------------------
+[[1 (69%)]] --> [[[SKIPPED]]]
+
+if it were any more of a turkey , it would gobble in dolby digital stereo if nothing else , rollerball 2002 may go down in cinema history as the only movie ever in which the rest of the cast was outshined by ll cool j
+
+
+--------------------------------------------- Result 78 ---------------------------------------------
+[[0 (71%)]] --> [[[SKIPPED]]]
+
+it 's like going to a house party and watching the host defend himself against a frothing ex girlfriend you do n't want to call the cops you want to call domino 's
+
+
+--------------------------------------------- Result 79 ---------------------------------------------
+[[0 (64%)]] --> [[1 (54%)]]
+
+mr deeds is not really a film as much as it is a loose collection of not so [[funny]] gags , scattered moments of lazy humor
+
+mr deeds is not really a film as much as it is a loose collection of not so [[giggle]] gags , scattered moments of lazy humor
+
+
+--------------------------------------------- Result 80 ---------------------------------------------
+[[1 (67%)]] --> [[0 (52%)]]
+
+it helps that the [[central]] performers are [[experienced]] actors , and that they know their roles [[so]] well
+
+it helps that the [[underlying]] performers are [[proficient]] actors , and that they know their roles [[too]] well
+
+
+--------------------------------------------- Result 81 ---------------------------------------------
+[[0 (63%)]] --> [[1 (73%)]]
+
+the whole affair is as [[predictable]] as can be
+
+the whole affair is as [[anticipate]] as can be
+
+
+--------------------------------------------- Result 82 ---------------------------------------------
+[[1 (73%)]] --> [[0 (73%)]]
+
+familiar but utterly [[delightful]]
+
+familiar but utterly [[peachy]]
+
+
+--------------------------------------------- Result 83 ---------------------------------------------
+[[1 (55%)]] --> [[0 (73%)]]
+
+for all the dolorous trim , [[secretary]] is a genial romance that maintains a surprisingly buoyant tone throughout , notwithstanding some of the writers' sporadic dips into pop freudianism
+
+for all the dolorous trim , [[secretaries]] is a genial romance that maintains a surprisingly buoyant tone throughout , notwithstanding some of the writers' sporadic dips into pop freudianism
+
+
+--------------------------------------------- Result 84 ---------------------------------------------
+[[0 (53%)]] --> [[1 (52%)]]
+
+it 's the kind of movie that ends up festooning u s art [[house]] screens for no reason other than the fact that it 's in french \( well , mostly \) with english subtitles and is magically 'significant' because of that
+
+it 's the kind of movie that ends up festooning u s art [[maison]] screens for no reason other than the fact that it 's in french \( well , mostly \) with english subtitles and is magically 'significant' because of that
+
+
+--------------------------------------------- Result 85 ---------------------------------------------
+[[1 (73%)]] --> [[0 (64%)]]
+
+'alice 's [[adventure]] through the looking glass and into zombie land' is filled with strange and [[wonderful]] creatures
+
+'alice 's [[trip]] through the looking glass and into zombie land' is filled with strange and [[marvellous]] creatures
+
+
+--------------------------------------------- Result 86 ---------------------------------------------
+[[0 (73%)]] --> [[[SKIPPED]]]
+
+real women have curves does n't offer any easy answers
+
+
+--------------------------------------------- Result 87 ---------------------------------------------
+[[1 (59%)]] --> [[0 (59%)]]
+
+eight legged freaks is [[clever]] and funny , is amused by its special effects , and leaves you feeling like you 've seen a movie instead of an endless trailer
+
+eight legged freaks is [[malin]] and funny , is amused by its special effects , and leaves you feeling like you 've seen a movie instead of an endless trailer
+
+
+--------------------------------------------- Result 88 ---------------------------------------------
+[[0 (70%)]] --> [[1 (51%)]]
+
+the talk heavy film plays like one of robert altman 's [[lesser]] works
+
+the talk heavy film plays like one of robert altman 's [[shorter]] works
+
+
+--------------------------------------------- Result 89 ---------------------------------------------
+[[1 (73%)]] --> [[0 (53%)]]
+
+a subtle , humorous , [[illuminating]] study of politics , [[power]] and social mobility
+
+a subtle , humorous , [[reflector]] study of politics , [[aptitude]] and social mobility
+
+
+--------------------------------------------- Result 90 ---------------------------------------------
+[[0 (73%)]] --> [[1 (50%)]]
+
+the actors pull out all the stops in [[nearly]] every scene , but to [[diminishing]] effect the [[characters]] never change
+
+the actors pull out all the stops in [[closely]] every scene , but to [[cutback]] effect the [[personages]] never change
+
+
+--------------------------------------------- Result 91 ---------------------------------------------
+[[0 (73%)]] --> [[[SKIPPED]]]
+
+half submarine flick , half ghost story , all in one criminally neglected film
+
+
+--------------------------------------------- Result 92 ---------------------------------------------
+[Succeeded / Failed / Skipped / Total] 66 / 1 / 25 / 92:   9%|▉         | 92/1000 [52:03<8:33:45, 33.95s/it][Succeeded / Failed / Skipped / Total] 66 / 1 / 25 / 92:   9%|▉         | 93/1000 [52:29<8:31:51, 33.86s/it][Succeeded / Failed / Skipped / Total] 67 / 1 / 25 / 93:   9%|▉         | 93/1000 [52:29<8:31:51, 33.86s/it][Succeeded / Failed / Skipped / Total] 67 / 1 / 25 / 93:   9%|▉         | 94/1000 [53:07<8:32:00, 33.91s/it][Succeeded / Failed / Skipped / Total] 68 / 1 / 25 / 94:   9%|▉         | 94/1000 [53:07<8:32:00, 33.91s/it][Succeeded / Failed / Skipped / Total] 68 / 1 / 25 / 94:  10%|▉         | 95/1000 [53:07<8:26:08, 33.56s/it][Succeeded / Failed / Skipped / Total] 68 / 1 / 26 / 95:  10%|▉         | 95/1000 [53:07<8:26:08, 33.56s/it][Succeeded / Failed / Skipped / Total] 68 / 1 / 26 / 95:  10%|▉         | 96/1000 [54:05<8:29:18, 33.80s/it][Succeeded / Failed / Skipped / Total] 69 / 1 / 26 / 96:  10%|▉         | 96/1000 [54:05<8:29:18, 33.80s/it][Succeeded / Failed / Skipped / Total] 69 / 1 / 26 / 96:  10%|▉         | 97/1000 [55:06<8:33:05, 34.09s/it][Succeeded / Failed / Skipped / Total] 70 / 1 / 26 / 97:  10%|▉         | 97/1000 [55:06<8:33:05, 34.09s/it][Succeeded / Failed / Skipped / Total] 70 / 1 / 26 / 97:  10%|▉         | 98/1000 [55:37<8:31:54, 34.05s/it][Succeeded / Failed / Skipped / Total] 71 / 1 / 26 / 98:  10%|▉         | 98/1000 [55:37<8:31:54, 34.05s/it][Succeeded / Failed / Skipped / Total] 71 / 1 / 26 / 98:  10%|▉         | 99/1000 [57:19<8:41:39, 34.74s/it][Succeeded / Failed / Skipped / Total] 71 / 2 / 26 / 99:  10%|▉         | 99/1000 [57:19<8:41:39, 34.74s/it][Succeeded / Failed / Skipped / Total] 71 / 2 / 26 / 99:  10%|█         | 100/1000 [58:01<8:42:13, 34.82s/it][Succeeded / Failed / Skipped / Total] 72 / 2 / 26 / 100:  10%|█         | 100/1000 [58:01<8:42:13, 34.82s/it][Succeeded / Failed / Skipped / Total] 72 / 2 / 26 / 100:  10%|█         | 101/1000 [58:19<8:39:08, 34.65s/it][Succeeded / Failed / Skipped / Total] 73 / 2 / 26 / 101:  10%|█         | 101/1000 [58:19<8:39:08, 34.65s/it][Succeeded / Failed / Skipped / Total] 73 / 2 / 26 / 101:  10%|█         | 102/1000 [58:20<8:33:34, 34.31s/it][Succeeded / Failed / Skipped / Total] 73 / 2 / 27 / 102:  10%|█         | 102/1000 [58:20<8:33:34, 34.31s/it][Succeeded / Failed / Skipped / Total] 73 / 2 / 27 / 102:  10%|█         | 103/1000 [58:20<8:28:07, 33.99s/it][Succeeded / Failed / Skipped / Total] 73 / 2 / 28 / 103:  10%|█         | 103/1000 [58:20<8:28:07, 33.99s/it][Succeeded / Failed / Skipped / Total] 73 / 2 / 28 / 103:  10%|█         | 104/1000 [59:02<8:28:42, 34.07s/it][Succeeded / Failed / Skipped / Total] 74 / 2 / 28 / 104:  10%|█         | 104/1000 [59:02<8:28:42, 34.07s/it][Succeeded / Failed / Skipped / Total] 74 / 2 / 28 / 104:  10%|█         | 105/1000 [1:00:11<8:33:07, 34.40s/it][Succeeded / Failed / Skipped / Total] 75 / 2 / 28 / 105:  10%|█         | 105/1000 [1:00:11<8:33:07, 34.40s/it][Succeeded / Failed / Skipped / Total] 75 / 2 / 28 / 105:  11%|█         | 106/1000 [1:00:12<8:27:48, 34.08s/it][Succeeded / Failed / Skipped / Total] 75 / 2 / 29 / 106:  11%|█         | 106/1000 [1:00:12<8:27:48, 34.08s/it][Succeeded / Failed / Skipped / Total] 75 / 2 / 29 / 106:  11%|█         | 107/1000 [1:00:13<8:22:37, 33.77s/it][Succeeded / Failed / Skipped / Total] 75 / 2 / 30 / 107:  11%|█         | 107/1000 [1:00:13<8:22:37, 33.77s/it][Succeeded / Failed / Skipped / Total] 75 / 2 / 30 / 107:  11%|█         | 108/1000 [1:00:16<8:17:47, 33.48s/it][Succeeded / Failed / Skipped / Total] 75 / 3 / 30 / 108:  11%|█         | 108/1000 [1:00:16<8:17:47, 33.48s/it][Succeeded / Failed / Skipped / Total] 75 / 3 / 30 / 108:  11%|█         | 109/1000 [1:00:45<8:16:37, 33.44s/it][Succeeded / Failed / Skipped / Total] 76 / 3 / 30 / 109:  11%|█         | 109/1000 [1:00:45<8:16:37, 33.44s/it][Succeeded / Failed / Skipped / Total] 76 / 3 / 30 / 109:  11%|█         | 110/1000 [1:01:08<8:14:45, 33.35s/it][Succeeded / Failed / Skipped / Total] 77 / 3 / 30 / 110:  11%|█         | 110/1000 [1:01:08<8:14:45, 33.35s/it][Succeeded / Failed / Skipped / Total] 77 / 3 / 30 / 110:  11%|█         | 111/1000 [1:02:16<8:18:43, 33.66s/it][Succeeded / Failed / Skipped / Total] 78 / 3 / 30 / 111:  11%|█         | 111/1000 [1:02:16<8:18:43, 33.66s/it][Succeeded / Failed / Skipped / Total] 78 / 3 / 30 / 111:  11%|█         | 112/1000 [1:03:22<8:22:29, 33.95s/it][Succeeded / Failed / Skipped / Total] 79 / 3 / 30 / 112:  11%|█         | 112/1000 [1:03:22<8:22:29, 33.95s/it][Succeeded / Failed / Skipped / Total] 79 / 3 / 30 / 112:  11%|█▏        | 113/1000 [1:03:54<8:21:37, 33.93s/it][Succeeded / Failed / Skipped / Total] 80 / 3 / 30 / 113:  11%|█▏        | 113/1000 [1:03:54<8:21:37, 33.93s/it][Succeeded / Failed / Skipped / Total] 80 / 3 / 30 / 113:  11%|█▏        | 114/1000 [1:04:11<8:18:51, 33.78s/it][Succeeded / Failed / Skipped / Total] 81 / 3 / 30 / 114:  11%|█▏        | 114/1000 [1:04:11<8:18:51, 33.78s/it][Succeeded / Failed / Skipped / Total] 81 / 3 / 30 / 114:  12%|█▏        | 115/1000 [1:06:06<8:28:44, 34.49s/it][Succeeded / Failed / Skipped / Total] 82 / 3 / 30 / 115:  12%|█▏        | 115/1000 [1:06:06<8:28:45, 34.49s/it][Succeeded / Failed / Skipped / Total] 82 / 3 / 30 / 115:  12%|█▏        | 116/1000 [1:07:05<8:31:16, 34.70s/it][[0 (71%)]] --> [[1 (53%)]]
+
+the [[essential]] problem in orange county is that , having created an unusually vivid set of characters worthy of its strong cast , the film flounders when it comes to giving them something to do
+
+the [[important]] problem in orange county is that , having created an unusually vivid set of characters worthy of its strong cast , the film flounders when it comes to giving them something to do
+
+
+--------------------------------------------- Result 93 ---------------------------------------------
+[[0 (67%)]] --> [[1 (60%)]]
+
+if you '[[re]] really renting this you 're not interested in discretion in your entertainment choices , you 're interested in anne geddes , john grisham , and thomas kincaid
+
+if you '[[ri]] really renting this you 're not interested in discretion in your entertainment choices , you 're interested in anne geddes , john grisham , and thomas kincaid
+
+
+--------------------------------------------- Result 94 ---------------------------------------------
+[[0 (73%)]] --> [[1 (73%)]]
+
+[[upper]] west sidey [[exercise]] in narcissism and self congratulation disguised as a tribute
+
+[[greatest]] west sidey [[exert]] in narcissism and self congratulation disguised as a tribute
+
+
+--------------------------------------------- Result 95 ---------------------------------------------
+[[0 (73%)]] --> [[[SKIPPED]]]
+
+highly watchable stuff
+
+
+--------------------------------------------- Result 96 ---------------------------------------------
+[[0 (63%)]] --> [[1 (52%)]]
+
+the film might [[have]] been more [[satisfying]] if it had , in fact , been fleshed out a little more instead of going for easy smiles
+
+the film might [[be]] been more [[gratified]] if it had , in fact , been fleshed out a little more instead of going for easy smiles
+
+
+--------------------------------------------- Result 97 ---------------------------------------------
+[[0 (73%)]] --> [[1 (72%)]]
+
+a [[film]] neither bitter nor sweet , neither romantic nor comedic , neither warm nor [[fuzzy]]
+
+a [[photo]] neither bitter nor sweet , neither romantic nor comedic , neither warm nor [[muddied]]
+
+
+--------------------------------------------- Result 98 ---------------------------------------------
+[[1 (73%)]] --> [[0 (63%)]]
+
+this [[film]] is an act of spiritual faith an eloquent , deeply felt meditation on the nature of compassion
+
+this [[cameraman]] is an act of spiritual faith an eloquent , deeply felt meditation on the nature of compassion
+
+
+--------------------------------------------- Result 99 ---------------------------------------------
+[[0 (73%)]] --> [[[FAILED]]]
+
+a bad movie that happened to good actors
+
+
+--------------------------------------------- Result 100 ---------------------------------------------
+[[1 (63%)]] --> [[0 (61%)]]
+
+more concerned with sade 's ideas than with his [[actions]] the movie achieves as great an impact by keeping these thoughts hidden as quills did by showing them
+
+more concerned with sade 's ideas than with his [[moves]] the movie achieves as great an impact by keeping these thoughts hidden as quills did by showing them
+
+
+--------------------------------------------- Result 101 ---------------------------------------------
+[[0 (72%)]] --> [[1 (61%)]]
+
+the new film of anton [[chekhov]] 's the cherry orchard puts the 'ick' in 'classic '
+
+the new film of anton [[playwrights]] 's the cherry orchard puts the 'ick' in 'classic '
+
+
+--------------------------------------------- Result 102 ---------------------------------------------
+[[0 (68%)]] --> [[[SKIPPED]]]
+
+as part of mr dong 's continuing exploration of homosexuality in america , family fundamentals is an earnest study in despair
+
+
+--------------------------------------------- Result 103 ---------------------------------------------
+[[0 (73%)]] --> [[[SKIPPED]]]
+
+the trinity assembly approaches the endeavor with a shocking lack of irony , and george ratliff 's documentary , hell house , reflects their earnestness which makes for a terrifying film
+
+
+--------------------------------------------- Result 104 ---------------------------------------------
+[[0 (73%)]] --> [[1 (71%)]]
+
+the [[tug]] of war at the core of beijing bicycle [[becomes]] weighed down with agonizing contrivances , overheated pathos and long , wistful gazes
+
+the [[trawling]] of war at the core of beijing bicycle [[ai]] weighed down with agonizing contrivances , overheated pathos and long , wistful gazes
+
+
+--------------------------------------------- Result 105 ---------------------------------------------
+[[0 (70%)]] --> [[1 (50%)]]
+
+wallace seems less like he 's been burning to [[tell]] a [[war]] story than he 's been [[itching]] to somehow tack one together
+
+wallace seems less like he 's been burning to [[declares]] a [[guerre]] story than he 's been [[flaking]] to somehow tack one together
+
+
+--------------------------------------------- Result 106 ---------------------------------------------
+[[0 (69%)]] --> [[[SKIPPED]]]
+
+wow , so who knew charles dickens could be so light hearted \?
+
+
+--------------------------------------------- Result 107 ---------------------------------------------
+[[0 (64%)]] --> [[[SKIPPED]]]
+
+massoud 's story is an epic , but also a tragedy , the record of a tenacious , humane fighter who was also the prisoner \( and ultimately the victim \) of history
+
+
+--------------------------------------------- Result 108 ---------------------------------------------
+[[0 (53%)]] --> [[[FAILED]]]
+
+this is no waterboy !
+
+
+--------------------------------------------- Result 109 ---------------------------------------------
+[[1 (73%)]] --> [[0 (69%)]]
+
+[[cho]] continues her exploration of the outer limits of raunch with considerable brio
+
+[[congee]] continues her exploration of the outer limits of raunch with considerable brio
+
+
+--------------------------------------------- Result 110 ---------------------------------------------
+[[1 (58%)]] --> [[0 (52%)]]
+
+while the [[film]] is not entirely successful , it still manages to string together enough charming moments to work
+
+while the [[filmmakers]] is not entirely successful , it still manages to string together enough charming moments to work
+
+
+--------------------------------------------- Result 111 ---------------------------------------------
+[[0 (73%)]] --> [[1 (73%)]]
+
+animated drivel [[meant]] to enhance the self [[image]] of drooling idiots
+
+animated drivel [[target]] to enhance the self [[photographed]] of drooling idiots
+
+
+--------------------------------------------- Result 112 ---------------------------------------------
+[[1 (57%)]] --> [[0 (52%)]]
+
+may be far from the best of the series , but it 's [[assured]] , wonderfully respectful of its past and thrilling enough to make it abundantly clear that this movie phenomenon has once again reinvented itself for a new generation
+
+may be far from the best of the series , but it 's [[ensured]] , wonderfully respectful of its past and thrilling enough to make it abundantly clear that this movie phenomenon has once again reinvented itself for a new generation
+
+
+--------------------------------------------- Result 113 ---------------------------------------------
+[[0 (73%)]] --> [[1 (62%)]]
+
+should have been worth [[cheering]] as a breakthrough but is devoid of wit and humor
+
+should have been worth [[shouted]] as a breakthrough but is devoid of wit and humor
+
+
+--------------------------------------------- Result 114 ---------------------------------------------
+[[0 (72%)]] --> [[1 (62%)]]
+
+a [[static]] and sugary little half hour , after school special about interfaith understanding , stretched out to 90 minutes
+
+a [[unchanging]] and sugary little half hour , after school special about interfaith understanding , stretched out to 90 minutes
+
+
+--------------------------------------------- Result 115 ---------------------------------------------
+[[0 (73%)]] --> [[1 (66%)]]
+
+a [[tired]] , predictable , [[bordering]] on [[offensive]] , [[waste]] of time , [[money]] and celluloid
+
+a [[listless]] , predictable , [[border]] on [[distasteful]] , [[residual]] of time , [[moneys]] and celluloid
+
+
+[Succeeded / Failed / Skipped / Total] 83 / 3 / 30 / 116:  12%|█▏        | 116/1000 [1:07:05<8:31:16, 34.70s/it][Succeeded / Failed / Skipped / Total] 83 / 3 / 30 / 116:  12%|█▏        | 117/1000 [1:07:30<8:29:26, 34.62s/it][Succeeded / Failed / Skipped / Total] 84 / 3 / 30 / 117:  12%|█▏        | 117/1000 [1:07:30<8:29:26, 34.62s/it][Succeeded / Failed / Skipped / Total] 84 / 3 / 30 / 117:  12%|█▏        | 118/1000 [1:08:38<8:33:04, 34.90s/it][Succeeded / Failed / Skipped / Total] 85 / 3 / 30 / 118:  12%|█▏        | 118/1000 [1:08:38<8:33:04, 34.90s/it][Succeeded / Failed / Skipped / Total] 85 / 3 / 30 / 118:  12%|█▏        | 119/1000 [1:09:17<8:33:02, 34.94s/it][Succeeded / Failed / Skipped / Total] 86 / 3 / 30 / 119:  12%|█▏        | 119/1000 [1:09:17<8:33:02, 34.94s/it][Succeeded / Failed / Skipped / Total] 86 / 3 / 30 / 119:  12%|█▏        | 120/1000 [1:10:09<8:34:29, 35.08s/it][Succeeded / Failed / Skipped / Total] 87 / 3 / 30 / 120:  12%|█▏        | 120/1000 [1:10:09<8:34:29, 35.08s/it][Succeeded / Failed / Skipped / Total] 87 / 3 / 30 / 120:  12%|█▏        | 121/1000 [1:10:59<8:35:39, 35.20s/it][Succeeded / Failed / Skipped / Total] 88 / 3 / 30 / 121:  12%|█▏        | 121/1000 [1:10:59<8:35:39, 35.20s/it][Succeeded / Failed / Skipped / Total] 88 / 3 / 30 / 121:  12%|█▏        | 122/1000 [1:11:30<8:34:39, 35.17s/it][Succeeded / Failed / Skipped / Total] 89 / 3 / 30 / 122:  12%|█▏        | 122/1000 [1:11:30<8:34:39, 35.17s/it][Succeeded / Failed / Skipped / Total] 89 / 3 / 30 / 122:  12%|█▏        | 123/1000 [1:11:31<8:29:57, 34.89s/it][Succeeded / Failed / Skipped / Total] 89 / 3 / 31 / 123:  12%|█▏        | 123/1000 [1:11:31<8:29:57, 34.89s/it][Succeeded / Failed / Skipped / Total] 89 / 3 / 31 / 123:  12%|█▏        | 124/1000 [1:12:33<8:32:38, 35.11s/it][Succeeded / Failed / Skipped / Total] 90 / 3 / 31 / 124:  12%|█▏        | 124/1000 [1:12:33<8:32:38, 35.11s/it][Succeeded / Failed / Skipped / Total] 90 / 3 / 31 / 124:  12%|█▎        | 125/1000 [1:13:22<8:33:38, 35.22s/it][Succeeded / Failed / Skipped / Total] 91 / 3 / 31 / 125:  12%|█▎        | 125/1000 [1:13:22<8:33:38, 35.22s/it][Succeeded / Failed / Skipped / Total] 91 / 3 / 31 / 125:  13%|█▎        | 126/1000 [1:13:23<8:29:03, 34.95s/it][Succeeded / Failed / Skipped / Total] 91 / 3 / 32 / 126:  13%|█▎        | 126/1000 [1:13:23<8:29:03, 34.95s/it][Succeeded / Failed / Skipped / Total] 91 / 3 / 32 / 126:  13%|█▎        | 127/1000 [1:14:45<8:33:51, 35.32s/it][Succeeded / Failed / Skipped / Total] 91 / 4 / 32 / 127:  13%|█▎        | 127/1000 [1:14:45<8:33:51, 35.32s/it][Succeeded / Failed / Skipped / Total] 91 / 4 / 32 / 127:  13%|█▎        | 128/1000 [1:15:15<8:32:41, 35.28s/it][Succeeded / Failed / Skipped / Total] 92 / 4 / 32 / 128:  13%|█▎        | 128/1000 [1:15:15<8:32:41, 35.28s/it][Succeeded / Failed / Skipped / Total] 92 / 4 / 32 / 128:  13%|█▎        | 129/1000 [1:16:42<8:37:54, 35.68s/it][Succeeded / Failed / Skipped / Total] 93 / 4 / 32 / 129:  13%|█▎        | 129/1000 [1:16:42<8:37:54, 35.68s/it][Succeeded / Failed / Skipped / Total] 93 / 4 / 32 / 129:  13%|█▎        | 130/1000 [1:16:43<8:33:25, 35.41s/it][Succeeded / Failed / Skipped / Total] 93 / 4 / 33 / 130:  13%|█▎        | 130/1000 [1:16:43<8:33:25, 35.41s/it][Succeeded / Failed / Skipped / Total] 93 / 4 / 33 / 130:  13%|█▎        | 131/1000 [1:17:08<8:31:46, 35.34s/it][Succeeded / Failed / Skipped / Total] 94 / 4 / 33 / 131:  13%|█▎        | 131/1000 [1:17:08<8:31:46, 35.34s/it][Succeeded / Failed / Skipped / Total] 94 / 4 / 33 / 131:  13%|█▎        | 132/1000 [1:17:41<8:30:56, 35.32s/it][Succeeded / Failed / Skipped / Total] 95 / 4 / 33 / 132:  13%|█▎        | 132/1000 [1:17:41<8:30:56, 35.32s/it][Succeeded / Failed / Skipped / Total] 95 / 4 / 33 / 132:  13%|█▎        | 133/1000 [1:18:08<8:29:21, 35.25s/it][Succeeded / Failed / Skipped / Total] 96 / 4 / 33 / 133:  13%|█▎        | 133/1000 [1:18:08<8:29:21, 35.25s/it][Succeeded / Failed / Skipped / Total] 96 / 4 / 33 / 133:  13%|█▎        | 134/1000 [1:19:49<8:35:50, 35.74s/it][Succeeded / Failed / Skipped / Total] 97 / 4 / 33 / 134:  13%|█▎        | 134/1000 [1:19:49<8:35:50, 35.74s/it][Succeeded / Failed / Skipped / Total] 97 / 4 / 33 / 134:  14%|█▎        | 135/1000 [1:19:49<8:31:29, 35.48s/it][Succeeded / Failed / Skipped / Total] 97 / 4 / 34 / 135:  14%|█▎        | 135/1000 [1:19:49<8:31:29, 35.48s/it][Succeeded / Failed / Skipped / Total] 97 / 4 / 34 / 135:  14%|█▎        | 136/1000 [1:19:50<8:27:12, 35.22s/it][Succeeded / Failed / Skipped / Total] 97 / 4 / 35 / 136:  14%|█▎        | 136/1000 [1:19:50<8:27:12, 35.22s/it][Succeeded / Failed / Skipped / Total] 97 / 4 / 35 / 136:  14%|█▎        | 137/1000 [1:20:09<8:24:57, 35.11s/it][Succeeded / Failed / Skipped / Total] 98 / 4 / 35 / 137:  14%|█▎        | 137/1000 [1:20:09<8:24:57, 35.11s/it][Succeeded / Failed / Skipped / Total] 98 / 4 / 35 / 137:  14%|█▍        | 138/1000 [1:20:21<8:21:58, 34.94s/it][Succeeded / Failed / Skipped / Total] 99 / 4 / 35 / 138:  14%|█▍        | 138/1000 [1:20:21<8:21:58, 34.94s/it][Succeeded / Failed / Skipped / Total] 99 / 4 / 35 / 138:  14%|█▍        | 139/1000 [1:20:57<8:21:29, 34.95s/it]--------------------------------------------- Result 116 ---------------------------------------------
+[[0 (73%)]] --> [[1 (73%)]]
+
+this one [[aims]] for the [[toilet]] and scores a direct hit
+
+this one [[geared]] for the [[wc]] and scores a direct hit
+
+
+--------------------------------------------- Result 117 ---------------------------------------------
+[[1 (73%)]] --> [[0 (73%)]]
+
+[[spare]] but quietly effective retelling
+
+[[alternatives]] but quietly effective retelling
+
+
+--------------------------------------------- Result 118 ---------------------------------------------
+[[0 (73%)]] --> [[1 (61%)]]
+
+seagal is [[painfully]] [[foolish]] in trying to hold onto what 's left of his passe' chopsocky glory
+
+seagal is [[ruthlessly]] [[goofball]] in trying to hold onto what 's left of his passe' chopsocky glory
+
+
+--------------------------------------------- Result 119 ---------------------------------------------
+[[1 (73%)]] --> [[0 (52%)]]
+
+a coda in every [[sense]] , the pinochet case splits time between a minute by minute account of the british court 's extradition chess game and the regime 's talking head survivors
+
+a coda in every [[vena]] , the pinochet case splits time between a minute by minute account of the british court 's extradition chess game and the regime 's talking head survivors
+
+
+--------------------------------------------- Result 120 ---------------------------------------------
+[[1 (73%)]] --> [[0 (73%)]]
+
+it 's a [[lovely]] film with lovely [[performances]] by [[buy]] and accorsi
+
+it 's a [[delectable]] film with lovely [[spectacle]] by [[bought]] and accorsi
+
+
+--------------------------------------------- Result 121 ---------------------------------------------
+[[1 (54%)]] --> [[0 (54%)]]
+
+were it not for a sentimental resolution that explains way more about cal than does the movie or the [[character]] any good , freundlich 's world traveler might have been one of the more daring and surprising american movies of the year
+
+were it not for a sentimental resolution that explains way more about cal than does the movie or the [[idiosyncrasies]] any good , freundlich 's world traveler might have been one of the more daring and surprising american movies of the year
+
+
+--------------------------------------------- Result 122 ---------------------------------------------
+[[0 (72%)]] --> [[1 (54%)]]
+
+[[finally]] coming down off of miramax 's deep shelves after a couple of aborted attempts , waking up in reno makes a strong case for letting sleeping dogs lie
+
+[[lastly]] coming down off of miramax 's deep shelves after a couple of aborted attempts , waking up in reno makes a strong case for letting sleeping dogs lie
+
+
+--------------------------------------------- Result 123 ---------------------------------------------
+[[0 (70%)]] --> [[[SKIPPED]]]
+
+rain is a small treasure , enveloping the viewer in a literal and spiritual torpor that is anything but cathartic
+
+
+--------------------------------------------- Result 124 ---------------------------------------------
+[[0 (73%)]] --> [[1 (65%)]]
+
+there 's only one [[way]] to kill michael myers for [[good]] stop buying tickets to these movies
+
+there 's only one [[menus]] to kill michael myers for [[best]] stop buying tickets to these movies
+
+
+--------------------------------------------- Result 125 ---------------------------------------------
+[[0 (73%)]] --> [[1 (66%)]]
+
+[[bad]] in such a [[bizarre]] way that it 's almost worth seeing , if only to witness the crazy confluence of purpose and taste
+
+[[unfavourable]] in such a [[odd]] way that it 's almost worth seeing , if only to witness the crazy confluence of purpose and taste
+
+
+--------------------------------------------- Result 126 ---------------------------------------------
+[[0 (66%)]] --> [[[SKIPPED]]]
+
+it 's absolutely spooky how lillard channels the shagster right down to the original casey kasem furnished voice
+
+
+--------------------------------------------- Result 127 ---------------------------------------------
+[[0 (73%)]] --> [[[FAILED]]]
+
+eight legged freaks \? no big hairy deal
+
+
+--------------------------------------------- Result 128 ---------------------------------------------
+[[0 (73%)]] --> [[1 (51%)]]
+
+even in [[terms]] of the low grade cheese standards on which it operates , it never quite makes the grade as tawdry trash
+
+even in [[clause]] of the low grade cheese standards on which it operates , it never quite makes the grade as tawdry trash
+
+
+--------------------------------------------- Result 129 ---------------------------------------------
+[[0 (73%)]] --> [[1 (53%)]]
+
+one of the more [[glaring]] signs of this movie 's servitude to its superstar is the way it skirts around any scenes that might have required [[genuine]] acting from [[ms]] [[spears]]
+
+one of the more [[noteworthy]] signs of this movie 's servitude to its superstar is the way it skirts around any scenes that might have required [[authentic]] acting from [[helga]] [[hauls]]
+
+
+--------------------------------------------- Result 130 ---------------------------------------------
+[[0 (63%)]] --> [[[SKIPPED]]]
+
+painful to watch , but viewers willing to take a chance will be rewarded with two of the year 's most accomplished and riveting film performances
+
+
+--------------------------------------------- Result 131 ---------------------------------------------
+[[0 (72%)]] --> [[1 (52%)]]
+
+paul bettany is [[good]] at being the ultra violent gangster wannabe , but the movie is certainly not number 1
+
+paul bettany is [[agreeable]] at being the ultra violent gangster wannabe , but the movie is certainly not number 1
+
+
+--------------------------------------------- Result 132 ---------------------------------------------
+[[1 (71%)]] --> [[0 (65%)]]
+
+[[mesmerizing]] , an eye opening tour of modern beijing culture in a journey of rebellion , retreat into oblivion and return
+
+[[astonishing]] , an eye opening tour of modern beijing culture in a journey of rebellion , retreat into oblivion and return
+
+
+--------------------------------------------- Result 133 ---------------------------------------------
+[[0 (64%)]] --> [[1 (71%)]]
+
+serviceable at best , slightly less than serviceable at [[worst]]
+
+serviceable at best , slightly less than serviceable at [[strictest]]
+
+
+--------------------------------------------- Result 134 ---------------------------------------------
+[[0 (72%)]] --> [[1 (51%)]]
+
+the movie is concocted and carried out by [[folks]] worthy of [[scorn]] , and the nicest thing i can say is that i ca n't remember a [[single]] name [[responsible]] for it
+
+the movie is concocted and carried out by [[countrymen]] worthy of [[overlook]] , and the nicest thing i can say is that i ca n't remember a [[unequalled]] name [[accountable]] for it
+
+
+--------------------------------------------- Result 135 ---------------------------------------------
+[[0 (62%)]] --> [[[SKIPPED]]]
+
+dong makes a valiant effort to understand everyone 's point of view , and he does such a good job of it that family fundamentals gets you riled up
+
+
+--------------------------------------------- Result 136 ---------------------------------------------
+[[1 (72%)]] --> [[[SKIPPED]]]
+
+a very long movie , dull in stretches , with entirely too much focus on meal preparation and igloo construction
+
+
+--------------------------------------------- Result 137 ---------------------------------------------
+[[1 (55%)]] --> [[0 (61%)]]
+
+the genius of the work speaks [[volumes]] , offering up a hallucinatory dreamscape that frustrates and captivates
+
+the genius of the work speaks [[quantity]] , offering up a hallucinatory dreamscape that frustrates and captivates
+
+
+--------------------------------------------- Result 138 ---------------------------------------------
+[[0 (65%)]] --> [[1 (61%)]]
+
+this is n't just the cliffsnotes version of [[nicholas]] nickleby , it 's the cliffsnotes with pages missing
+
+this is n't just the cliffsnotes version of [[nicolas]] nickleby , it 's the cliffsnotes with pages missing
+
+
+--------------------------------------------- Result 139 ---------------------------------------------
+[Succeeded / Failed / Skipped / Total] 100 / 4 / 35 / 139:  14%|█▍        | 139/1000 [1:20:57<8:21:29, 34.95s/it][Succeeded / Failed / Skipped / Total] 100 / 4 / 35 / 139:  14%|█▍        | 140/1000 [1:20:58<8:17:24, 34.70s/it][Succeeded / Failed / Skipped / Total] 100 / 4 / 36 / 140:  14%|█▍        | 140/1000 [1:20:58<8:17:24, 34.70s/it][Succeeded / Failed / Skipped / Total] 100 / 4 / 36 / 140:  14%|█▍        | 141/1000 [1:21:46<8:18:09, 34.80s/it][Succeeded / Failed / Skipped / Total] 101 / 4 / 36 / 141:  14%|█▍        | 141/1000 [1:21:46<8:18:09, 34.80s/it][Succeeded / Failed / Skipped / Total] 101 / 4 / 36 / 141:  14%|█▍        | 142/1000 [1:21:46<8:14:08, 34.56s/it][Succeeded / Failed / Skipped / Total] 101 / 4 / 37 / 142:  14%|█▍        | 142/1000 [1:21:46<8:14:08, 34.56s/it][Succeeded / Failed / Skipped / Total] 101 / 4 / 37 / 142:  14%|█▍        | 143/1000 [1:21:47<8:10:11, 34.32s/it][Succeeded / Failed / Skipped / Total] 101 / 4 / 38 / 143:  14%|█▍        | 143/1000 [1:21:47<8:10:11, 34.32s/it][Succeeded / Failed / Skipped / Total] 101 / 4 / 38 / 143:  14%|█▍        | 144/1000 [1:22:18<8:09:17, 34.30s/it][Succeeded / Failed / Skipped / Total] 102 / 4 / 38 / 144:  14%|█▍        | 144/1000 [1:22:18<8:09:17, 34.30s/it][Succeeded / Failed / Skipped / Total] 102 / 4 / 38 / 144:  14%|█▍        | 145/1000 [1:23:36<8:13:01, 34.60s/it][Succeeded / Failed / Skipped / Total] 103 / 4 / 38 / 145:  14%|█▍        | 145/1000 [1:23:36<8:13:01, 34.60s/it][Succeeded / Failed / Skipped / Total] 103 / 4 / 38 / 145:  15%|█▍        | 146/1000 [1:24:00<8:11:23, 34.52s/it][Succeeded / Failed / Skipped / Total] 104 / 4 / 38 / 146:  15%|█▍        | 146/1000 [1:24:00<8:11:23, 34.52s/it][Succeeded / Failed / Skipped / Total] 104 / 4 / 38 / 146:  15%|█▍        | 147/1000 [1:25:10<8:14:12, 34.76s/it][Succeeded / Failed / Skipped / Total] 105 / 4 / 38 / 147:  15%|█▍        | 147/1000 [1:25:10<8:14:12, 34.76s/it][Succeeded / Failed / Skipped / Total] 105 / 4 / 38 / 147:  15%|█▍        | 148/1000 [1:25:28<8:12:01, 34.65s/it][Succeeded / Failed / Skipped / Total] 106 / 4 / 38 / 148:  15%|█▍        | 148/1000 [1:25:28<8:12:01, 34.65s/it][Succeeded / Failed / Skipped / Total] 106 / 4 / 38 / 148:  15%|█▍        | 149/1000 [1:25:28<8:08:11, 34.42s/it][Succeeded / Failed / Skipped / Total] 106 / 4 / 39 / 149:  15%|█▍        | 149/1000 [1:25:28<8:08:11, 34.42s/it][Succeeded / Failed / Skipped / Total] 106 / 4 / 39 / 149:  15%|█▌        | 150/1000 [1:25:45<8:05:55, 34.30s/it][Succeeded / Failed / Skipped / Total] 107 / 4 / 39 / 150:  15%|█▌        | 150/1000 [1:25:45<8:05:55, 34.30s/it][Succeeded / Failed / Skipped / Total] 107 / 4 / 39 / 150:  15%|█▌        | 151/1000 [1:26:33<8:06:41, 34.40s/it][Succeeded / Failed / Skipped / Total] 108 / 4 / 39 / 151:  15%|█▌        | 151/1000 [1:26:33<8:06:41, 34.40s/it][Succeeded / Failed / Skipped / Total] 108 / 4 / 39 / 151:  15%|█▌        | 152/1000 [1:30:58<8:27:32, 35.91s/it][Succeeded / Failed / Skipped / Total] 109 / 4 / 39 / 152:  15%|█▌        | 152/1000 [1:30:58<8:27:32, 35.91s/it][Succeeded / Failed / Skipped / Total] 109 / 4 / 39 / 152:  15%|█▌        | 153/1000 [1:32:28<8:31:57, 36.27s/it][Succeeded / Failed / Skipped / Total] 110 / 4 / 39 / 153:  15%|█▌        | 153/1000 [1:32:28<8:31:57, 36.27s/it][Succeeded / Failed / Skipped / Total] 110 / 4 / 39 / 153:  15%|█▌        | 154/1000 [1:33:05<8:31:25, 36.27s/it][Succeeded / Failed / Skipped / Total] 111 / 4 / 39 / 154:  15%|█▌        | 154/1000 [1:33:05<8:31:25, 36.27s/it][Succeeded / Failed / Skipped / Total] 111 / 4 / 39 / 154:  16%|█▌        | 155/1000 [1:33:06<8:27:35, 36.04s/it][Succeeded / Failed / Skipped / Total] 111 / 4 / 40 / 155:  16%|█▌        | 155/1000 [1:33:06<8:27:35, 36.04s/it][Succeeded / Failed / Skipped / Total] 111 / 4 / 40 / 155:  16%|█▌        | 156/1000 [1:33:29<8:25:47, 35.96s/it][Succeeded / Failed / Skipped / Total] 112 / 4 / 40 / 156:  16%|█▌        | 156/1000 [1:33:29<8:25:47, 35.96s/it][Succeeded / Failed / Skipped / Total] 112 / 4 / 40 / 156:  16%|█▌        | 157/1000 [1:33:29<8:22:02, 35.73s/it][Succeeded / Failed / Skipped / Total] 112 / 4 / 41 / 157:  16%|█▌        | 157/1000 [1:33:29<8:22:02, 35.73s/it][Succeeded / Failed / Skipped / Total] 112 / 4 / 41 / 157:  16%|█▌        | 158/1000 [1:33:45<8:19:39, 35.60s/it][Succeeded / Failed / Skipped / Total] 113 / 4 / 41 / 158:  16%|█▌        | 158/1000 [1:33:45<8:19:39, 35.60s/it][Succeeded / Failed / Skipped / Total] 113 / 4 / 41 / 158:  16%|█▌        | 159/1000 [1:34:40<8:20:45, 35.73s/it][Succeeded / Failed / Skipped / Total] 114 / 4 / 41 / 159:  16%|█▌        | 159/1000 [1:34:40<8:20:45, 35.73s/it][Succeeded / Failed / Skipped / Total] 114 / 4 / 41 / 159:  16%|█▌        | 160/1000 [1:34:41<8:17:05, 35.51s/it][Succeeded / Failed / Skipped / Total] 114 / 4 / 42 / 160:  16%|█▌        | 160/1000 [1:34:41<8:17:05, 35.51s/it][Succeeded / Failed / Skipped / Total] 114 / 4 / 42 / 160:  16%|█▌        | 161/1000 [1:35:12<8:16:07, 35.48s/it][[1 (69%)]] --> [[0 (73%)]]
+
+a good [[film]] that must have baffled the folks in the marketing department
+
+a good [[photographed]] that must have baffled the folks in the marketing department
+
+
+--------------------------------------------- Result 140 ---------------------------------------------
+[[1 (61%)]] --> [[[SKIPPED]]]
+
+showtime is one of the hapless victims of the arrogant if we put together a wry white man and a chatty black man and give them guns , the movie will be funny syndrome
+
+
+--------------------------------------------- Result 141 ---------------------------------------------
+[[0 (73%)]] --> [[1 (73%)]]
+
+the first [[mistake]] , i suspect , is casting shatner as a legendary professor and kunis as a brilliant college student where 's pauly shore as the rocket scientist \?
+
+the first [[flawed]] , i suspect , is casting shatner as a legendary professor and kunis as a brilliant college student where 's pauly shore as the rocket scientist \?
+
+
+--------------------------------------------- Result 142 ---------------------------------------------
+[[0 (73%)]] --> [[[SKIPPED]]]
+
+an effectively creepy , fear inducing \( not fear reducing \) film from japanese director hideo nakata , who takes the superstitious curse on chain letters and actually applies it
+
+
+--------------------------------------------- Result 143 ---------------------------------------------
+[[0 (66%)]] --> [[[SKIPPED]]]
+
+the stars may be college kids , but the subject matter is as adult as you can get the temptations of the flesh are unleashed by a slightly crazed , overtly determined young woman and a one night swim turns into an ocean of trouble
+
+
+--------------------------------------------- Result 144 ---------------------------------------------
+[[0 (73%)]] --> [[1 (54%)]]
+
+an entertainment so in [[love]] with its overinflated mythology that it no longer recognizes the needs of moviegoers for real characters and compelling plots
+
+an entertainment so in [[aime]] with its overinflated mythology that it no longer recognizes the needs of moviegoers for real characters and compelling plots
+
+
+--------------------------------------------- Result 145 ---------------------------------------------
+[[1 (52%)]] --> [[0 (50%)]]
+
+for a film that 's being advertised as a comedy , sweet home alabama is n't as funny as you 'd hoped for a film that 's being advertised as a comedy , sweet home alabama is n't as funny as you 'd [[hoped]]
+
+for a film that 's being advertised as a comedy , sweet home alabama is n't as funny as you 'd hoped for a film that 's being advertised as a comedy , sweet home alabama is n't as funny as you 'd [[hopes]]
+
+
+--------------------------------------------- Result 146 ---------------------------------------------
+[[1 (73%)]] --> [[0 (73%)]]
+
+a [[hypnotic]] portrait of this sad , compulsive life
+
+a [[riffs]] portrait of this sad , compulsive life
+
+
+--------------------------------------------- Result 147 ---------------------------------------------
+[[0 (68%)]] --> [[1 (53%)]]
+
+director elie chouraqui , who co wrote the script , catches the chaotic [[horror]] of war , but why bother if you 're going to subjugate truth to the tear jerking demands of soap opera \?
+
+director elie chouraqui , who co wrote the script , catches the chaotic [[terrifying]] of war , but why bother if you 're going to subjugate truth to the tear jerking demands of soap opera \?
+
+
+--------------------------------------------- Result 148 ---------------------------------------------
+[[0 (61%)]] --> [[1 (52%)]]
+
+a movie that , rather than skip along the seine , more or [[less]] slogs its way through soggy paris , tongue uncomfortably in cheek
+
+a movie that , rather than skip along the seine , more or [[slightly]] slogs its way through soggy paris , tongue uncomfortably in cheek
+
+
+--------------------------------------------- Result 149 ---------------------------------------------
+[[0 (63%)]] --> [[[SKIPPED]]]
+
+by turns very dark and very funny
+
+
+--------------------------------------------- Result 150 ---------------------------------------------
+[[0 (60%)]] --> [[1 (52%)]]
+
+despite the holes in the story and the somewhat predictable [[plot]] , moments of the movie caused me to jump in my chair
+
+despite the holes in the story and the somewhat predictable [[parcels]] , moments of the movie caused me to jump in my chair
+
+
+--------------------------------------------- Result 151 ---------------------------------------------
+[[1 (73%)]] --> [[0 (67%)]]
+
+[[duvall]] is [[strong]] as always
+
+[[channing]] is [[grievous]] as always
+
+
+--------------------------------------------- Result 152 ---------------------------------------------
+[[1 (73%)]] --> [[0 (53%)]]
+
+it 's more enjoyable than i [[expected]] , though , and that 's because the laughs [[come]] from [[fairly]] [[basic]] [[comedic]] [[constructs]] [[cinematic]] pratfalls given a working over the cast is spot on and the mood is [[laid]] back
+
+it 's more enjoyable than i [[foretold]] , though , and that 's because the laughs [[came]] from [[too]] [[rudimentary]] [[melodramatic]] [[engineered]] [[cinematographic]] pratfalls given a working over the cast is spot on and the mood is [[hurled]] back
+
+
+--------------------------------------------- Result 153 ---------------------------------------------
+[[0 (70%)]] --> [[1 (51%)]]
+
+starts out with [[tremendous]] promise , [[introducing]] an intriguing and alluring premise , only to fall prey to a boatload of [[screenwriting]] cliches that sink it faster than a leaky freighter
+
+starts out with [[large]] promise , [[introduces]] an intriguing and alluring premise , only to fall prey to a boatload of [[script]] cliches that sink it faster than a leaky freighter
+
+
+--------------------------------------------- Result 154 ---------------------------------------------
+[[1 (55%)]] --> [[0 (53%)]]
+
+this movie has a strong message about never giving up on a loved one , but it 's not an [[easy]] movie to watch and will probably disturb many who see it
+
+this movie has a strong message about never giving up on a loved one , but it 's not an [[easier]] movie to watch and will probably disturb many who see it
+
+
+--------------------------------------------- Result 155 ---------------------------------------------
+[[0 (62%)]] --> [[[SKIPPED]]]
+
+a burst of color , music , and dance that only the most practiced curmudgeon could fail to crack a smile at
+
+
+--------------------------------------------- Result 156 ---------------------------------------------
+[[0 (71%)]] --> [[1 (70%)]]
+
+scherfig , who [[has]] had a successful career in tv , tackles more than she can handle
+
+scherfig , who [[hectare]] had a successful career in tv , tackles more than she can handle
+
+
+--------------------------------------------- Result 157 ---------------------------------------------
+[[0 (55%)]] --> [[[SKIPPED]]]
+
+what 's most memorable about circuit is that it 's shot on digital video , whose tiny camera enables shafer to navigate spaces both large and small with considerable aplomb
+
+
+--------------------------------------------- Result 158 ---------------------------------------------
+[[0 (64%)]] --> [[1 (71%)]]
+
+formulaic to the 51st [[power]] , more like
+
+formulaic to the 51st [[electrified]] , more like
+
+
+--------------------------------------------- Result 159 ---------------------------------------------
+[[0 (69%)]] --> [[1 (54%)]]
+
+this pep talk for faith , hope and [[charity]] does little to offend , but if saccharine [[earnestness]] were a crime , the film 's producers would be in the clink for life
+
+this pep talk for faith , hope and [[compassionate]] does little to offend , but if saccharine [[candour]] were a crime , the film 's producers would be in the clink for life
+
+
+--------------------------------------------- Result 160 ---------------------------------------------
+[[1 (56%)]] --> [[[SKIPPED]]]
+
+the people in abc africa are treated as docile , mostly wordless ethnographic extras
+
+
+--------------------------------------------- Result 161 ---------------------------------------------
+[Succeeded / Failed / Skipped / Total] 115 / 4 / 42 / 161:  16%|█▌        | 161/1000 [1:35:12<8:16:07, 35.48s/it][Succeeded / Failed / Skipped / Total] 115 / 4 / 42 / 161:  16%|█▌        | 162/1000 [1:35:34<8:14:21, 35.40s/it][Succeeded / Failed / Skipped / Total] 116 / 4 / 42 / 162:  16%|█▌        | 162/1000 [1:35:34<8:14:21, 35.40s/it][Succeeded / Failed / Skipped / Total] 116 / 4 / 42 / 162:  16%|█▋        | 163/1000 [1:36:02<8:13:11, 35.35s/it][Succeeded / Failed / Skipped / Total] 117 / 4 / 42 / 163:  16%|█▋        | 163/1000 [1:36:02<8:13:11, 35.35s/it][Succeeded / Failed / Skipped / Total] 117 / 4 / 42 / 163:  16%|█▋        | 164/1000 [1:37:04<8:14:50, 35.51s/it][Succeeded / Failed / Skipped / Total] 118 / 4 / 42 / 164:  16%|█▋        | 164/1000 [1:37:04<8:14:50, 35.51s/it][Succeeded / Failed / Skipped / Total] 118 / 4 / 42 / 164:  16%|█▋        | 165/1000 [1:37:39<8:14:11, 35.51s/it][Succeeded / Failed / Skipped / Total] 119 / 4 / 42 / 165:  16%|█▋        | 165/1000 [1:37:39<8:14:11, 35.51s/it][Succeeded / Failed / Skipped / Total] 119 / 4 / 42 / 165:  17%|█▋        | 166/1000 [1:37:40<8:10:41, 35.30s/it][Succeeded / Failed / Skipped / Total] 119 / 4 / 43 / 166:  17%|█▋        | 166/1000 [1:37:40<8:10:41, 35.30s/it][Succeeded / Failed / Skipped / Total] 119 / 4 / 43 / 166:  17%|█▋        | 167/1000 [1:39:33<8:16:34, 35.77s/it][Succeeded / Failed / Skipped / Total] 120 / 4 / 43 / 167:  17%|█▋        | 167/1000 [1:39:33<8:16:34, 35.77s/it][Succeeded / Failed / Skipped / Total] 120 / 4 / 43 / 167:  17%|█▋        | 168/1000 [1:40:56<8:19:55, 36.05s/it][Succeeded / Failed / Skipped / Total] 121 / 4 / 43 / 168:  17%|█▋        | 168/1000 [1:40:56<8:19:55, 36.05s/it][Succeeded / Failed / Skipped / Total] 121 / 4 / 43 / 168:  17%|█▋        | 169/1000 [1:41:13<8:17:42, 35.94s/it][Succeeded / Failed / Skipped / Total] 122 / 4 / 43 / 169:  17%|█▋        | 169/1000 [1:41:13<8:17:42, 35.94s/it][Succeeded / Failed / Skipped / Total] 122 / 4 / 43 / 169:  17%|█▋        | 170/1000 [1:41:41<8:16:29, 35.89s/it][Succeeded / Failed / Skipped / Total] 123 / 4 / 43 / 170:  17%|█▋        | 170/1000 [1:41:41<8:16:29, 35.89s/it][Succeeded / Failed / Skipped / Total] 123 / 4 / 43 / 170:  17%|█▋        | 171/1000 [1:42:39<8:17:41, 36.02s/it][Succeeded / Failed / Skipped / Total] 124 / 4 / 43 / 171:  17%|█▋        | 171/1000 [1:42:39<8:17:41, 36.02s/it][Succeeded / Failed / Skipped / Total] 124 / 4 / 43 / 171:  17%|█▋        | 172/1000 [1:42:40<8:14:14, 35.82s/it][Succeeded / Failed / Skipped / Total] 124 / 4 / 44 / 172:  17%|█▋        | 172/1000 [1:42:40<8:14:14, 35.82s/it][Succeeded / Failed / Skipped / Total] 124 / 4 / 44 / 172:  17%|█▋        | 173/1000 [1:43:35<8:15:12, 35.93s/it][Succeeded / Failed / Skipped / Total] 125 / 4 / 44 / 173:  17%|█▋        | 173/1000 [1:43:35<8:15:12, 35.93s/it][Succeeded / Failed / Skipped / Total] 125 / 4 / 44 / 173:  17%|█▋        | 174/1000 [1:44:37<8:16:42, 36.08s/it][Succeeded / Failed / Skipped / Total] 126 / 4 / 44 / 174:  17%|█▋        | 174/1000 [1:44:37<8:16:42, 36.08s/it][Succeeded / Failed / Skipped / Total] 126 / 4 / 44 / 174:  18%|█▊        | 175/1000 [1:46:02<8:19:55, 36.36s/it][Succeeded / Failed / Skipped / Total] 127 / 4 / 44 / 175:  18%|█▊        | 175/1000 [1:46:02<8:19:55, 36.36s/it][Succeeded / Failed / Skipped / Total] 127 / 4 / 44 / 175:  18%|█▊        | 176/1000 [1:46:44<8:19:45, 36.39s/it][Succeeded / Failed / Skipped / Total] 128 / 4 / 44 / 176:  18%|█▊        | 176/1000 [1:46:44<8:19:45, 36.39s/it][Succeeded / Failed / Skipped / Total] 128 / 4 / 44 / 176:  18%|█▊        | 177/1000 [1:47:31<8:19:56, 36.45s/it][Succeeded / Failed / Skipped / Total] 129 / 4 / 44 / 177:  18%|█▊        | 177/1000 [1:47:31<8:19:56, 36.45s/it][Succeeded / Failed / Skipped / Total] 129 / 4 / 44 / 177:  18%|█▊        | 178/1000 [1:47:31<8:16:34, 36.25s/it][Succeeded / Failed / Skipped / Total] 129 / 4 / 45 / 178:  18%|█▊        | 178/1000 [1:47:31<8:16:34, 36.25s/it][Succeeded / Failed / Skipped / Total] 129 / 4 / 45 / 178:  18%|█▊        | 179/1000 [1:47:32<8:13:14, 36.05s/it][Succeeded / Failed / Skipped / Total] 129 / 4 / 46 / 179:  18%|█▊        | 179/1000 [1:47:32<8:13:14, 36.05s/it][Succeeded / Failed / Skipped / Total] 129 / 4 / 46 / 179:  18%|█▊        | 180/1000 [1:47:49<8:11:10, 35.94s/it][Succeeded / Failed / Skipped / Total] 130 / 4 / 46 / 180:  18%|█▊        | 180/1000 [1:47:49<8:11:10, 35.94s/it][Succeeded / Failed / Skipped / Total] 130 / 4 / 46 / 180:  18%|█▊        | 181/1000 [1:48:52<8:12:39, 36.09s/it][Succeeded / Failed / Skipped / Total] 131 / 4 / 46 / 181:  18%|█▊        | 181/1000 [1:48:52<8:12:39, 36.09s/it][Succeeded / Failed / Skipped / Total] 131 / 4 / 46 / 181:  18%|█▊        | 182/1000 [1:48:53<8:09:25, 35.90s/it][Succeeded / Failed / Skipped / Total] 131 / 4 / 47 / 182:  18%|█▊        | 182/1000 [1:48:53<8:09:25, 35.90s/it][Succeeded / Failed / Skipped / Total] 131 / 4 / 47 / 182:  18%|█▊        | 183/1000 [1:48:54<8:06:11, 35.71s/it][Succeeded / Failed / Skipped / Total] 131 / 4 / 48 / 183:  18%|█▊        | 183/1000 [1:48:54<8:06:11, 35.71s/it][Succeeded / Failed / Skipped / Total] 131 / 4 / 48 / 183:  18%|█▊        | 184/1000 [1:49:43<8:06:38, 35.78s/it][[1 (73%)]] --> [[0 (72%)]]
+
+the series' message about making the right choice in the face of tempting alternatives remains prominent , as [[do]] the girls' amusing personalities
+
+the series' message about making the right choice in the face of tempting alternatives remains prominent , as [[doing]] the girls' amusing personalities
+
+
+--------------------------------------------- Result 162 ---------------------------------------------
+[[0 (73%)]] --> [[1 (72%)]]
+
+[[love]] may have been in the air onscreen , but i certainly was n't feeling any of it
+
+[[loved]] may have been in the air onscreen , but i certainly was n't feeling any of it
+
+
+--------------------------------------------- Result 163 ---------------------------------------------
+[[1 (73%)]] --> [[0 (73%)]]
+
+it 's made with [[deftly]] unsettling genre flair
+
+it 's made with [[ably]] unsettling genre flair
+
+
+--------------------------------------------- Result 164 ---------------------------------------------
+[[0 (73%)]] --> [[1 (65%)]]
+
+possibly the most [[irresponsible]] picture ever released by a major [[film]] studio
+
+possibly the most [[carefree]] picture ever released by a major [[panorama]] studio
+
+
+--------------------------------------------- Result 165 ---------------------------------------------
+[[1 (68%)]] --> [[0 (55%)]]
+
+clever and unflinching in its comic barbs , slap her is a [[small]] but rewarding comedy that takes aim at contemporary southern adolescence and never lets up
+
+clever and unflinching in its comic barbs , slap her is a [[petite]] but rewarding comedy that takes aim at contemporary southern adolescence and never lets up
+
+
+--------------------------------------------- Result 166 ---------------------------------------------
+[[1 (55%)]] --> [[[SKIPPED]]]
+
+'cq may one day be fondly remembered as roman coppola 's brief pretentious period before going on to other films that actually tell a story worth caring about
+
+
+--------------------------------------------- Result 167 ---------------------------------------------
+[[1 (73%)]] --> [[0 (52%)]]
+
+a breathtaking adventure for all ages , [[spirit]] tells its [[poignant]] and uplifting story in a stunning [[fusion]] of music and [[images]]
+
+a breathtaking adventure for all ages , [[psychotropic]] tells its [[sobering]] and uplifting story in a stunning [[thawing]] of music and [[cinematography]]
+
+
+--------------------------------------------- Result 168 ---------------------------------------------
+[[0 (73%)]] --> [[1 (73%)]]
+
+though her fans [[will]] assuredly have their funny bones tickled , others will find their [[humor]] seeking dollars best spent elsewhere
+
+though her fans [[going]] assuredly have their funny bones tickled , others will find their [[fun]] seeking dollars best spent elsewhere
+
+
+--------------------------------------------- Result 169 ---------------------------------------------
+[[1 (72%)]] --> [[0 (60%)]]
+
+quite [[good]] at providing some good old fashioned spooks
+
+quite [[fine]] at providing some good old fashioned spooks
+
+
+--------------------------------------------- Result 170 ---------------------------------------------
+[[0 (64%)]] --> [[1 (72%)]]
+
+it uses the pain and [[violence]] of war as background material for color
+
+it uses the pain and [[maltreated]] of war as background material for color
+
+
+--------------------------------------------- Result 171 ---------------------------------------------
+[[1 (73%)]] --> [[0 (73%)]]
+
+the aaa of [[action]] , xxx is a blast of adrenalin , [[rated]] eee for excitement and vin diesel is the man
+
+the aaa of [[proceeding]] , xxx is a blast of adrenalin , [[classified]] eee for excitement and vin diesel is the man
+
+
+--------------------------------------------- Result 172 ---------------------------------------------
+[[0 (53%)]] --> [[[SKIPPED]]]
+
+a thriller made from a completist 's checklist rather than with a cultist 's passion
+
+
+--------------------------------------------- Result 173 ---------------------------------------------
+[[0 (73%)]] --> [[1 (71%)]]
+
+a portrait of alienation so perfect , it will [[certainly]] succeed in [[alienating]] most viewers
+
+a portrait of alienation so perfect , it will [[definately]] succeed in [[ingratiate]] most viewers
+
+
+--------------------------------------------- Result 174 ---------------------------------------------
+[[1 (73%)]] --> [[0 (60%)]]
+
+jir hubac 's [[script]] is a [[gem]] his characters are engaging , [[intimate]] and the dialogue is realistic and greatly moving the scope of the silberstein family is large and we grow attached to their lives , full of strength , warmth and vitality
+
+jir hubac 's [[scenarios]] is a [[bling]] his characters are engaging , [[comfy]] and the dialogue is realistic and greatly moving the scope of the silberstein family is large and we grow attached to their lives , full of strength , warmth and vitality
+
+
+--------------------------------------------- Result 175 ---------------------------------------------
+[[0 (73%)]] --> [[1 (71%)]]
+
+a [[film]] [[so]] [[tedious]] that it is [[impossible]] to [[care]] whether that [[boast]] is true or not
+
+a [[movie]] [[yet]] [[irksome]] that it is [[unreal]] to [[attention]] whether that [[gloat]] is true or not
+
+
+--------------------------------------------- Result 176 ---------------------------------------------
+[[0 (69%)]] --> [[1 (58%)]]
+
+it 's a prison soccer movie starring charismatic tough guy vinnie jones , but it [[had]] too much [[spitting]] for me to enjoy
+
+it 's a prison soccer movie starring charismatic tough guy vinnie jones , but it [[gets]] too much [[spit]] for me to enjoy
+
+
+--------------------------------------------- Result 177 ---------------------------------------------
+[[0 (64%)]] --> [[1 (65%)]]
+
+the man from elysian fields is a cold , bliss less work that groans along [[thinking]] itself some important comment on how life throws us some beguiling curves
+
+the man from elysian fields is a cold , bliss less work that groans along [[mind]] itself some important comment on how life throws us some beguiling curves
+
+
+--------------------------------------------- Result 178 ---------------------------------------------
+[[1 (72%)]] --> [[[SKIPPED]]]
+
+however sincere it may be , the rising place never quite justifies its own existence
+
+
+--------------------------------------------- Result 179 ---------------------------------------------
+[[0 (60%)]] --> [[[SKIPPED]]]
+
+a compelling , moving film that respects its audience and its source material
+
+
+--------------------------------------------- Result 180 ---------------------------------------------
+[[1 (66%)]] --> [[0 (54%)]]
+
+an intoxicating [[experience]]
+
+an intoxicating [[joys]]
+
+
+--------------------------------------------- Result 181 ---------------------------------------------
+[[1 (73%)]] --> [[0 (73%)]]
+
+neither [[parker]] nor donovan is a typical romantic lead , but they [[bring]] a fresh , quirky charm to the formula
+
+neither [[goodwin]] nor donovan is a typical romantic lead , but they [[assumes]] a fresh , quirky charm to the formula
+
+
+--------------------------------------------- Result 182 ---------------------------------------------
+[[0 (59%)]] --> [[[SKIPPED]]]
+
+katz uses archival footage , horrifying documents of lynchings , still photographs and charming old reel to reel recordings of meeropol entertaining his children to create his song history , but most powerful of all is the song itself
+
+
+--------------------------------------------- Result 183 ---------------------------------------------
+[[0 (73%)]] --> [[[SKIPPED]]]
+
+that storytelling has value cannot be denied not even solondz 's thirst for controversy , sketchy characters and immature provocations can fully succeed at cheapening it
+
+
+--------------------------------------------- Result 184 ---------------------------------------------
+[Succeeded / Failed / Skipped / Total] 132 / 4 / 48 / 184:  18%|█▊        | 184/1000 [1:49:43<8:06:38, 35.78s/it][Succeeded / Failed / Skipped / Total] 132 / 4 / 48 / 184:  18%|█▊        | 185/1000 [1:49:44<8:03:27, 35.59s/it][Succeeded / Failed / Skipped / Total] 132 / 4 / 49 / 185:  18%|█▊        | 185/1000 [1:49:44<8:03:27, 35.59s/it][Succeeded / Failed / Skipped / Total] 132 / 4 / 49 / 185:  19%|█▊        | 186/1000 [1:49:45<8:00:18, 35.40s/it][Succeeded / Failed / Skipped / Total] 132 / 4 / 50 / 186:  19%|█▊        | 186/1000 [1:49:45<8:00:18, 35.40s/it][Succeeded / Failed / Skipped / Total] 132 / 4 / 50 / 186:  19%|█▊        | 187/1000 [1:50:26<8:00:11, 35.44s/it][Succeeded / Failed / Skipped / Total] 133 / 4 / 50 / 187:  19%|█▊        | 187/1000 [1:50:26<8:00:11, 35.44s/it][Succeeded / Failed / Skipped / Total] 133 / 4 / 50 / 187:  19%|█▉        | 188/1000 [1:51:45<8:02:40, 35.67s/it][Succeeded / Failed / Skipped / Total] 134 / 4 / 50 / 188:  19%|█▉        | 188/1000 [1:51:45<8:02:40, 35.67s/it][Succeeded / Failed / Skipped / Total] 134 / 4 / 50 / 188:  19%|█▉        | 189/1000 [1:52:04<8:00:56, 35.58s/it][Succeeded / Failed / Skipped / Total] 135 / 4 / 50 / 189:  19%|█▉        | 189/1000 [1:52:04<8:00:56, 35.58s/it][Succeeded / Failed / Skipped / Total] 135 / 4 / 50 / 189:  19%|█▉        | 190/1000 [1:52:46<8:00:48, 35.62s/it][Succeeded / Failed / Skipped / Total] 136 / 4 / 50 / 190:  19%|█▉        | 190/1000 [1:52:46<8:00:48, 35.62s/it][Succeeded / Failed / Skipped / Total] 136 / 4 / 50 / 190:  19%|█▉        | 191/1000 [1:53:13<7:59:34, 35.57s/it][Succeeded / Failed / Skipped / Total] 137 / 4 / 50 / 191:  19%|█▉        | 191/1000 [1:53:13<7:59:34, 35.57s/it][Succeeded / Failed / Skipped / Total] 137 / 4 / 50 / 191:  19%|█▉        | 192/1000 [1:53:13<7:56:31, 35.38s/it][Succeeded / Failed / Skipped / Total] 137 / 4 / 51 / 192:  19%|█▉        | 192/1000 [1:53:13<7:56:31, 35.38s/it][Succeeded / Failed / Skipped / Total] 137 / 4 / 51 / 192:  19%|█▉        | 193/1000 [1:53:14<7:53:30, 35.21s/it][Succeeded / Failed / Skipped / Total] 137 / 4 / 52 / 193:  19%|█▉        | 193/1000 [1:53:14<7:53:30, 35.21s/it][Succeeded / Failed / Skipped / Total] 137 / 4 / 52 / 193:  19%|█▉        | 194/1000 [1:54:46<7:56:50, 35.50s/it][Succeeded / Failed / Skipped / Total] 138 / 4 / 52 / 194:  19%|█▉        | 194/1000 [1:54:46<7:56:50, 35.50s/it][Succeeded / Failed / Skipped / Total] 138 / 4 / 52 / 194:  20%|█▉        | 195/1000 [1:56:39<8:01:34, 35.89s/it][Succeeded / Failed / Skipped / Total] 139 / 4 / 52 / 195:  20%|█▉        | 195/1000 [1:56:39<8:01:34, 35.89s/it][Succeeded / Failed / Skipped / Total] 139 / 4 / 52 / 195:  20%|█▉        | 196/1000 [1:57:05<8:00:19, 35.84s/it][Succeeded / Failed / Skipped / Total] 140 / 4 / 52 / 196:  20%|█▉        | 196/1000 [1:57:05<8:00:19, 35.84s/it][Succeeded / Failed / Skipped / Total] 140 / 4 / 52 / 196:  20%|█▉        | 197/1000 [1:57:41<7:59:42, 35.84s/it][Succeeded / Failed / Skipped / Total] 141 / 4 / 52 / 197:  20%|█▉        | 197/1000 [1:57:41<7:59:42, 35.84s/it][Succeeded / Failed / Skipped / Total] 141 / 4 / 52 / 197:  20%|█▉        | 198/1000 [1:57:41<7:56:43, 35.67s/it][Succeeded / Failed / Skipped / Total] 141 / 4 / 53 / 198:  20%|█▉        | 198/1000 [1:57:41<7:56:43, 35.67s/it][Succeeded / Failed / Skipped / Total] 141 / 4 / 53 / 198:  20%|█▉        | 199/1000 [1:58:51<7:58:23, 35.84s/it][Succeeded / Failed / Skipped / Total] 142 / 4 / 53 / 199:  20%|█▉        | 199/1000 [1:58:51<7:58:23, 35.84s/it][Succeeded / Failed / Skipped / Total] 142 / 4 / 53 / 199:  20%|██        | 200/1000 [2:01:27<8:05:50, 36.44s/it][Succeeded / Failed / Skipped / Total] 143 / 4 / 53 / 200:  20%|██        | 200/1000 [2:01:27<8:05:50, 36.44s/it]
