@@ -37,7 +37,7 @@ class Dataset(torch.utils.data.Dataset):
 # HYPERPARAMETERS
 
 use_cuda = torch.cuda.is_available()
-device = torch.device("cuda:2")
+#device = torch.device("cuda:2")
 params = {'batch_size': 1,
           'shuffle': True,
           'num_workers': 0}
@@ -64,8 +64,10 @@ class Model(torch.nn.Module):
 
         return out
 
-model = Model().to(device)
-
+model = Model()
+model.load_state_dict(torch.load('bert_imdb_epoch0.pt'))
+model=model.to('cuda:1')
+model = torch.nn.DataParallel(model, device_ids=[1,2,3])
 
 optimizer = optim.Adam(model.parameters(), lr=1e-5)
 
@@ -73,7 +75,7 @@ loss_f = torch.nn.CrossEntropyLoss()
 
 tokenizer = BertTokenizer.from_pretrained('bert-large-uncased')
 
-for epoch in range(6):
+for epoch in range(1,6):
     print(f'training epoch {epoch}')
 
     model.train()
@@ -85,7 +87,7 @@ for epoch in range(6):
         if iter%10 ==0:
             print(iter)
         iter += 1
-        input_tokens = tokenizer(texts, padding=True, return_tensors='pt', truncation=True, max_length=512).input_ids.to(device)
+        input_tokens = tokenizer(texts, padding=True, return_tensors='pt', truncation=True, max_length=512).input_ids#.to(device)
         label = label.long()
         model_output = model(input_tokens)
 
@@ -109,7 +111,7 @@ for epoch in range(6):
     predictions = []
     truth_labels = []
     for texts, label in test_loader:
-        input_tokens = tokenizer(texts, padding=True, return_tensors='pt').input_ids.to(device)
+        input_tokens = tokenizer(texts, padding=True, return_tensors='pt', truncation=True, max_length=512).input_ids#.to(device)
         label = label.long()
         model_output = model(input_tokens)
 

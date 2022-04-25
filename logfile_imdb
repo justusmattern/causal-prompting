@@ -12338,3 +12338,12 @@
 2022-04-23 13:28:53,364 INFO     iteration 22720
 2022-04-23 13:29:02,379 INFO     iteration 22730
 2022-04-23 13:29:15,478 INFO     iteration 22740
+2022-04-24 23:55:34,482 INFO     script is running!!
+2022-04-24 23:56:41,400 INFO     script is running!!
+2022-04-24 23:57:02,469 INFO     script is running!!
+2022-04-24 23:57:04,098 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-24 23:57:04,587 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/config.json HTTP/1.1" 200 0
+2022-04-24 23:57:04,668 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-24 23:57:05,115 DEBUG    https://huggingface.co:443 "HEAD /gpt2-medium/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-04-24 23:57:22,973 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2022-04-24 23:57:23,416 DEBUG    https://huggingface.co:443 "HEAD /None/resolve/main/tokenizer_config.json HTTP/1.1" 404 0

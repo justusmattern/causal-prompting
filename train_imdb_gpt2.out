@@ -1,0 +1,28 @@
+/home/zjin/users/justus_mattern/anaconda3/envs/prompts/lib/python3.9/site-packages/transformers/models/auto/modeling_auto.py:878: FutureWarning: The class `AutoModelWithLMHead` is deprecated and will be removed in a future version. Please use `AutoModelForCausalLM` for causal language models, `AutoModelForMaskedLM` for masked language models and `AutoModelForSeq2SeqLM` for encoder-decoder models.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/zjin/users/justus_mattern/anaconda3/envs/prompts/lib/python3.9/site-packages/transformers/file_utils.py", line 2310, in get_file_from_repo
+    resolved_file = cached_path(
+  File "/home/zjin/users/justus_mattern/anaconda3/envs/prompts/lib/python3.9/site-packages/transformers/file_utils.py", line 1921, in cached_path
+    output_path = get_from_cache(
+  File "/home/zjin/users/justus_mattern/anaconda3/envs/prompts/lib/python3.9/site-packages/transformers/file_utils.py", line 2125, in get_from_cache
+    _raise_for_status(r)
+  File "/home/zjin/users/justus_mattern/anaconda3/envs/prompts/lib/python3.9/site-packages/transformers/file_utils.py", line 2046, in _raise_for_status
+    raise RepositoryNotFoundError(f"404 Client Error: Repository Not Found for url: {request.url}")
+transformers.file_utils.RepositoryNotFoundError: 404 Client Error: Repository Not Found for url: https://huggingface.co/None/resolve/main/tokenizer_config.json
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zjin/users/justus_mattern/code/causal-prompting/train_supervised_causal_exp.py", line 128, in <module>
+    train(train_file=args.train_file,
+  File "/home/zjin/users/justus_mattern/code/causal-prompting/train_supervised_causal_exp.py", line 62, in train
+    tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
+  File "/home/zjin/users/justus_mattern/anaconda3/envs/prompts/lib/python3.9/site-packages/transformers/models/auto/tokenization_auto.py", line 471, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "/home/zjin/users/justus_mattern/anaconda3/envs/prompts/lib/python3.9/site-packages/transformers/models/auto/tokenization_auto.py", line 332, in get_tokenizer_config
+    resolved_config_file = get_file_from_repo(
+  File "/home/zjin/users/justus_mattern/anaconda3/envs/prompts/lib/python3.9/site-packages/transformers/file_utils.py", line 2321, in get_file_from_repo
+    raise EnvironmentError(
+OSError: None is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo with `use_auth_token` or log in with `huggingface-cli login` and pass `use_auth_token=True`.
