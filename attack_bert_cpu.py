@@ -9,9 +9,9 @@ import textattack
 import random
 #from train_bert import Model
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = ""
 #torch.cuda.is_available = lambda : False
-textattack.shared.utils.device = "cuda:1"
+textattack.shared.utils.device = "cpu"
 
 class Model(torch.nn.Module):
     def __init__(self):
@@ -22,7 +22,7 @@ class Model(torch.nn.Module):
         self.l1 = torch.nn.Linear(768,2)
 
     def forward(self, text):
-        tokenized_text = tokenizer(text , max_length=512, truncation=True, return_tensors='pt').input_ids.to('cuda:1')
+        tokenized_text = tokenizer(text , max_length=512, truncation=True, return_tensors='pt').input_ids#.to('cuda:3')
         text_rep = self.drop(self.bert_model(tokenized_text).pooler_output)
         out = self.l1(text_rep)
         #print(out)
@@ -31,7 +31,7 @@ class Model(torch.nn.Module):
 
 
 model = Model()
-model.load_state_dict(torch.load('bert_base_imdb_epoch3.pt', map_location = torch.device('cuda:1')))
+model.load_state_dict(torch.load('bert_base_imdb_epoch3.pt'))
 model = model.to('cpu')
 model.eval()
 
@@ -40,7 +40,7 @@ tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
 class CustomWrapper(textattack.models.wrappers.ModelWrapper):
     def __init__(self, model):
-        self.model = model.to('cuda:1')
+        self.model = model#.to('cuda:3')
         self.model.eval()
 
     def __call__(self, list_of_texts):
@@ -57,12 +57,12 @@ class_model = CustomWrapper(model)
 
 
 from textattack.datasets import Dataset
-from textattack.attack_recipes.pwws_ren_2019 import PWWSRen2019
+from textattack.attack_recipes.textfooler_jin_2019 import TextFoolerJin2019
 from textattack import Attacker, AttackArgs
 
 
-attack = PWWSRen2019.build(class_model)
-attack.cuda_()
+attack = TextFoolerJin2019.build(class_model)
+attack#.cuda_()
 
 dataset = []
 count= 0

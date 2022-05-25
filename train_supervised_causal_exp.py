@@ -33,8 +33,8 @@ def forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls):
     for prompt in prompts:
         x_new = [f'{prompt} {text}' for text in list(x)]
         #print('x new', x_new)
-        tokenized_all = tokenizer(x_new, return_tensors='pt', padding=True, truncation=True).input_ids.to('cuda:0')
-        tokenized_prompt = tokenizer([prompt]*len(x_new), return_tensors='pt', padding=True, truncation=True).input_ids.to('cuda:0')
+        tokenized_all = tokenizer(x_new, return_tensors='pt', padding=True, truncation=True).input_ids.to('cuda:1')
+        tokenized_prompt = tokenizer([prompt]*len(x_new), return_tensors='pt', padding=True, truncation=True).input_ids.to('cuda:1')
         #print('all loss', lm_loss(model, tokenized_all, loss_fn_lm))
         #print('prompt loss', lm_loss(model, tokenized_prompt, loss_fn_lm))
         language_loss = model(tokenized_all, labels=tokenized_all).loss - model(tokenized_prompt, labels=tokenized_prompt).loss*len(tokenized_prompt[0])/len(tokenized_all[0])
@@ -57,7 +57,7 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
     test_generator = torch.utils.data.DataLoader(test_data, shuffle=True, batch_size=batch_size)
 
     model = AutoModelWithLMHead.from_pretrained(model_name)
-    model.parallelize()
+    model = model.to('cuda:1')
 
     tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
     tokenizer.pad_token = tokenizer.eos_token
@@ -90,7 +90,7 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
                 logging.info(f"iteration {t}")
             t += 1
             loss, label_probs = forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls)
-            print('loss', loss)
+            #print('loss', loss)
             #print('label_probs', label_probs)
             #print('labels', y)
             loss.backward()
@@ -107,7 +107,7 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
 
 if __name__=='__main__':
     
-    logging.basicConfig(level=logging.DEBUG, filename="logfile_imdb", filemode="a+",
+    logging.basicConfig(level=logging.DEBUG, filename="logfile_imdb_smallgpt2", filemode="a+",
                         format="%(asctime)-15s %(levelname)-8s %(message)s")
     logging.info("script is running!!")
 
