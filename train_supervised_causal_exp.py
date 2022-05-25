@@ -6,6 +6,10 @@ import torch
 import transformers
 from torch import nn
 import logging
+import os 
+from tqdm import tqdm
+
+os.environ["CUDA_VISIBLE_DEVICES"]="1,2,3"
 
 class TextDataset(torch.utils.data.Dataset):
     def __init__(self, file):
@@ -28,17 +32,28 @@ def lm_loss(model, input, loss_fn):
     return torch.sum(loss, dim=1)
     
 
-def forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls):
+def forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls, causal=False):
     scores = []
-    for prompt in prompts:
-        x_new = [f'{prompt} {text}' for text in list(x)]
-        #print('x new', x_new)
-        tokenized_all = tokenizer(x_new, return_tensors='pt', padding=True, truncation=True).input_ids.to('cuda:1')
-        tokenized_prompt = tokenizer([prompt]*len(x_new), return_tensors='pt', padding=True, truncation=True).input_ids.to('cuda:1')
-        #print('all loss', lm_loss(model, tokenized_all, loss_fn_lm))
-        #print('prompt loss', lm_loss(model, tokenized_prompt, loss_fn_lm))
-        language_loss = model(tokenized_all, labels=tokenized_all).loss - model(tokenized_prompt, labels=tokenized_prompt).loss*len(tokenized_prompt[0])/len(tokenized_all[0])
-        scores.append(language_loss)
+    if causal:
+        for prompt in prompts:
+            x_new = [f'{prompt} {text}' for text in list(x)]
+            #print('x new', x_new)
+            tokenized_all = tokenizer(x_new, return_tensors='pt', padding=True, truncation=True).input_ids.to('cuda:0')
+            tokenized_prompt = tokenizer([prompt]*len(x_new), return_tensors='pt', padding=True, truncation=True).input_ids.to('cuda:0')
+            #print('all loss', lm_loss(model, tokenized_all, loss_fn_lm))
+            #print('prompt loss', lm_loss(model, tokenized_prompt, loss_fn_lm))
+            language_loss = model(tokenized_all, labels=tokenized_all).loss - model(tokenized_prompt, labels=tokenized_prompt).loss*len(tokenized_prompt[0])/len(tokenized_all[0])
+            scores.append(language_loss)
+    else:
+        for prompt in prompts:
+            x_new = [f'{text} {prompt}' for text in list(x)]
+            #print('x new', x_new)
+            tokenized_all = tokenizer(x_new, return_tensors='pt', padding=True, truncation=True).input_ids.to('cuda:0')
+            tokenized_texts = tokenizer(list(x), return_tensors='pt', padding=True, truncation=True).input_ids.to('cuda:0')
+            #print('all loss', lm_loss(model, tokenized_all, loss_fn_lm))
+            #print('prompt loss', lm_loss(model, tokenized_prompt, loss_fn_lm))
+            language_loss = model(tokenized_all, labels=tokenized_all).loss - model(tokenized_texts, labels=tokenized_texts).loss*len(tokenized_texts[0])/len(tokenized_all[0])
+            scores.append(language_loss)
     #print('neg loss', scores[0])
     #print('pos loss', scores[1])
     label_probs = -1* torch.stack(scores).unsqueeze(dim=0)
@@ -57,8 +72,8 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
     test_generator = torch.utils.data.DataLoader(test_data, shuffle=True, batch_size=batch_size)
 
     model = AutoModelWithLMHead.from_pretrained(model_name)
-    model = model.to('cuda:1')
-
+    #model = model.to('cuda:1')
+    model.parallelize()
     tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
     tokenizer.pad_token = tokenizer.eos_token
     loss_fn_lm = nn.CrossEntropyLoss(reduction='none')
@@ -72,9 +87,9 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
         t = 0
 
         test_acc = 0
-        for x, y in test_generator:
+        for x, y in tqdm(test_generator):
             loss, label_probs = forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls)
-
+            
             preds = torch.argmax(label_probs, dim=1)
             correct_predictions = torch.sum(preds.cpu() == y.long())
             test_acc += correct_predictions
@@ -85,9 +100,7 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
         #torch.save(model.state_dict(), f'model_mr_epoch_{epoch}.pt')
 
         train_acc = 0
-        for x, y in training_generator:
-            if t % 10 == 0:
-                logging.info(f"iteration {t}")
+        for x, y in tqdm(training_generator):
             t += 1
             loss, label_probs = forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls)
             #print('loss', loss)

@@ -7601,3 +7601,5 @@ a [[credible]] , well formed satire
 | Average num. words per input: | 19.22  |
 | Avg num queries:              | 76.05  |
 +-------------------------------+--------+
+/home/zjin/users/justus_mattern/anaconda3/envs/prompts/lib/python3.9/site-packages/transformers/models/auto/modeling_auto.py:878: FutureWarning: The class `AutoModelWithLMHead` is deprecated and will be removed in a future version. Please use `AutoModelForCausalLM` for causal language models, `AutoModelForMaskedLM` for masked language models and `AutoModelForSeq2SeqLM` for encoder-decoder models.
+  warnings.warn(
