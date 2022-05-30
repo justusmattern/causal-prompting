@@ -53,6 +53,7 @@ def forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls, causa
             #print('all loss', lm_loss(model, tokenized_all, loss_fn_lm))
             #print('prompt loss', lm_loss(model, tokenized_prompt, loss_fn_lm))
             language_loss = model(tokenized_all, labels=tokenized_all).loss - model(tokenized_texts, labels=tokenized_texts).loss*len(tokenized_texts[0])/len(tokenized_all[0])
+            
             scores.append(language_loss)
     #print('neg loss', scores[0])
     #print('pos loss', scores[1])
@@ -65,7 +66,7 @@ def forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls, causa
 
 
 
-def train(train_file: str, test_file: str, batch_size: int, model_name: str, tokenizer_name: str, prompts: list, num_epochs: int):
+def train(train_file: str, test_file: str, batch_size: int, model_name: str, tokenizer_name: str, prompts: list, num_epochs: int, causal:bool):
     train_data = TextDataset(train_file)
     training_generator = torch.utils.data.DataLoader(train_data, shuffle=True, batch_size=batch_size)
     test_data = TextDataset(test_file)
@@ -88,7 +89,7 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
 
         test_acc = 0
         for x, y in tqdm(test_generator):
-            loss, label_probs = forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls)
+            loss, label_probs = forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls, causal)
             
             preds = torch.argmax(label_probs, dim=1)
             correct_predictions = torch.sum(preds.cpu() == y.long())
@@ -102,7 +103,7 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
         train_acc = 0
         for x, y in tqdm(training_generator):
             t += 1
-            loss, label_probs = forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls)
+            loss, label_probs = forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls, causal)
             #print('loss', loss)
             #print('label_probs', label_probs)
             #print('labels', y)
@@ -134,6 +135,7 @@ if __name__=='__main__':
     parser.add_argument('--tokenizer-name', type=str)
     parser.add_argument('--prompts', type=str, nargs='+')
     parser.add_argument('--num-epochs', type=int)
+    parser.add_argument('--causal', action='store_true')
 
 
     args = parser.parse_args()
@@ -144,5 +146,6 @@ if __name__=='__main__':
         model_name=args.model_name, 
         tokenizer_name=args.tokenizer_name,
         prompts=args.prompts,
-        num_epochs=args.num_epochs)
+        num_epochs=args.num_epochs,
+        causal=args.causal)
 
