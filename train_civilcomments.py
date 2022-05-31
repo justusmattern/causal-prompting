@@ -79,17 +79,22 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
         t = 0
 
         test_acc = 0
+        test_preds = []
+        test_true = []
+        test_meta = []
         for x, y, meta in tqdm(test_loader):
             loss, label_probs = forward_pass(x, y, model, tokenizer, prompts, loss_fn_lm, loss_fn_cls, causal)
             
             preds = torch.argmax(label_probs, dim=1)
             correct_predictions = torch.sum(preds.cpu() == y.long())
             test_acc += correct_predictions
+            test_preds.append(preds[0].cpu().item())
+            test_true.append(y[0].cpu().item())
+            test_meta.append(meta[0].cpu())
 
         logging.info('testing accuracy'+str(test_acc/len(test_data)))
         print('testing accuracy', test_acc/len(test_data))
         model.save_pretrained(f'model_imdb_epoch_{epoch}.pt')
-        #torch.save(model.state_dict(), f'model_mr_epoch_{epoch}.pt')
 
         train_acc = 0
         for x, y, meta in tqdm(train_loader):
