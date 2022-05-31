@@ -38,7 +38,7 @@ class Dataset(torch.utils.data.Dataset):
 
 use_cuda = torch.cuda.is_available()
 #device = torch.device("cuda:2")
-params = {'batch_size': 1,
+params = {'batch_size': 8,
           'shuffle': True,
           'num_workers': 0}
 
@@ -53,29 +53,28 @@ test_loader = torch.utils.data.DataLoader(test_data, **params)
 class Model(torch.nn.Module):
     def __init__(self):
         super(Model, self).__init__()
-        self.bert_model = BertModel.from_pretrained('bert-large-uncased')
+        self.bert_model = BertModel.from_pretrained('bert-base-uncased')
         #self.bert_model.parallelize()
-        self.drop = torch.nn.Dropout(p=0.5)
-        self.l1 = torch.nn.Linear(1024,2)
+        self.drop = torch.nn.Dropout(p=0.1)
+        self.l1 = torch.nn.Linear(768,2)
     
     def forward(self, tokenized_text):
-        text_rep = self.drop(self.bert_model(tokenized_text).pooler_output)
+        text_rep = self.bert_model(tokenized_text).pooler_output
         out = self.l1(text_rep)
 
         return out
 
 model = Model()
-model.load_state_dict(torch.load('bert_imdb_epoch0.pt'))
-model=model.to('cuda:1')
-model = torch.nn.DataParallel(model, device_ids=[1,2,3])
+#model.load_state_dict(torch.load('bert-large-uncased'))
+model=model.to('cuda:3')
 
 optimizer = optim.Adam(model.parameters(), lr=1e-5)
 
 loss_f = torch.nn.CrossEntropyLoss()
 
-tokenizer = BertTokenizer.from_pretrained('bert-large-uncased')
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
-for epoch in range(1,6):
+for epoch in range(1,20):
     print(f'training epoch {epoch}')
 
     model.train()
@@ -84,17 +83,20 @@ for epoch in range(1,6):
     truth_labels = []
     iter = 0
     for texts, label in train_loader:
+        optimizer.zero_grad()
         if iter%10 ==0:
             print(iter)
         iter += 1
-        input_tokens = tokenizer(texts, padding=True, return_tensors='pt', truncation=True, max_length=512).input_ids#.to(device)
+        input_tokens = tokenizer(texts, padding=True, return_tensors='pt', truncation=True, max_length=512).input_ids.to('cuda:3')
+        #print(input_tokens.shape)
         label = label.long()
+        #print('input', input_tokens)
         model_output = model(input_tokens)
-
+        #print('out', model_output.cpu())
         loss = loss_f(model_output.cpu(), label)
+        #print('l', loss)
         loss.backward()
         optimizer.step()
-        optimizer.zero_grad()
 
         preds = torch.argmax(model_output, dim=1)
         correct_predictions += torch.sum(preds.cpu() == label)
@@ -103,15 +105,16 @@ for epoch in range(1,6):
         
         
     print('training accuracy ', correct_predictions/len(train_data))
-    torch.save(model.state_dict(), f'bert_imdb_epoch{epoch}.pt')
-
+    torch.save(model.state_dict(), f'bert_base_imdb_epoch{epoch}.pt')
+    print(predictions)
+    #print(truth_labels)
 
     model.eval()
     correct_predictions = 0
     predictions = []
     truth_labels = []
     for texts, label in test_loader:
-        input_tokens = tokenizer(texts, padding=True, return_tensors='pt', truncation=True, max_length=512).input_ids#.to(device)
+        input_tokens = tokenizer(texts, padding=True, return_tensors='pt', truncation=True, max_length=512).input_ids.to('cuda:3')
         label = label.long()
         model_output = model(input_tokens)
 

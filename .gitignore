@@ -1,2 +1,5 @@
+*.pt
 trained_models
 logs
+data
+*.out
