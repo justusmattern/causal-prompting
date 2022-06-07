@@ -79,7 +79,7 @@ def train(train_file: str, test_file: str, batch_size: int, model_name: str, tok
     tokenizer.pad_token = tokenizer.eos_token
     loss_fn_lm = nn.CrossEntropyLoss(reduction='none')
     loss_fn_cls = nn.CrossEntropyLoss(reduction='mean')
-    optimizer = torch.optim.Adam(model.parameters(), lr = 2e-6)
+    optimizer = torch.optim.Adam(model.parameters(), lr = 1e-7)
     optimizer.zero_grad()
 
     for epoch in range(num_epochs):
@@ -139,7 +139,9 @@ if __name__=='__main__':
 
 
     args = parser.parse_args()
-
+ 
+    print(args)
+ 
     train(train_file=args.train_file,
         test_file=args.test_file, 
         batch_size=args.batch_size, 
