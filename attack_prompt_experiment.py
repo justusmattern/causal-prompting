@@ -14,23 +14,33 @@ import random
 #torch.cuda.is_available = lambda : False
 
 class ClassificationModel(nn.Module):
-    def __init__(self, model, pos_prompt, neg_prompt):
+    def __init__(self, model, pos_prompt, neg_prompt, causal):
         super(ClassificationModel, self).__init__()
         self.tokenizer = GPT2Tokenizer.from_pretrained('gpt2-medium')
         self.model = GPT2LMHeadModel.from_pretrained(model)
-        #self.model.to('cuda:1')
         self.model.eval()
         self.pos_prompt = pos_prompt
         self.neg_prompt = neg_prompt
+        self.causal = causal
 
     def score(self, prompt, sentence, model):
-        tokenized_prompt = self.tokenizer.encode(prompt , max_length=1024, truncation=True, return_tensors='pt')#.to('cuda:1')
-        tokenized_all = self.tokenizer.encode(prompt + ' ' + sentence, max_length=1024, truncation=True, return_tensors='pt')#.to('cuda:1')
+        if self.causal:
+            tokenized_prompt = self.tokenizer.encode(prompt , max_length=1024, truncation=True, return_tensors='pt')#.to('cuda:1')
+            tokenized_all = self.tokenizer.encode(prompt + ' ' + sentence, max_length=1024, truncation=True, return_tensors='pt')#.to('cuda:1')
 
-        loss1=model(tokenized_all, labels=tokenized_all).loss 
-        loss2 = model(tokenized_prompt, labels=tokenized_prompt).loss*len(tokenized_prompt[0])/len(tokenized_all[0])
-        loss = loss1-loss2
-        return math.exp(loss)
+            loss1=model(tokenized_all, labels=tokenized_all).loss 
+            loss2 = model(tokenized_prompt, labels=tokenized_prompt).loss*len(tokenized_prompt[0])/len(tokenized_all[0])
+            loss = loss1-loss2
+            return loss
+
+        else:
+            tokenized_sentence = self.tokenizer.encode(sentence , max_length=1024, truncation=True, return_tensors='pt')#.to('cuda:1')
+            tokenized_all = self.tokenizer.encode(sentence + ' ' + prompt, max_length=1024, truncation=True, return_tensors='pt')#.to('cuda:1')
+
+            loss1=model(tokenized_all, labels=tokenized_all).loss 
+            loss2 = model(tokenized_sentence, labels=tokenized_sentence).loss*len(tokenized_sentence[0])/len(tokenized_all[0])
+            loss = loss1-loss2
+            return loss
     
 
     def forward(self, sentence):
@@ -51,10 +61,6 @@ class ClassificationModel(nn.Module):
         return torch.softmax(result, 0)
 
 
-class TorchTokenizer(GPT2Tokenizer):
-    def __init__(self):
-        super(TorchTokenizer, self).__init__()
-
 
 class CustomWrapper(textattack.models.wrappers.ModelWrapper):
     def __init__(self, model):
@@ -70,7 +76,7 @@ class CustomWrapper(textattack.models.wrappers.ModelWrapper):
 
 
 #model = ClassificationModel('gpt2-xl', ['I loved this movie!','A great film!', "This was an awesome movie!", "This movie was extremely good!", "This was the best movie I have ever seen!", "I found the movie to be very good.", "This film was fantastic!"], ['I hated this movie!', 'A bad film!', "This was a terrible movie!", "This movie was really bad!", "This was the worst movie I have ever seen!", "I found the movie to be very bad.", "This film was boring."]).to('cuda:2')
-model = ClassificationModel('trained_models/model_imdb_epoch_4.pt', ['Positive'], ['Negative:'])
+model = ClassificationModel('trained_models/model_imdb_epoch_4.pt', ['Positive'], ['Negative:'], causal=True)
 class_model = CustomWrapper(model)
 
 
@@ -92,19 +98,8 @@ with open('data/imdb_test.txt', 'r') as f:
         if count == 1000:
             break
 
-#df = pd.read_csv('data/amz_test.csv')
-#for index, row in df.iterrows():
-#    dataset.append((row['text'], row['label']))
-"""
-with open('data/yelp_positive_test.txt', 'r') as f:
-    for line in f:
-      dataset.append((line.replace('\n', ' '), 1))
 
-with open('data/yelp_negative_test.txt', 'r') as f:
-    for line in f:
-      dataset.append((line.replace('\n', ' '), 0))
-"""
-random.shuffle(dataset)
+#random.shuffle(dataset)
 
 attacker = Attacker(attack, textattack.datasets.Dataset(dataset[:1000]), AttackArgs(num_examples=1000))
 attacker.attack_dataset()
