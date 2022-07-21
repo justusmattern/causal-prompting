@@ -16,7 +16,7 @@ import random
 class ClassificationModel(nn.Module):
     def __init__(self, model, pos_prompt, neg_prompt, causal):
         super(ClassificationModel, self).__init__()
-        self.tokenizer = GPT2Tokenizer.from_pretrained('gpt2-medium')
+        self.tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
         self.model = GPT2LMHeadModel.from_pretrained(model)
         self.model.eval()
         self.pos_prompt = pos_prompt
@@ -25,8 +25,8 @@ class ClassificationModel(nn.Module):
 
     def score(self, prompt, sentence, model):
         if self.causal:
-            tokenized_prompt = self.tokenizer.encode(prompt , max_length=1024, truncation=True, return_tensors='pt')#.to('cuda:1')
-            tokenized_all = self.tokenizer.encode(prompt + ' ' + sentence, max_length=1024, truncation=True, return_tensors='pt')#.to('cuda:1')
+            tokenized_prompt = self.tokenizer.encode(prompt , max_length=1024, truncation=True, return_tensors='pt').to('cuda:0')
+            tokenized_all = self.tokenizer.encode(prompt + ' ' + sentence, max_length=1024, truncation=True, return_tensors='pt').to('cuda:0')
 
             loss1=model(tokenized_all, labels=tokenized_all).loss 
             loss2 = model(tokenized_prompt, labels=tokenized_prompt).loss*len(tokenized_prompt[0])/len(tokenized_all[0])
@@ -34,10 +34,10 @@ class ClassificationModel(nn.Module):
             return loss
 
         else:
-            tokenized_sentence = self.tokenizer.encode(sentence , max_length=1024, truncation=True, return_tensors='pt')#.to('cuda:1')
-            tokenized_all = self.tokenizer.encode(sentence + ' ' + prompt, max_length=1024, truncation=True, return_tensors='pt')#.to('cuda:1')
+            tokenized_sentence = self.tokenizer.encode(sentence , max_length=1024, truncation=True, return_tensors='pt').to('cuda:0')
+            tokenized_all = self.tokenizer.encode(sentence + ' ' + prompt, max_length=1024, truncation=True, return_tensors='pt').to('cuda:0')
 
-            loss1=model(tokenized_all, labels=tokenized_all).loss 
+            loss1=model(tokenized_all, labels=tokenized_all).loss
             loss2 = model(tokenized_sentence, labels=tokenized_sentence).loss*len(tokenized_sentence[0])/len(tokenized_all[0])
             loss = loss1-loss2
             return loss
@@ -76,7 +76,7 @@ class CustomWrapper(textattack.models.wrappers.ModelWrapper):
 
 
 #model = ClassificationModel('gpt2-xl', ['I loved this movie!','A great film!', "This was an awesome movie!", "This movie was extremely good!", "This was the best movie I have ever seen!", "I found the movie to be very good.", "This film was fantastic!"], ['I hated this movie!', 'A bad film!', "This was a terrible movie!", "This movie was really bad!", "This was the worst movie I have ever seen!", "I found the movie to be very bad.", "This film was boring."]).to('cuda:2')
-model = ClassificationModel('trained_models/model_imdb_epoch_4.pt', ['Positive'], ['Negative:'], causal=True)
+model = ClassificationModel('model_imdb_epoch_2.pt', [' : Positive'], [' : Negative'], causal=False)
 class_model = CustomWrapper(model)
 
 
@@ -87,7 +87,7 @@ from textattack import Attacker, AttackArgs
 
 
 attack = TextFoolerJin2019.build(class_model)
-attack#.cuda_()
+attack.cuda_()
 
 dataset = []
 count= 0

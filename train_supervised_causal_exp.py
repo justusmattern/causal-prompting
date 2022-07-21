@@ -9,7 +9,7 @@ import logging
 import os 
 from tqdm import tqdm
 
-os.environ["CUDA_VISIBLE_DEVICES"]="1,2,3"
+#os.environ["CUDA_VISIBLE_DEVICES"]="1,2,3"
 
 class TextDataset(torch.utils.data.Dataset):
     def __init__(self, file):

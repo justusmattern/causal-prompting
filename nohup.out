@@ -7603,3 +7603,11 @@ a [[credible]] , well formed satire
 +-------------------------------+--------+
 /home/zjin/users/justus_mattern/anaconda3/envs/prompts/lib/python3.9/site-packages/transformers/models/auto/modeling_auto.py:878: FutureWarning: The class `AutoModelWithLMHead` is deprecated and will be removed in a future version. Please use `AutoModelForCausalLM` for causal language models, `AutoModelForMaskedLM` for masked language models and `AutoModelForSeq2SeqLM` for encoder-decoder models.
   warnings.warn(
+usage: train_supervised_causal_exp.py [-h] [--train-file TRAIN_FILE]
+                                      [--test-file TEST_FILE]
+                                      [--batch-size BATCH_SIZE]
+                                      [--model-name MODEL_NAME]
+                                      [--tokenizer-name TOKENIZER_NAME]
+                                      [--prompts PROMPTS [PROMPTS ...]]
+                                      [--num-epochs NUM_EPOCHS] [--causal]
+train_supervised_causal_exp.py: error: argument --tokenizer-name: expected one argument
